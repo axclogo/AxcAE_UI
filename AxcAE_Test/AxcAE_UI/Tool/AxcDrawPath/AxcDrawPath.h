@@ -36,27 +36,31 @@
 #pragma mark 四边形
 /**
  绘制一个四边形
- @param startPoint 起始点
- @param size 大小
+ @param rect frame
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect;
+
+/**
+ 绘制一个四边形
+ @param rect frame
  @param clockwise 是否顺时针绘制
  @return 贝塞尔曲线
  */
-+ (UIBezierPath *)AxcDrawParallelogramStartPoint:(CGPoint )startPoint
-                                            size:(CGSize )size
-                                       clockwise:(BOOL)clockwise;
++ (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect
+                                 clockwise:(BOOL)clockwise;
 #pragma mark 平行四边形
 /**
  绘制一个四边形
- @param startPoint 起始点
- @param size 大小
+ @param rect frame
  @param clockwise 是否顺时针绘制
  @param offset 偏移量
  @return 贝塞尔曲线
  */
-+ (UIBezierPath *)AxcDrawParallelogramStartPoint:(CGPoint )startPoint
-                                            size:(CGSize )size
-                                          offset:(CGPoint )offset
-                                       clockwise:(BOOL)clockwise;
+#pragma mark 平行四边形
++ (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect
+                                    offset:(CGPoint )offset
+                                 clockwise:(BOOL)clockwise;
 #pragma mark - 圆环相关
 /**
  画圆 。。我自己都觉得这个封有点迷
@@ -80,8 +84,8 @@
  @param radius 半径
  @return 贝塞尔曲线
  */
-+ (UIBezierPath *)AxcDrawBlockArcRingCenter:(CGPoint )center
-                                     radius:(CGFloat)radius;
++ (UIBezierPath *)AxcDrawArcRingCenter:(CGPoint )center
+                                radius:(CGFloat)radius;
 
 /**
  绘制双圆弧 - 2
@@ -90,9 +94,9 @@
  @param radian 弧度
  @return 贝塞尔曲线
  */
-+ (UIBezierPath *)AxcDrawBlockArcRingCenter:(CGPoint )center
-                                     radius:(CGFloat)radius
-                                     radian:(CGFloat )radian;
++ (UIBezierPath *)AxcDrawArcRingCenter:(CGPoint )center
+                                radius:(CGFloat)radius
+                                radian:(CGFloat )radian;
 
 #pragma mark 绘制块状圆弧
 /**

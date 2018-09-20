@@ -31,15 +31,19 @@
 		EA31924721521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31924621521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m */; };
 		EA31924B21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31924A21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m */; };
 		EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA319250215246A100C315F2 /* BezierSampleVC.m */; };
-		EA3192562152477C00C315F2 /* AxcAE_DrawLineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3192552152477C00C315F2 /* AxcAE_DrawLineVC.m */; };
+		EA3192562152477C00C315F2 /* DrawLineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3192552152477C00C315F2 /* DrawLineVC.m */; };
 		EA50F7F52151E23100A53B71 /* AxcDrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7F42151E23100A53B71 /* AxcDrawPath.m */; };
 		EA50F7F92151ED9600A53B71 /* AxcLayerBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7F82151ED9600A53B71 /* AxcLayerBrush.m */; };
 		EA50F7FC2151F04100A53B71 /* AETestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7FB2151F04100A53B71 /* AETestViewController.m */; };
 		EA50F7FF2151F08500A53B71 /* AxcAE_DrawBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7FE2151F08500A53B71 /* AxcAE_DrawBoard.m */; };
 		EA7142ED214CF89C003E76BA /* AxcAE_RingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7142EC214CF89C003E76BA /* AxcAE_RingImageView.m */; };
-		EABB8FA2214F3F95009CABC7 /* AxcAE_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FA1214F3F95009CABC7 /* AxcAE_ViewController.m */; };
 		EABB8FB1214F8F21009CABC7 /* AxcAE_ArrowDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FB0214F8F21009CABC7 /* AxcAE_ArrowDrawView.m */; };
 		EABB8FB9214FA0EF009CABC7 /* AxcAE_BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FB8214FA0EF009CABC7 /* AxcAE_BaseObject.m */; };
+		EABC24BB21532C7B00AE4D8A /* DrawQuadrilateralVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24BA21532C7B00AE4D8A /* DrawQuadrilateralVC.m */; };
+		EABC24BF215338C300AE4D8A /* DrawBlockRingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24BE215338C300AE4D8A /* DrawBlockRingVC.m */; };
+		EABC24C12153734000AE4D8A /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC24C02153734000AE4D8A /* test.png */; };
+		EABC24C321537A4700AE4D8A /* ttt.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC24C221537A4600AE4D8A /* ttt.png */; };
+		EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */; };
 		EAE4FAA4214BB4C9008146A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */; };
 		EAE4FAAA214BB4CA008146A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE4FAA8214BB4CA008146A2 /* Main.storyboard */; };
 		EAE4FAAC214BB4CB008146A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE4FAAB214BB4CB008146A2 /* Assets.xcassets */; };
@@ -122,8 +126,8 @@
 		EA31924C21521E8A00C315F2 /* AxcAE_StructDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_StructDefine.h; sourceTree = "<group>"; };
 		EA31924F215246A100C315F2 /* BezierSampleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierSampleVC.h; sourceTree = "<group>"; };
 		EA319250215246A100C315F2 /* BezierSampleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierSampleVC.m; sourceTree = "<group>"; };
-		EA3192542152477C00C315F2 /* AxcAE_DrawLineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_DrawLineVC.h; sourceTree = "<group>"; };
-		EA3192552152477C00C315F2 /* AxcAE_DrawLineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_DrawLineVC.m; sourceTree = "<group>"; };
+		EA3192542152477C00C315F2 /* DrawLineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawLineVC.h; sourceTree = "<group>"; };
+		EA3192552152477C00C315F2 /* DrawLineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawLineVC.m; sourceTree = "<group>"; };
 		EA50F7F32151E23100A53B71 /* AxcDrawPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcDrawPath.h; sourceTree = "<group>"; };
 		EA50F7F42151E23100A53B71 /* AxcDrawPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcDrawPath.m; sourceTree = "<group>"; };
 		EA50F7F72151ED9600A53B71 /* AxcLayerBrush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcLayerBrush.h; sourceTree = "<group>"; };
@@ -134,12 +138,18 @@
 		EA50F7FE2151F08500A53B71 /* AxcAE_DrawBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_DrawBoard.m; sourceTree = "<group>"; };
 		EA7142EB214CF89C003E76BA /* AxcAE_RingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_RingImageView.h; sourceTree = "<group>"; };
 		EA7142EC214CF89C003E76BA /* AxcAE_RingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_RingImageView.m; sourceTree = "<group>"; };
-		EABB8FA0214F3F95009CABC7 /* AxcAE_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ViewController.h; sourceTree = "<group>"; };
-		EABB8FA1214F3F95009CABC7 /* AxcAE_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ViewController.m; sourceTree = "<group>"; };
 		EABB8FAF214F8F21009CABC7 /* AxcAE_ArrowDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ArrowDrawView.h; sourceTree = "<group>"; };
 		EABB8FB0214F8F21009CABC7 /* AxcAE_ArrowDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ArrowDrawView.m; sourceTree = "<group>"; };
 		EABB8FB7214FA0EF009CABC7 /* AxcAE_BaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_BaseObject.h; sourceTree = "<group>"; };
 		EABB8FB8214FA0EF009CABC7 /* AxcAE_BaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_BaseObject.m; sourceTree = "<group>"; };
+		EABC24B921532C7B00AE4D8A /* DrawQuadrilateralVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawQuadrilateralVC.h; sourceTree = "<group>"; };
+		EABC24BA21532C7B00AE4D8A /* DrawQuadrilateralVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawQuadrilateralVC.m; sourceTree = "<group>"; };
+		EABC24BD215338C300AE4D8A /* DrawBlockRingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawBlockRingVC.h; sourceTree = "<group>"; };
+		EABC24BE215338C300AE4D8A /* DrawBlockRingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawBlockRingVC.m; sourceTree = "<group>"; };
+		EABC24C02153734000AE4D8A /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		EABC24C221537A4600AE4D8A /* ttt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttt.png; sourceTree = "<group>"; };
+		EABC24C52153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AxcAE_ViewControllerExtension.h"; sourceTree = "<group>"; };
+		EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AxcAE_ViewControllerExtension.m"; sourceTree = "<group>"; };
 		EAE4FA9F214BB4C9008146A2 /* AxcAE_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxcAE_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE4FAA2214BB4C9008146A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -489,6 +499,8 @@
 		EA3192522152474D00C315F2 /* SubVC */ = {
 			isa = PBXGroup;
 			children = (
+				EABC24BC215338B800AE4D8A /* 快状圆弧 */,
+				EABC24B821532BA500AE4D8A /* 四边形绘制 */,
 				EA3192532152475400C315F2 /* 线段绘制 */,
 			);
 			path = SubVC;
@@ -497,8 +509,8 @@
 		EA3192532152475400C315F2 /* 线段绘制 */ = {
 			isa = PBXGroup;
 			children = (
-				EA3192542152477C00C315F2 /* AxcAE_DrawLineVC.h */,
-				EA3192552152477C00C315F2 /* AxcAE_DrawLineVC.m */,
+				EA3192542152477C00C315F2 /* DrawLineVC.h */,
+				EA3192552152477C00C315F2 /* DrawLineVC.m */,
 			);
 			path = "线段绘制";
 			sourceTree = "<group>";
@@ -524,7 +536,7 @@
 		EA7142D7214C9353003E76BA /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				EABB8F9F214F3F7B009CABC7 /* AxcAE_ViewController */,
+				EABC24C42153A02300AE4D8A /* AxcAE_ViewControllerExtension */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -574,15 +586,6 @@
 			path = AxcAE_RingImageView;
 			sourceTree = "<group>";
 		};
-		EABB8F9F214F3F7B009CABC7 /* AxcAE_ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				EABB8FA0214F3F95009CABC7 /* AxcAE_ViewController.h */,
-				EABB8FA1214F3F95009CABC7 /* AxcAE_ViewController.m */,
-			);
-			path = AxcAE_ViewController;
-			sourceTree = "<group>";
-		};
 		EABB8FAE214F8871009CABC7 /* AxcAE_ArrowDrawView */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +602,33 @@
 				EABB8FB8214FA0EF009CABC7 /* AxcAE_BaseObject.m */,
 			);
 			path = AxcAE_BaseObject;
+			sourceTree = "<group>";
+		};
+		EABC24B821532BA500AE4D8A /* 四边形绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				EABC24B921532C7B00AE4D8A /* DrawQuadrilateralVC.h */,
+				EABC24BA21532C7B00AE4D8A /* DrawQuadrilateralVC.m */,
+			);
+			path = "四边形绘制";
+			sourceTree = "<group>";
+		};
+		EABC24BC215338B800AE4D8A /* 快状圆弧 */ = {
+			isa = PBXGroup;
+			children = (
+				EABC24BD215338C300AE4D8A /* DrawBlockRingVC.h */,
+				EABC24BE215338C300AE4D8A /* DrawBlockRingVC.m */,
+			);
+			path = "快状圆弧";
+			sourceTree = "<group>";
+		};
+		EABC24C42153A02300AE4D8A /* AxcAE_ViewControllerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EABC24C52153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.h */,
+				EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */,
+			);
+			path = AxcAE_ViewControllerExtension;
 			sourceTree = "<group>";
 		};
 		EAE4FA96214BB4C9008146A2 = {
@@ -630,6 +660,8 @@
 				EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */,
 				EA50F7FA2151F04100A53B71 /* AETestViewController.h */,
 				EA50F7FB2151F04100A53B71 /* AETestViewController.m */,
+				EABC24C02153734000AE4D8A /* test.png */,
+				EABC24C221537A4600AE4D8A /* ttt.png */,
 				EA16438B21509BC800BE510B /* UI */,
 				EAE4FAD4214BB4E0008146A2 /* AxcAE_UI */,
 				EA16439021509C8000BE510B /* Other */,
@@ -852,7 +884,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EABC24C321537A4700AE4D8A /* ttt.png in Resources */,
 				EAE4FAAF214BB4CB008146A2 /* LaunchScreen.storyboard in Resources */,
+				EABC24C12153734000AE4D8A /* test.png in Resources */,
 				EAE4FAAC214BB4CB008146A2 /* Assets.xcassets in Resources */,
 				EA1643BF2150A78E00BE510B /* ShowCell.xib in Resources */,
 				EAE4FAAA214BB4CA008146A2 /* Main.storyboard in Resources */,
@@ -925,7 +959,9 @@
 				EA164378215095F000BE510B /* AxcAE_DrawBaseObj.m in Sources */,
 				EA1643C82150CE5700BE510B /* AxcAE_RingDrawView.m in Sources */,
 				EA1643CE2150D05600BE510B /* AxcAE_RingImageVC.m in Sources */,
+				EABC24BB21532C7B00AE4D8A /* DrawQuadrilateralVC.m in Sources */,
 				EA1643AC2150A4AA00BE510B /* ContainerSampleVC.m in Sources */,
+				EABC24BF215338C300AE4D8A /* DrawBlockRingVC.m in Sources */,
 				EA1643B92150A69F00BE510B /* ShowModel.m in Sources */,
 				EAE4FADD214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m in Sources */,
 				EA1643862150989900BE510B /* AxcAE_BaseDrawModule.m in Sources */,
@@ -943,15 +979,15 @@
 				EAE4FAE4214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m in Sources */,
 				EA31924721521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m in Sources */,
 				EAE4FAD8214BB525008146A2 /* AxcAE_BaseControl.m in Sources */,
+				EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */,
 				EABB8FB1214F8F21009CABC7 /* AxcAE_ArrowDrawView.m in Sources */,
 				EA7142ED214CF89C003E76BA /* AxcAE_RingImageView.m in Sources */,
 				EA50F7FF2151F08500A53B71 /* AxcAE_DrawBoard.m in Sources */,
 				EA1643B42150A68000BE510B /* BaseModel.m in Sources */,
 				EA1643A92150A49100BE510B /* DrawSampleListVC.m in Sources */,
-				EABB8FA2214F3F95009CABC7 /* AxcAE_ViewController.m in Sources */,
 				EA31924B21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m in Sources */,
 				EA1643822150980000BE510B /* AxcAE_BaseModule.m in Sources */,
-				EA3192562152477C00C315F2 /* AxcAE_DrawLineVC.m in Sources */,
+				EA3192562152477C00C315F2 /* DrawLineVC.m in Sources */,
 				EA1643992150A3D900BE510B /* SampleTemplateVC.m in Sources */,
 				EA16438A215098AB00BE510B /* AxcAE_BaseImageModule.m in Sources */,
 				EA50F7F52151E23100A53B71 /* AxcDrawPath.m in Sources */,

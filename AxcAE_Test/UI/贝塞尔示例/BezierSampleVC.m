@@ -19,7 +19,9 @@
     // Do any additional setup after loading the view.
 }
 -(void)settingData{
-    [self.dataArray addObject:[ShowModel Title:@"线段绘制" disTitle:@"贝塞尔曲线折线/线段绘制" VCName:@"AxcAE_DrawLineVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"线段绘制" disTitle:@"贝塞尔曲线折线/线段绘制" VCName:@"DrawLineVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"四边形绘制" disTitle:@"贝塞尔四边形绘制" VCName:@"DrawQuadrilateralVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"块状圆弧绘制" disTitle:@"贝塞尔块状圆弧绘制" VCName:@"DrawBlockRingVC"]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

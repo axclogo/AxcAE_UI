@@ -40,7 +40,7 @@
     layer.strokeColor = strokeColor.CGColor;
     if (lineDashPattern) layer.lineDashPattern = lineDashPattern;
     layer.anchorPoint = CGPointZero;
-    layer.drawPath = bezierPath; // 将绘制路径保存关联给Layer层，方便布局
+    layer.drawPath = bezierPath; // 将绘制路径保存关联给Layer层，方便画板进行布局
     return layer;
 }
 

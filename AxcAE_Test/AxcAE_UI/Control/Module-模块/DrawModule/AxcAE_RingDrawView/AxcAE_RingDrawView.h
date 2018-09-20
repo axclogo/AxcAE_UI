@@ -15,12 +15,12 @@
 
 #pragma mark - 实例化方法
 /** 快速实例化类方法 */
-+ (AxcAE_RingDrawModel *)drawModelWithImage:(UIImage *)image;
++ (AxcAE_RingDrawModel *)imageModelWithImage:(UIImage *)image;
 /** 快速实例化类方法 */
-+ (AxcAE_RingDrawModel *)drawModelWithImage:(UIImage *)image
++ (AxcAE_RingDrawModel *)imageModelWithImage:(UIImage *)image
                            internalDistance:(CGFloat )internalDistance;
 /** 快速实例化类方法 */
-+ (AxcAE_RingDrawModel *)drawModelWithImage:(UIImage *)image
++ (AxcAE_RingDrawModel *)imageModelWithImage:(UIImage *)image
                            internalDistance:(CGFloat )internalDistance
                                   tintColor:(UIColor *)tintColor;
 @end

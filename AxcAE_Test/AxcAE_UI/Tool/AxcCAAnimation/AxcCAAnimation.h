@@ -31,6 +31,24 @@
 +(CABasicAnimation *)AxcDrawLineDuration:(CGFloat )duration
                           timingFunction:(NSString *)timingFunction;
 
+#pragma mark - 缩放动画
+
+/**
+ 缩放效果动画 - 2
+ @param duration 周期时间
+ @return 动画对象
+ */
++ (CABasicAnimation *)AxcScaleDuration:(CGFloat )duration;
+
+/**
+ 缩放效果动画 - 2
+ @param duration 周期时间
+ @param timingFunction 时间函数
+ @return 动画对象
+ */
++ (CABasicAnimation *)AxcScaleDuration:(CGFloat )duration
+                        timingFunction:(NSString *)timingFunction;
+
 #pragma mark - 旋转动画
 
 /**
@@ -57,8 +75,38 @@
  @return 动画对象
  */
 + (CABasicAnimation *)AxcRotatingDuration:(CGFloat )duration
-                                clockwise:(BOOL )clockwise
-                           timingFunction:(NSString *)timingFunction;
+                           timingFunction:(NSString *)timingFunction
+                                clockwise:(BOOL )clockwise;
+
+#pragma mark - 透明渐变
+/**
+ 渐变出现动画
+ @param duration 周期时间
+ @return 动画对象
+ */
++(CABasicAnimation *)AxcOpacityWithDuration:(CGFloat )duration;
+
+/**
+ 渐变出现动画
+ @param duration 周期时间
+ @param timingFunction 时间曲线
+ @return 动画对象
+ */
++(CABasicAnimation *)AxcOpacityWithDuration:(CGFloat )duration
+                             timingFunction:(NSString *)timingFunction;
+
+/**
+ 渐变动画
+ @param duration 周期时间
+ @param maxOpacity 最大透明度
+ @param minOpacity 最小透明度
+ @param timingFunction 时间曲线
+ @return 动画对象
+ */
++(CABasicAnimation *)AxcOpacityWithDuration:(CGFloat )duration
+                                 maxOpacity:(CGFloat )maxOpacity
+                                 minOpacity:(CGFloat )minOpacity
+                             timingFunction:(NSString *)timingFunction;
 
 #pragma mark - 呼吸/闪烁效果动画
 /**

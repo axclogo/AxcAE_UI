@@ -17,5 +17,3 @@
 #import "AxcAE_RingImageView.h"
 
 
-// 页面控制器
-#import "AxcAE_ViewController.h"

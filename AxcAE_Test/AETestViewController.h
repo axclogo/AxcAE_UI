@@ -6,8 +6,8 @@
 //  Copyright © 2018年 AxcLogo. All rights reserved.
 //
 
-#import "AxcAE_ViewController.h"
+#import "BaseVC.h"
 
-@interface AETestViewController : AxcAE_ViewController
+@interface AETestViewController : BaseVC  
 
 @end

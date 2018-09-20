@@ -37,26 +37,28 @@
 }
 #pragma mark - 多边形相关
 #pragma mark 四边形
-+ (UIBezierPath *)AxcDrawParallelogramStartPoint:(CGPoint )startPoint
-                                            size:(CGSize )size
-                                       clockwise:(BOOL)clockwise{
-    return [self AxcDrawParallelogramStartPoint:startPoint
-                                           size:size
-                                         offset:CGPointZero
-                                      clockwise:clockwise];
++ (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect{
+    return [self AxcDrawParallelogramRect:rect
+                                clockwise:YES];
+}
++ (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect
+                                 clockwise:(BOOL)clockwise{
+    return [self AxcDrawParallelogramRect:rect
+                                   offset:CGPointZero
+                                clockwise:clockwise];
 }
 #pragma mark 平行四边形
-+ (UIBezierPath *)AxcDrawParallelogramStartPoint:(CGPoint )startPoint
-                                            size:(CGSize )size
-                                          offset:(CGPoint )offset
-                                       clockwise:(BOOL)clockwise{
-    UIBezierPath *bezierPath = [self AxcDrawLineArray:
-                                @[[NSValue valueWithCGPoint: startPoint],
-                                  [NSValue valueWithCGPoint: CGPointMake(startPoint.x + size.width , startPoint.y + offset.y)],
-                                  [NSValue valueWithCGPoint: CGPointMake(startPoint.x + size.width + offset.x , startPoint.y + size.height + offset.y)],
-                                  [NSValue valueWithCGPoint: CGPointMake(startPoint.x + offset.x , startPoint.y + size.height)],
-                                  [NSValue valueWithCGPoint: startPoint]]
-                                            clockwise:clockwise];
++ (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect
+                                    offset:(CGPoint )offset
+                                 clockwise:(BOOL)clockwise{
+    UIBezierPath *bezierPath =
+    [self AxcDrawLineArray:
+     @[[NSValue valueWithCGPoint: rect.origin],
+       [NSValue valueWithCGPoint: CGPointMake(rect.origin.x + rect.size.width , rect.origin.y + offset.y)],
+       [NSValue valueWithCGPoint: CGPointMake(rect.origin.x + rect.size.width + offset.x , rect.origin.y + rect.size.height + offset.y)],
+       [NSValue valueWithCGPoint: CGPointMake(rect.origin.x + offset.x , rect.origin.y + rect.size.height)],
+       [NSValue valueWithCGPoint: rect.origin]]
+                 clockwise:clockwise];
     return bezierPath;
 }
 #pragma mark - 圆环相关
@@ -76,15 +78,15 @@
 }
 
 #pragma mark 绘制双圆弧
-+ (UIBezierPath *)AxcDrawBlockArcRingCenter:(CGPoint )center
-                                     radius:(CGFloat)radius{
-    return [self AxcDrawBlockArcRingCenter:center
-                                    radius:radius
-                                    radian: M_PI / 4];
++ (UIBezierPath *)AxcDrawArcRingCenter:(CGPoint )center
+                                radius:(CGFloat)radius{
+    return [self AxcDrawArcRingCenter:center
+                               radius:radius
+                               radian: M_PI / 4];
 }
-+ (UIBezierPath *)AxcDrawBlockArcRingCenter:(CGPoint )center
-                                     radius:(CGFloat)radius
-                                     radian:(CGFloat )radian{
++ (UIBezierPath *)AxcDrawArcRingCenter:(CGPoint )center
+                                radius:(CGFloat)radius
+                                radian:(CGFloat )radian{
     UIBezierPath *circlePath = [UIBezierPath bezierPath];
     [circlePath addArcWithCenter:center radius:radius startAngle:-3 * radian endAngle:-radian clockwise:true];
     [circlePath moveToPoint:CGPointMake(center.x - radius * cosf(radian),radius * sinf(radian) + center.y)];
@@ -115,7 +117,7 @@
                                openingAngle:(CGFloat )openingAngle{
     // 创建绘制对象
     AxcDrawPath *circlePath = [AxcDrawPath bezierPath];
-    CGFloat angle = openingAngle / blockCount - angleSpacing; // 度
+    CGFloat angle = (360.f - openingAngle) / blockCount - angleSpacing; // 度
     for (int i = 0; i < blockCount; i ++) {
         CGFloat cycleStartAngle = AxcAE_Angle(startAngle);
         [circlePath addArcWithCenter:center
@@ -130,10 +132,10 @@
                            clockwise:NO];
         [circlePath addLineToPoint:CGPointMake(center.x + outsideRadius * cosf(cycleStartAngle),
                                                center.y + outsideRadius * sinf(cycleStartAngle))];
+        [circlePath closePath]; // 闭合
         startAngle += ((angle + angleSpacing));
         [circlePath moveToPoint:CGPointMake(outsideRadius * cosf(AxcAE_Angle(startAngle))+ center.x,
                                             outsideRadius * sinf(AxcAE_Angle(startAngle))+ center.y)];
-        
     }
     return circlePath;
 }

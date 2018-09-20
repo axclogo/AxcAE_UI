@@ -15,13 +15,6 @@
     }
     return self;
 }
-// 配置
-- (void)AxcAE_BaseConfiguration{
-    [super AxcAE_BaseConfiguration];
-    self.migrationRate = 100;
-    self.offsetMultiple = 0.1f;
-    self.compensationCoefficient = 0.45f;
-}
 // 自适应布局
 - (void)layoutSubviews{
     [super layoutSubviews]; // 如果反复设置父类View的frame会不断重绘所有Layer层
@@ -89,7 +82,7 @@
     }];
 }
 // 重感调用时偏移
-- (void)setGyroscope:(AxcAE_Gyroscope)gyroscope{
+- (void)offsetWithGyroscope:(AxcAE_Gyroscope)gyroscope{
     double gravityX = gyroscope.x;
     double gravityY = gyroscope.y;
     // 偏移率
@@ -117,34 +110,34 @@
 
 @implementation AxcAE_RingImageModel
 /** 快速实例化类方法 */
-+ (AxcAE_RingImageModel *)drawModelWithImageView:(UIImageView *)imageView{
-    return [self drawModelWithImageView:imageView
-                               distance:0];
++ (AxcAE_RingImageModel *)imageModelWithImageView:(UIImageView *)imageView{
+    return [self imageModelWithImageView:imageView
+                                distance:0];
 }
 /** 快速实例化类方法 */
-+ (AxcAE_RingImageModel *)drawModelWithImageView:(UIImageView *)imageView
-                                        distance:(CGFloat )distance{
-    AxcAE_RingImageModel *model = [self drawModelWithImage:nil
-                                                  distance:distance];
++ (AxcAE_RingImageModel *)imageModelWithImageView:(UIImageView *)imageView
+                                         distance:(CGFloat )distance{
+    AxcAE_RingImageModel *model = [self imageModelWithImage:nil
+                                                   distance:distance];
     if (imageView) model.imageView = imageView;
     return model;
 }
 /** 快速实例化类方法 */
-+ (AxcAE_RingImageModel *)drawModelWithImage:(UIImage *)image{
-    return [self drawModelWithImage:image
-                           distance:0];
++ (AxcAE_RingImageModel *)imageModelWithImage:(UIImage *)image{
+    return [self imageModelWithImage:image
+                            distance:0];
 }
 /** 快速实例化类方法 */
-+ (AxcAE_RingImageModel *)drawModelWithImage:(UIImage *)image
-                                    distance:(CGFloat )distance{
-    return [self drawModelWithImage:image
-                           distance:distance
-                          tintColor:nil];
++ (AxcAE_RingImageModel *)imageModelWithImage:(UIImage *)image
+                                     distance:(CGFloat )distance{
+    return [self imageModelWithImage:image
+                            distance:distance
+                           tintColor:nil];
 }
 /** 快速实例化类方法 */
-+ (AxcAE_RingImageModel *)drawModelWithImage:(UIImage *)image
-                                    distance:(CGFloat )distance
-                                   tintColor:(UIColor *)tintColor{
++ (AxcAE_RingImageModel *)imageModelWithImage:(UIImage *)image
+                                     distance:(CGFloat )distance
+                                    tintColor:(UIColor *)tintColor{
     AxcAE_RingImageModel *model = [[AxcAE_RingImageModel alloc] init];
     if (image)              model.image = image;
     if (distance)   model.distance = distance;
@@ -155,3 +148,4 @@
 
 
 @end
+

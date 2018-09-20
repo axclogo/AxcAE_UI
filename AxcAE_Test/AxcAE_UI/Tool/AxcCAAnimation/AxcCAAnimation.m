@@ -17,14 +17,29 @@
 +(CABasicAnimation *)AxcDrawLineDuration:(CGFloat )duration
                           timingFunction:(NSString *)timingFunction{
     CABasicAnimation *pathAniamtion = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    pathAniamtion.duration = duration;// 时间
-    pathAniamtion.timingFunction = [CAMediaTimingFunction functionWithName:timingFunction];
-    pathAniamtion.fromValue = [NSNumber numberWithFloat:0.0f];
-    pathAniamtion.toValue = [NSNumber numberWithFloat:1];// 划线段的百分之多少
-    pathAniamtion.autoreverses = NO;
+    [self settingCABasicAnimation:pathAniamtion
+                        fromValue:@(0)
+                          toValue:@(1)
+                         duration:duration
+                   timingFunction:timingFunction];
+    pathAniamtion.repeatCount = 1; // 重复次数只需要1次
     return pathAniamtion;
 }
-
+#pragma mark - 缩放动画
++ (CABasicAnimation *)AxcScaleDuration:(CGFloat )duration{
+    return [self AxcScaleDuration:duration timingFunction:kCAMediaTimingFunctionEaseInEaseOut];
+}
++ (CABasicAnimation *)AxcScaleDuration:(CGFloat )duration
+                        timingFunction:(NSString *)timingFunction{
+    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    [self settingCABasicAnimation:scaleAnimation
+                        fromValue:@(0)
+                          toValue:@(1)
+                         duration:duration
+                   timingFunction:timingFunction];
+    scaleAnimation.repeatCount = 1; // 重复次数只需要1次
+    return scaleAnimation;
+}
 #pragma mark - 旋转动画
 + (CABasicAnimation *)AxcRotatingDuration:(CGFloat )duration{
     return [self AxcRotatingDuration:duration
@@ -33,12 +48,12 @@
 + (CABasicAnimation *)AxcRotatingDuration:(CGFloat )duration
                                 clockwise:(BOOL )clockwise{
     return [self AxcRotatingDuration:duration
-                           clockwise:clockwise
-                      timingFunction:kCAMediaTimingFunctionLinear];
+                      timingFunction:kCAMediaTimingFunctionLinear
+                           clockwise:clockwise];
 }
 + (CABasicAnimation *)AxcRotatingDuration:(CGFloat )duration
-                                clockwise:(BOOL )clockwise
-                           timingFunction:(NSString *)timingFunction{
+                           timingFunction:(NSString *)timingFunction
+                                clockwise:(BOOL )clockwise{
     CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     [self settingCABasicAnimation:animation
                         fromValue:@(0)
@@ -49,6 +64,33 @@
     return animation;
 }
 
+#pragma mark - 透明渐变
++(CABasicAnimation *)AxcOpacityWithDuration:(CGFloat )duration{
+    return [self AxcOpacityWithDuration:duration
+                         timingFunction:kCAMediaTimingFunctionLinear];
+}
++(CABasicAnimation *)AxcOpacityWithDuration:(CGFloat )duration
+                             timingFunction:(NSString *)timingFunction{
+    CABasicAnimation *scaleAnimation =[CABasicAnimation animationWithKeyPath:@"opacity"];
+    [self AxcOpacityWithDuration:duration
+                      maxOpacity:1
+                      minOpacity:0
+                  timingFunction:timingFunction];
+    return scaleAnimation;
+}
++(CABasicAnimation *)AxcOpacityWithDuration:(CGFloat )duration
+                                 maxOpacity:(CGFloat )maxOpacity
+                                 minOpacity:(CGFloat )minOpacity
+                             timingFunction:(NSString *)timingFunction{
+    CABasicAnimation *scaleAnimation =[CABasicAnimation animationWithKeyPath:@"opacity"];
+    [self settingCABasicAnimation:scaleAnimation
+                        fromValue:@(maxOpacity)
+                          toValue:@(minOpacity)
+                         duration:duration
+                   timingFunction:timingFunction];
+    scaleAnimation.repeatCount = 1; // 重复次数只需要1次
+    return scaleAnimation;
+}
 #pragma mark - 呼吸/闪烁效果动画
 +(CABasicAnimation *)AxcBreathingWithDuration:(CGFloat )duration{
     return [self AxcBreathingWithDuration:duration
@@ -73,7 +115,6 @@
                           toValue:@(minOpacity)
                          duration:duration
                    timingFunction:timingFunction];
-    animation.fillMode = kCAFillModeForwards;
     return animation;
 }
 
@@ -86,10 +127,9 @@
     animation.fromValue = fromValue;
     animation.toValue = toValue;
     animation.duration = duration;
-    animation.autoreverses = YES;
-    animation.repeatCount = HUGE_VALF;
-    animation.removedOnCompletion = NO;
-    animation.fillMode = kCAFillModeForwards;
+    animation.autoreverses = NO;               // 动画结束时执行逆动画
+    animation.repeatCount = HUGE_VALF;          // 重复次数
+    animation.fillMode = kCAFillModeForwards;   // 保持动画执行的最后一步状态
     animation.timingFunction=[CAMediaTimingFunction functionWithName:timingFunction];
 }
 

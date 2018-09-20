@@ -47,7 +47,7 @@
     NSMutableArray *arr = @[].mutableCopy;
     int i = 0;
     for (NSString *imgName in imgNames) {
-        AxcAE_RingDrawModel *ring = [AxcAE_RingDrawModel drawModelWithImage:[UIImage imageNamed:imgName]];
+        AxcAE_RingDrawModel *ring = [AxcAE_RingDrawModel imageModelWithImage:[UIImage imageNamed:imgName]];
         switch (i) {
             case 0:{
                 ring.tintColor = KScienceTechnologyBlue;

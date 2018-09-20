@@ -14,8 +14,17 @@
     [super AxcAE_BaseConfiguration];
     self.verticalDrawPoints = AxcAE_Ring_VerticalDrawPointsCenter;
     self.horizontalDrawPoints = AxcAE_Ring_HorizontalDrawPointsCenter;
+    self.migrationRate = 100.f;
+    self.offsetMultiple = 0.1f;
+    self.compensationCoefficient = 0.5f;
 }
-
 - (void)startAnimation{}
+
+
+- (void)setGyroscope:(AxcAE_Gyroscope)gyroscope{
+    _gyroscope = gyroscope;
+    [self offsetWithGyroscope:gyroscope];
+}
+- (void)offsetWithGyroscope:(AxcAE_Gyroscope)gyroscope{}
 
 @end
