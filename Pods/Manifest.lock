@@ -1,0 +1,64 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AxcAE_TabBar (1.0.5)
+  - IQKeyboardManager (6.1.1)
+  - JWNetAutoCache (0.0.2)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.0.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SVProgressHUD (2.1.2)
+  - WHC_Model (1.7.0.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - AxcAE_TabBar
+  - IQKeyboardManager
+  - JWNetAutoCache
+  - Masonry
+  - MBProgressHUD (~> 1.0.0)
+  - SDWebImage (~> 4.4.2)
+  - SVProgressHUD (~> 2.1.2)
+  - WHC_Model
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AxcAE_TabBar
+    - IQKeyboardManager
+    - JWNetAutoCache
+    - Masonry
+    - MBProgressHUD
+    - SDWebImage
+    - SVProgressHUD
+    - WHC_Model
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AxcAE_TabBar: 1d5bcf6c4921889dc38839b6ba2c584a9b55251a
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
+  JWNetAutoCache: 434f10855da06d29a381359552ae9d27ef35cad7
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  WHC_Model: 8268100386a9d450fa7ff72e9671910da8334e3f
+
+PODFILE CHECKSUM: d51f58ab5fc8d8dcca2004b4512b7f0ac5a54d0d
+
+COCOAPODS: 1.5.3

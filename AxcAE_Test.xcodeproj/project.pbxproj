@@ -1,0 +1,1279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8084A1F236645FB447FE2A3 /* libPods-AxcAE_Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AE4BD8D8EFCA3804B67854 /* libPods-AxcAE_Test.a */; };
+		EA164375215095E900BE510B /* AxcAE_ImageBaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = EA164374215095E900BE510B /* AxcAE_ImageBaseObj.m */; };
+		EA164378215095F000BE510B /* AxcAE_DrawBaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = EA164377215095F000BE510B /* AxcAE_DrawBaseObj.m */; };
+		EA1643822150980000BE510B /* AxcAE_BaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643812150980000BE510B /* AxcAE_BaseModule.m */; };
+		EA1643862150989900BE510B /* AxcAE_BaseDrawModule.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643852150989900BE510B /* AxcAE_BaseDrawModule.m */; };
+		EA16438A215098AB00BE510B /* AxcAE_BaseImageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = EA164389215098AB00BE510B /* AxcAE_BaseImageModule.m */; };
+		EA16438F21509BE200BE510B /* AxcTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16438E21509BE200BE510B /* AxcTabBarController.m */; };
+		EA1643992150A3D900BE510B /* SampleTemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643982150A3D900BE510B /* SampleTemplateVC.m */; };
+		EA1643A62150A48300BE510B /* ViewSampleListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643A52150A48300BE510B /* ViewSampleListVC.m */; };
+		EA1643A92150A49100BE510B /* DrawSampleListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643A82150A49100BE510B /* DrawSampleListVC.m */; };
+		EA1643AC2150A4AA00BE510B /* ContainerSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643AB2150A4AA00BE510B /* ContainerSampleVC.m */; };
+		EA1643B02150A4D600BE510B /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643AF2150A4D600BE510B /* BaseVC.m */; };
+		EA1643B42150A68000BE510B /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643B32150A68000BE510B /* BaseModel.m */; };
+		EA1643B92150A69F00BE510B /* ShowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643B82150A69F00BE510B /* ShowModel.m */; };
+		EA1643BE2150A78E00BE510B /* ShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643BC2150A78E00BE510B /* ShowCell.m */; };
+		EA1643BF2150A78E00BE510B /* ShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1643BD2150A78E00BE510B /* ShowCell.xib */; };
+		EA1643C32150CC3B00BE510B /* AxcAE_RingDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643C22150CC3B00BE510B /* AxcAE_RingDrawVC.m */; };
+		EA1643C82150CE5700BE510B /* AxcAE_RingDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643C62150CE5600BE510B /* AxcAE_RingDrawView.m */; };
+		EA1643CE2150D05600BE510B /* AxcAE_RingImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643CD2150D05600BE510B /* AxcAE_RingImageVC.m */; };
+		EA1643D22150D48E00BE510B /* AxcAE_ArrowDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643D12150D48E00BE510B /* AxcAE_ArrowDrawVC.m */; };
+		EA1643D62150D6CD00BE510B /* AxcCAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643D52150D6CD00BE510B /* AxcCAAnimation.m */; };
+		EA31924721521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31924621521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m */; };
+		EA31924B21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31924A21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m */; };
+		EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA319250215246A100C315F2 /* BezierSampleVC.m */; };
+		EA3192562152477C00C315F2 /* AxcAE_DrawLineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3192552152477C00C315F2 /* AxcAE_DrawLineVC.m */; };
+		EA50F7F52151E23100A53B71 /* AxcDrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7F42151E23100A53B71 /* AxcDrawPath.m */; };
+		EA50F7F92151ED9600A53B71 /* AxcLayerBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7F82151ED9600A53B71 /* AxcLayerBrush.m */; };
+		EA50F7FC2151F04100A53B71 /* AETestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7FB2151F04100A53B71 /* AETestViewController.m */; };
+		EA50F7FF2151F08500A53B71 /* AxcAE_DrawBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7FE2151F08500A53B71 /* AxcAE_DrawBoard.m */; };
+		EA7142ED214CF89C003E76BA /* AxcAE_RingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7142EC214CF89C003E76BA /* AxcAE_RingImageView.m */; };
+		EABB8FA2214F3F95009CABC7 /* AxcAE_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FA1214F3F95009CABC7 /* AxcAE_ViewController.m */; };
+		EABB8FB1214F8F21009CABC7 /* AxcAE_ArrowDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FB0214F8F21009CABC7 /* AxcAE_ArrowDrawView.m */; };
+		EABB8FB9214FA0EF009CABC7 /* AxcAE_BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FB8214FA0EF009CABC7 /* AxcAE_BaseObject.m */; };
+		EAE4FAA4214BB4C9008146A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */; };
+		EAE4FAAA214BB4CA008146A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE4FAA8214BB4CA008146A2 /* Main.storyboard */; };
+		EAE4FAAC214BB4CB008146A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE4FAAB214BB4CB008146A2 /* Assets.xcassets */; };
+		EAE4FAAF214BB4CB008146A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE4FAAD214BB4CB008146A2 /* LaunchScreen.storyboard */; };
+		EAE4FAB2214BB4CB008146A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAB1214BB4CB008146A2 /* main.m */; };
+		EAE4FABC214BB4CB008146A2 /* AxcAE_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FABB214BB4CB008146A2 /* AxcAE_TestTests.m */; };
+		EAE4FAC7214BB4CB008146A2 /* AxcAE_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAC6214BB4CB008146A2 /* AxcAE_TestUITests.m */; };
+		EAE4FAD8214BB525008146A2 /* AxcAE_BaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAD7214BB525008146A2 /* AxcAE_BaseControl.m */; };
+		EAE4FADD214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FADB214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m */; };
+		EAE4FAE4214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAE3214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m */; };
+		EAE4FAE9214BB864008146A2 /* AxcAE_ParallelogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAE7214BB864008146A2 /* AxcAE_ParallelogramView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAE4FAB8214BB4CB008146A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE4FA97214BB4C9008146A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE4FA9E214BB4C9008146A2;
+			remoteInfo = AxcAE_Test;
+		};
+		EAE4FAC3214BB4CB008146A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE4FA97214BB4C9008146A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE4FA9E214BB4C9008146A2;
+			remoteInfo = AxcAE_Test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3EAFAEF7E149894555DC05F1 /* Pods-AxcAE_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxcAE_Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-AxcAE_Test/Pods-AxcAE_Test.release.xcconfig"; sourceTree = "<group>"; };
+		63AE4BD8D8EFCA3804B67854 /* libPods-AxcAE_Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AxcAE_Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE94864D95CF4100B2FA2FA /* Pods-AxcAE_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxcAE_Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AxcAE_Test/Pods-AxcAE_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		EA164373215095E900BE510B /* AxcAE_ImageBaseObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ImageBaseObj.h; sourceTree = "<group>"; };
+		EA164374215095E900BE510B /* AxcAE_ImageBaseObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ImageBaseObj.m; sourceTree = "<group>"; };
+		EA164376215095F000BE510B /* AxcAE_DrawBaseObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_DrawBaseObj.h; sourceTree = "<group>"; };
+		EA164377215095F000BE510B /* AxcAE_DrawBaseObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_DrawBaseObj.m; sourceTree = "<group>"; };
+		EA1643802150980000BE510B /* AxcAE_BaseModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_BaseModule.h; sourceTree = "<group>"; };
+		EA1643812150980000BE510B /* AxcAE_BaseModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_BaseModule.m; sourceTree = "<group>"; };
+		EA1643842150989900BE510B /* AxcAE_BaseDrawModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_BaseDrawModule.h; sourceTree = "<group>"; };
+		EA1643852150989900BE510B /* AxcAE_BaseDrawModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_BaseDrawModule.m; sourceTree = "<group>"; };
+		EA164388215098AB00BE510B /* AxcAE_BaseImageModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_BaseImageModule.h; sourceTree = "<group>"; };
+		EA164389215098AB00BE510B /* AxcAE_BaseImageModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_BaseImageModule.m; sourceTree = "<group>"; };
+		EA16438D21509BE200BE510B /* AxcTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcTabBarController.h; sourceTree = "<group>"; };
+		EA16438E21509BE200BE510B /* AxcTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcTabBarController.m; sourceTree = "<group>"; };
+		EA16439121509C9E00BE510B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EA1643972150A3D900BE510B /* SampleTemplateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleTemplateVC.h; sourceTree = "<group>"; };
+		EA1643982150A3D900BE510B /* SampleTemplateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTemplateVC.m; sourceTree = "<group>"; };
+		EA1643A42150A48300BE510B /* ViewSampleListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewSampleListVC.h; sourceTree = "<group>"; };
+		EA1643A52150A48300BE510B /* ViewSampleListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewSampleListVC.m; sourceTree = "<group>"; };
+		EA1643A72150A49100BE510B /* DrawSampleListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawSampleListVC.h; sourceTree = "<group>"; };
+		EA1643A82150A49100BE510B /* DrawSampleListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawSampleListVC.m; sourceTree = "<group>"; };
+		EA1643AA2150A4AA00BE510B /* ContainerSampleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerSampleVC.h; sourceTree = "<group>"; };
+		EA1643AB2150A4AA00BE510B /* ContainerSampleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerSampleVC.m; sourceTree = "<group>"; };
+		EA1643AE2150A4D600BE510B /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		EA1643AF2150A4D600BE510B /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		EA1643B22150A68000BE510B /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		EA1643B32150A68000BE510B /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		EA1643B72150A69F00BE510B /* ShowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowModel.h; sourceTree = "<group>"; };
+		EA1643B82150A69F00BE510B /* ShowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowModel.m; sourceTree = "<group>"; };
+		EA1643BB2150A78E00BE510B /* ShowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowCell.h; sourceTree = "<group>"; };
+		EA1643BC2150A78E00BE510B /* ShowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowCell.m; sourceTree = "<group>"; };
+		EA1643BD2150A78E00BE510B /* ShowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCell.xib; sourceTree = "<group>"; };
+		EA1643C12150CC3B00BE510B /* AxcAE_RingDrawVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_RingDrawVC.h; sourceTree = "<group>"; };
+		EA1643C22150CC3B00BE510B /* AxcAE_RingDrawVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_RingDrawVC.m; sourceTree = "<group>"; };
+		EA1643C42150CC6200BE510B /* AxcAE_UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_UI.h; sourceTree = "<group>"; };
+		EA1643C62150CE5600BE510B /* AxcAE_RingDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcAE_RingDrawView.m; sourceTree = "<group>"; };
+		EA1643C72150CE5600BE510B /* AxcAE_RingDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcAE_RingDrawView.h; sourceTree = "<group>"; };
+		EA1643CC2150D05600BE510B /* AxcAE_RingImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_RingImageVC.h; sourceTree = "<group>"; };
+		EA1643CD2150D05600BE510B /* AxcAE_RingImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_RingImageVC.m; sourceTree = "<group>"; };
+		EA1643D02150D48E00BE510B /* AxcAE_ArrowDrawVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ArrowDrawVC.h; sourceTree = "<group>"; };
+		EA1643D12150D48E00BE510B /* AxcAE_ArrowDrawVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ArrowDrawVC.m; sourceTree = "<group>"; };
+		EA1643D42150D6CD00BE510B /* AxcCAAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcCAAnimation.h; sourceTree = "<group>"; };
+		EA1643D52150D6CD00BE510B /* AxcCAAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcCAAnimation.m; sourceTree = "<group>"; };
+		EA31924521521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+AxcAE_LayerAttribute.h"; sourceTree = "<group>"; };
+		EA31924621521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+AxcAE_LayerAttribute.m"; sourceTree = "<group>"; };
+		EA31924921521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AxcAE_ObjAttribute.h"; sourceTree = "<group>"; };
+		EA31924A21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AxcAE_ObjAttribute.m"; sourceTree = "<group>"; };
+		EA31924C21521E8A00C315F2 /* AxcAE_StructDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_StructDefine.h; sourceTree = "<group>"; };
+		EA31924F215246A100C315F2 /* BezierSampleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierSampleVC.h; sourceTree = "<group>"; };
+		EA319250215246A100C315F2 /* BezierSampleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierSampleVC.m; sourceTree = "<group>"; };
+		EA3192542152477C00C315F2 /* AxcAE_DrawLineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_DrawLineVC.h; sourceTree = "<group>"; };
+		EA3192552152477C00C315F2 /* AxcAE_DrawLineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_DrawLineVC.m; sourceTree = "<group>"; };
+		EA50F7F32151E23100A53B71 /* AxcDrawPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcDrawPath.h; sourceTree = "<group>"; };
+		EA50F7F42151E23100A53B71 /* AxcDrawPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcDrawPath.m; sourceTree = "<group>"; };
+		EA50F7F72151ED9600A53B71 /* AxcLayerBrush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcLayerBrush.h; sourceTree = "<group>"; };
+		EA50F7F82151ED9600A53B71 /* AxcLayerBrush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcLayerBrush.m; sourceTree = "<group>"; };
+		EA50F7FA2151F04100A53B71 /* AETestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestViewController.h; sourceTree = "<group>"; };
+		EA50F7FB2151F04100A53B71 /* AETestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestViewController.m; sourceTree = "<group>"; };
+		EA50F7FD2151F08500A53B71 /* AxcAE_DrawBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_DrawBoard.h; sourceTree = "<group>"; };
+		EA50F7FE2151F08500A53B71 /* AxcAE_DrawBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_DrawBoard.m; sourceTree = "<group>"; };
+		EA7142EB214CF89C003E76BA /* AxcAE_RingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_RingImageView.h; sourceTree = "<group>"; };
+		EA7142EC214CF89C003E76BA /* AxcAE_RingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_RingImageView.m; sourceTree = "<group>"; };
+		EABB8FA0214F3F95009CABC7 /* AxcAE_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ViewController.h; sourceTree = "<group>"; };
+		EABB8FA1214F3F95009CABC7 /* AxcAE_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ViewController.m; sourceTree = "<group>"; };
+		EABB8FAF214F8F21009CABC7 /* AxcAE_ArrowDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ArrowDrawView.h; sourceTree = "<group>"; };
+		EABB8FB0214F8F21009CABC7 /* AxcAE_ArrowDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ArrowDrawView.m; sourceTree = "<group>"; };
+		EABB8FB7214FA0EF009CABC7 /* AxcAE_BaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_BaseObject.h; sourceTree = "<group>"; };
+		EABB8FB8214FA0EF009CABC7 /* AxcAE_BaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_BaseObject.m; sourceTree = "<group>"; };
+		EAE4FA9F214BB4C9008146A2 /* AxcAE_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxcAE_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE4FAA2214BB4C9008146A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAE4FAA9214BB4CA008146A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAE4FAAB214BB4CB008146A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAE4FAAE214BB4CB008146A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAE4FAB0214BB4CB008146A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE4FAB1214BB4CB008146A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAE4FAB7214BB4CB008146A2 /* AxcAE_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxcAE_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE4FABB214BB4CB008146A2 /* AxcAE_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_TestTests.m; sourceTree = "<group>"; };
+		EAE4FABD214BB4CB008146A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE4FAC2214BB4CB008146A2 /* AxcAE_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxcAE_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE4FAC6214BB4CB008146A2 /* AxcAE_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_TestUITests.m; sourceTree = "<group>"; };
+		EAE4FAC8214BB4CB008146A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE4FAD6214BB525008146A2 /* AxcAE_BaseControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_BaseControl.h; sourceTree = "<group>"; };
+		EAE4FAD7214BB525008146A2 /* AxcAE_BaseControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_BaseControl.m; sourceTree = "<group>"; };
+		EAE4FAD9214BB5F8008146A2 /* AxcAE_UIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcAE_UIDefine.h; sourceTree = "<group>"; };
+		EAE4FADB214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AxcAE_ViewFrame.m"; sourceTree = "<group>"; };
+		EAE4FADC214BB61C008146A2 /* UIView+AxcAE_ViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AxcAE_ViewFrame.h"; sourceTree = "<group>"; };
+		EAE4FAE2214BB7BD008146A2 /* AxcAE_FirstDisplayBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_FirstDisplayBox.h; sourceTree = "<group>"; };
+		EAE4FAE3214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_FirstDisplayBox.m; sourceTree = "<group>"; };
+		EAE4FAE7214BB864008146A2 /* AxcAE_ParallelogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ParallelogramView.m; sourceTree = "<group>"; };
+		EAE4FAE8214BB864008146A2 /* AxcAE_ParallelogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcAE_ParallelogramView.h; sourceTree = "<group>"; };
+		EAE4FAEA214BBA44008146A2 /* AxcAE_HeaderDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_HeaderDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAE4FA9C214BB4C9008146A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8084A1F236645FB447FE2A3 /* libPods-AxcAE_Test.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE4FAB4214BB4CB008146A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE4FABF214BB4CB008146A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C114612FA14CFBEED7741F8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFE94864D95CF4100B2FA2FA /* Pods-AxcAE_Test.debug.xcconfig */,
+				3EAFAEF7E149894555DC05F1 /* Pods-AxcAE_Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4A50119089880596954FB01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63AE4BD8D8EFCA3804B67854 /* libPods-AxcAE_Test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA164371215095C200BE510B /* AxcAE_DrawBaseObj */ = {
+			isa = PBXGroup;
+			children = (
+				EA164376215095F000BE510B /* AxcAE_DrawBaseObj.h */,
+				EA164377215095F000BE510B /* AxcAE_DrawBaseObj.m */,
+			);
+			path = AxcAE_DrawBaseObj;
+			sourceTree = "<group>";
+		};
+		EA164372215095D300BE510B /* AxcAE_ImageBaseObj */ = {
+			isa = PBXGroup;
+			children = (
+				EA164373215095E900BE510B /* AxcAE_ImageBaseObj.h */,
+				EA164374215095E900BE510B /* AxcAE_ImageBaseObj.m */,
+			);
+			path = AxcAE_ImageBaseObj;
+			sourceTree = "<group>";
+		};
+		EA1643792150972400BE510B /* DrawModule */ = {
+			isa = PBXGroup;
+			children = (
+				EABB8FAE214F8871009CABC7 /* AxcAE_ArrowDrawView */,
+				EA1643C52150CE5600BE510B /* AxcAE_RingDrawView */,
+				EA1643832150988800BE510B /* BaseDrawModule */,
+			);
+			path = DrawModule;
+			sourceTree = "<group>";
+		};
+		EA16437A2150973200BE510B /* ImageModule */ = {
+			isa = PBXGroup;
+			children = (
+				EA7142EA214CF894003E76BA /* AxcAE_RingImageView */,
+				EA164387215098A000BE510B /* BaseImageModule */,
+			);
+			path = ImageModule;
+			sourceTree = "<group>";
+		};
+		EA16437F215097E300BE510B /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643802150980000BE510B /* AxcAE_BaseModule.h */,
+				EA1643812150980000BE510B /* AxcAE_BaseModule.m */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		EA1643832150988800BE510B /* BaseDrawModule */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643842150989900BE510B /* AxcAE_BaseDrawModule.h */,
+				EA1643852150989900BE510B /* AxcAE_BaseDrawModule.m */,
+			);
+			path = BaseDrawModule;
+			sourceTree = "<group>";
+		};
+		EA164387215098A000BE510B /* BaseImageModule */ = {
+			isa = PBXGroup;
+			children = (
+				EA164388215098AB00BE510B /* AxcAE_BaseImageModule.h */,
+				EA164389215098AB00BE510B /* AxcAE_BaseImageModule.m */,
+			);
+			path = BaseImageModule;
+			sourceTree = "<group>";
+		};
+		EA16438B21509BC800BE510B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643AD2150A4CE00BE510B /* BaseVC */,
+				EA1643962150A3C500BE510B /* 示例模板 */,
+				EA31924D2152464700C315F2 /* 贝塞尔示例 */,
+				EA16439A2150A3E800BE510B /* 绘制示例 */,
+				EA16439221509D0500BE510B /* 视图示例 */,
+				EA16439B2150A3FF00BE510B /* 容器示例 */,
+				EA16438C21509BCE00BE510B /* TabBar */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EA16438C21509BCE00BE510B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EA16438D21509BE200BE510B /* AxcTabBarController.h */,
+				EA16438E21509BE200BE510B /* AxcTabBarController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EA16439021509C8000BE510B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EA16439121509C9E00BE510B /* PrefixHeader.pch */,
+				EAE4FAA8214BB4CA008146A2 /* Main.storyboard */,
+				EAE4FAAB214BB4CB008146A2 /* Assets.xcassets */,
+				EAE4FAAD214BB4CB008146A2 /* LaunchScreen.storyboard */,
+				EAE4FAB0214BB4CB008146A2 /* Info.plist */,
+				EAE4FAB1214BB4CB008146A2 /* main.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		EA16439221509D0500BE510B /* 视图示例 */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643A42150A48300BE510B /* ViewSampleListVC.h */,
+				EA1643A52150A48300BE510B /* ViewSampleListVC.m */,
+				EA1643CA2150D02C00BE510B /* SubVC */,
+			);
+			path = "视图示例";
+			sourceTree = "<group>";
+		};
+		EA1643962150A3C500BE510B /* 示例模板 */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643972150A3D900BE510B /* SampleTemplateVC.h */,
+				EA1643982150A3D900BE510B /* SampleTemplateVC.m */,
+			);
+			path = "示例模板";
+			sourceTree = "<group>";
+		};
+		EA16439A2150A3E800BE510B /* 绘制示例 */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643A72150A49100BE510B /* DrawSampleListVC.h */,
+				EA1643A82150A49100BE510B /* DrawSampleListVC.m */,
+				EA1643C02150CC1600BE510B /* SubVC */,
+			);
+			path = "绘制示例";
+			sourceTree = "<group>";
+		};
+		EA16439B2150A3FF00BE510B /* 容器示例 */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643AA2150A4AA00BE510B /* ContainerSampleVC.h */,
+				EA1643AB2150A4AA00BE510B /* ContainerSampleVC.m */,
+			);
+			path = "容器示例";
+			sourceTree = "<group>";
+		};
+		EA1643AD2150A4CE00BE510B /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643BA2150A77800BE510B /* View */,
+				EA1643B12150A66B00BE510B /* Model */,
+				EA1643AE2150A4D600BE510B /* BaseVC.h */,
+				EA1643AF2150A4D600BE510B /* BaseVC.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		EA1643B12150A66B00BE510B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643B62150A68E00BE510B /* ShowModel */,
+				EA1643B52150A68600BE510B /* Base */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA1643B52150A68600BE510B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643B22150A68000BE510B /* BaseModel.h */,
+				EA1643B32150A68000BE510B /* BaseModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EA1643B62150A68E00BE510B /* ShowModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643B72150A69F00BE510B /* ShowModel.h */,
+				EA1643B82150A69F00BE510B /* ShowModel.m */,
+			);
+			path = ShowModel;
+			sourceTree = "<group>";
+		};
+		EA1643BA2150A77800BE510B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643BB2150A78E00BE510B /* ShowCell.h */,
+				EA1643BC2150A78E00BE510B /* ShowCell.m */,
+				EA1643BD2150A78E00BE510B /* ShowCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA1643C02150CC1600BE510B /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643CF2150D46900BE510B /* 箭头 */,
+				EA1643C92150CFF700BE510B /* 圆环 */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		EA1643C52150CE5600BE510B /* AxcAE_RingDrawView */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643C72150CE5600BE510B /* AxcAE_RingDrawView.h */,
+				EA1643C62150CE5600BE510B /* AxcAE_RingDrawView.m */,
+			);
+			path = AxcAE_RingDrawView;
+			sourceTree = "<group>";
+		};
+		EA1643C92150CFF700BE510B /* 圆环 */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643C12150CC3B00BE510B /* AxcAE_RingDrawVC.h */,
+				EA1643C22150CC3B00BE510B /* AxcAE_RingDrawVC.m */,
+			);
+			path = "圆环";
+			sourceTree = "<group>";
+		};
+		EA1643CA2150D02C00BE510B /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643CB2150D03400BE510B /* 圆环 */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		EA1643CB2150D03400BE510B /* 圆环 */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643CC2150D05600BE510B /* AxcAE_RingImageVC.h */,
+				EA1643CD2150D05600BE510B /* AxcAE_RingImageVC.m */,
+			);
+			path = "圆环";
+			sourceTree = "<group>";
+		};
+		EA1643CF2150D46900BE510B /* 箭头 */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643D02150D48E00BE510B /* AxcAE_ArrowDrawVC.h */,
+				EA1643D12150D48E00BE510B /* AxcAE_ArrowDrawVC.m */,
+			);
+			path = "箭头";
+			sourceTree = "<group>";
+		};
+		EA1643D32150D68F00BE510B /* AxcBaseModelObj */ = {
+			isa = PBXGroup;
+			children = (
+				EA164372215095D300BE510B /* AxcAE_ImageBaseObj */,
+				EA164371215095C200BE510B /* AxcAE_DrawBaseObj */,
+				EABB8FB6214FA0D0009CABC7 /* AxcAE_BaseObject */,
+			);
+			path = AxcBaseModelObj;
+			sourceTree = "<group>";
+		};
+		EA31924421521D2500C315F2 /* CAShapeLayer+ */ = {
+			isa = PBXGroup;
+			children = (
+				EA31924521521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.h */,
+				EA31924621521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m */,
+			);
+			path = "CAShapeLayer+";
+			sourceTree = "<group>";
+		};
+		EA31924821521D7000C315F2 /* NSObject+ */ = {
+			isa = PBXGroup;
+			children = (
+				EA31924921521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.h */,
+				EA31924A21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m */,
+			);
+			path = "NSObject+";
+			sourceTree = "<group>";
+		};
+		EA31924D2152464700C315F2 /* 贝塞尔示例 */ = {
+			isa = PBXGroup;
+			children = (
+				EA31924F215246A100C315F2 /* BezierSampleVC.h */,
+				EA319250215246A100C315F2 /* BezierSampleVC.m */,
+				EA3192522152474D00C315F2 /* SubVC */,
+			);
+			path = "贝塞尔示例";
+			sourceTree = "<group>";
+		};
+		EA3192522152474D00C315F2 /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA3192532152475400C315F2 /* 线段绘制 */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		EA3192532152475400C315F2 /* 线段绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				EA3192542152477C00C315F2 /* AxcAE_DrawLineVC.h */,
+				EA3192552152477C00C315F2 /* AxcAE_DrawLineVC.m */,
+			);
+			path = "线段绘制";
+			sourceTree = "<group>";
+		};
+		EA50F7EF2151E1E100A53B71 /* AxcAE_DrawBoard */ = {
+			isa = PBXGroup;
+			children = (
+				EA50F7FD2151F08500A53B71 /* AxcAE_DrawBoard.h */,
+				EA50F7FE2151F08500A53B71 /* AxcAE_DrawBoard.m */,
+			);
+			path = AxcAE_DrawBoard;
+			sourceTree = "<group>";
+		};
+		EA50F7F62151ED0600A53B71 /* AxcLayerBrush */ = {
+			isa = PBXGroup;
+			children = (
+				EA50F7F72151ED9600A53B71 /* AxcLayerBrush.h */,
+				EA50F7F82151ED9600A53B71 /* AxcLayerBrush.m */,
+			);
+			path = AxcLayerBrush;
+			sourceTree = "<group>";
+		};
+		EA7142D7214C9353003E76BA /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EABB8F9F214F3F7B009CABC7 /* AxcAE_ViewController */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		EA7142E0214CCF98003E76BA /* AxcAE_BaseControl */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FAD6214BB525008146A2 /* AxcAE_BaseControl.h */,
+				EAE4FAD7214BB525008146A2 /* AxcAE_BaseControl.m */,
+			);
+			path = AxcAE_BaseControl;
+			sourceTree = "<group>";
+		};
+		EA7142E1214CCFA2003E76BA /* AxcDrawPath */ = {
+			isa = PBXGroup;
+			children = (
+				EA50F7F32151E23100A53B71 /* AxcDrawPath.h */,
+				EA50F7F42151E23100A53B71 /* AxcDrawPath.m */,
+			);
+			path = AxcDrawPath;
+			sourceTree = "<group>";
+		};
+		EA7142E2214CCFBC003E76BA /* AxcCAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643D42150D6CD00BE510B /* AxcCAAnimation.h */,
+				EA1643D52150D6CD00BE510B /* AxcCAAnimation.m */,
+			);
+			path = AxcCAAnimation;
+			sourceTree = "<group>";
+		};
+		EA7142E3214CD8C1003E76BA /* UIView+ */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FADB214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m */,
+				EAE4FADC214BB61C008146A2 /* UIView+AxcAE_ViewFrame.h */,
+			);
+			path = "UIView+";
+			sourceTree = "<group>";
+		};
+		EA7142EA214CF894003E76BA /* AxcAE_RingImageView */ = {
+			isa = PBXGroup;
+			children = (
+				EA7142EB214CF89C003E76BA /* AxcAE_RingImageView.h */,
+				EA7142EC214CF89C003E76BA /* AxcAE_RingImageView.m */,
+			);
+			path = AxcAE_RingImageView;
+			sourceTree = "<group>";
+		};
+		EABB8F9F214F3F7B009CABC7 /* AxcAE_ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EABB8FA0214F3F95009CABC7 /* AxcAE_ViewController.h */,
+				EABB8FA1214F3F95009CABC7 /* AxcAE_ViewController.m */,
+			);
+			path = AxcAE_ViewController;
+			sourceTree = "<group>";
+		};
+		EABB8FAE214F8871009CABC7 /* AxcAE_ArrowDrawView */ = {
+			isa = PBXGroup;
+			children = (
+				EABB8FAF214F8F21009CABC7 /* AxcAE_ArrowDrawView.h */,
+				EABB8FB0214F8F21009CABC7 /* AxcAE_ArrowDrawView.m */,
+			);
+			path = AxcAE_ArrowDrawView;
+			sourceTree = "<group>";
+		};
+		EABB8FB6214FA0D0009CABC7 /* AxcAE_BaseObject */ = {
+			isa = PBXGroup;
+			children = (
+				EABB8FB7214FA0EF009CABC7 /* AxcAE_BaseObject.h */,
+				EABB8FB8214FA0EF009CABC7 /* AxcAE_BaseObject.m */,
+			);
+			path = AxcAE_BaseObject;
+			sourceTree = "<group>";
+		};
+		EAE4FA96214BB4C9008146A2 = {
+			isa = PBXGroup;
+			children = (
+				EAE4FAA1214BB4C9008146A2 /* AxcAE_Test */,
+				EAE4FABA214BB4CB008146A2 /* AxcAE_TestTests */,
+				EAE4FAC5214BB4CB008146A2 /* AxcAE_TestUITests */,
+				EAE4FAA0214BB4C9008146A2 /* Products */,
+				C114612FA14CFBEED7741F8C /* Pods */,
+				D4A50119089880596954FB01 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAE4FAA0214BB4C9008146A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FA9F214BB4C9008146A2 /* AxcAE_Test.app */,
+				EAE4FAB7214BB4CB008146A2 /* AxcAE_TestTests.xctest */,
+				EAE4FAC2214BB4CB008146A2 /* AxcAE_TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAE4FAA1214BB4C9008146A2 /* AxcAE_Test */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FAA2214BB4C9008146A2 /* AppDelegate.h */,
+				EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */,
+				EA50F7FA2151F04100A53B71 /* AETestViewController.h */,
+				EA50F7FB2151F04100A53B71 /* AETestViewController.m */,
+				EA16438B21509BC800BE510B /* UI */,
+				EAE4FAD4214BB4E0008146A2 /* AxcAE_UI */,
+				EA16439021509C8000BE510B /* Other */,
+			);
+			path = AxcAE_Test;
+			sourceTree = "<group>";
+		};
+		EAE4FABA214BB4CB008146A2 /* AxcAE_TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FABB214BB4CB008146A2 /* AxcAE_TestTests.m */,
+				EAE4FABD214BB4CB008146A2 /* Info.plist */,
+			);
+			path = AxcAE_TestTests;
+			sourceTree = "<group>";
+		};
+		EAE4FAC5214BB4CB008146A2 /* AxcAE_TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FAC6214BB4CB008146A2 /* AxcAE_TestUITests.m */,
+				EAE4FAC8214BB4CB008146A2 /* Info.plist */,
+			);
+			path = AxcAE_TestUITests;
+			sourceTree = "<group>";
+		};
+		EAE4FAD4214BB4E0008146A2 /* AxcAE_UI */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FADF214BB6F9008146A2 /* Control */,
+				EAE4FAD5214BB50C008146A2 /* Base */,
+				EAE4FADE214BB61F008146A2 /* Tool */,
+				EA1643C42150CC6200BE510B /* AxcAE_UI.h */,
+			);
+			path = AxcAE_UI;
+			sourceTree = "<group>";
+		};
+		EAE4FAD5214BB50C008146A2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EA1643D32150D68F00BE510B /* AxcBaseModelObj */,
+				EA7142E0214CCF98003E76BA /* AxcAE_BaseControl */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EAE4FADA214BB61C008146A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA31924821521D7000C315F2 /* NSObject+ */,
+				EA31924421521D2500C315F2 /* CAShapeLayer+ */,
+				EA7142E3214CD8C1003E76BA /* UIView+ */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EAE4FADE214BB61F008146A2 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				EA7142E2214CCFBC003E76BA /* AxcCAAnimation */,
+				EA50F7F62151ED0600A53B71 /* AxcLayerBrush */,
+				EA7142E1214CCFA2003E76BA /* AxcDrawPath */,
+				EAE4FADA214BB61C008146A2 /* Extension */,
+				EAE4FAD9214BB5F8008146A2 /* AxcAE_UIDefine.h */,
+				EA31924C21521E8A00C315F2 /* AxcAE_StructDefine.h */,
+				EAE4FAEA214BBA44008146A2 /* AxcAE_HeaderDefine.h */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		EAE4FADF214BB6F9008146A2 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				EA7142D7214C9353003E76BA /* Component */,
+				EAE4FAE5214BB851008146A2 /* Module-模块 */,
+				EAE4FAE0214BB6FF008146A2 /* DisplayBox-展示框 */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		EAE4FAE0214BB6FF008146A2 /* DisplayBox-展示框 */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FAE1214BB710008146A2 /* AxcAE_FirstDisplayBox */,
+			);
+			path = "DisplayBox-展示框";
+			sourceTree = "<group>";
+		};
+		EAE4FAE1214BB710008146A2 /* AxcAE_FirstDisplayBox */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FAE2214BB7BD008146A2 /* AxcAE_FirstDisplayBox.h */,
+				EAE4FAE3214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m */,
+			);
+			path = AxcAE_FirstDisplayBox;
+			sourceTree = "<group>";
+		};
+		EAE4FAE5214BB851008146A2 /* Module-模块 */ = {
+			isa = PBXGroup;
+			children = (
+				EA50F7EF2151E1E100A53B71 /* AxcAE_DrawBoard */,
+				EAE4FAE6214BB864008146A2 /* AxcAE_ParallelogramView */,
+				EA16437A2150973200BE510B /* ImageModule */,
+				EA1643792150972400BE510B /* DrawModule */,
+				EA16437F215097E300BE510B /* BaseModule */,
+			);
+			path = "Module-模块";
+			sourceTree = "<group>";
+		};
+		EAE4FAE6214BB864008146A2 /* AxcAE_ParallelogramView */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4FAE8214BB864008146A2 /* AxcAE_ParallelogramView.h */,
+				EAE4FAE7214BB864008146A2 /* AxcAE_ParallelogramView.m */,
+			);
+			path = AxcAE_ParallelogramView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAE4FA9E214BB4C9008146A2 /* AxcAE_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE4FACB214BB4CB008146A2 /* Build configuration list for PBXNativeTarget "AxcAE_Test" */;
+			buildPhases = (
+				9B29E1DA2CB76E5A48D6BD53 /* [CP] Check Pods Manifest.lock */,
+				EAE4FA9B214BB4C9008146A2 /* Sources */,
+				EAE4FA9C214BB4C9008146A2 /* Frameworks */,
+				EAE4FA9D214BB4C9008146A2 /* Resources */,
+				A02091AF772EAC99BAA30FC9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AxcAE_Test;
+			productName = AxcAE_Test;
+			productReference = EAE4FA9F214BB4C9008146A2 /* AxcAE_Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAE4FAB6214BB4CB008146A2 /* AxcAE_TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE4FACE214BB4CB008146A2 /* Build configuration list for PBXNativeTarget "AxcAE_TestTests" */;
+			buildPhases = (
+				EAE4FAB3214BB4CB008146A2 /* Sources */,
+				EAE4FAB4214BB4CB008146A2 /* Frameworks */,
+				EAE4FAB5214BB4CB008146A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE4FAB9214BB4CB008146A2 /* PBXTargetDependency */,
+			);
+			name = AxcAE_TestTests;
+			productName = AxcAE_TestTests;
+			productReference = EAE4FAB7214BB4CB008146A2 /* AxcAE_TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAE4FAC1214BB4CB008146A2 /* AxcAE_TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE4FAD1214BB4CB008146A2 /* Build configuration list for PBXNativeTarget "AxcAE_TestUITests" */;
+			buildPhases = (
+				EAE4FABE214BB4CB008146A2 /* Sources */,
+				EAE4FABF214BB4CB008146A2 /* Frameworks */,
+				EAE4FAC0214BB4CB008146A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE4FAC4214BB4CB008146A2 /* PBXTargetDependency */,
+			);
+			name = AxcAE_TestUITests;
+			productName = AxcAE_TestUITests;
+			productReference = EAE4FAC2214BB4CB008146A2 /* AxcAE_TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAE4FA97214BB4C9008146A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = AxcLogo;
+				TargetAttributes = {
+					EAE4FA9E214BB4C9008146A2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EAE4FAB6214BB4CB008146A2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EAE4FA9E214BB4C9008146A2;
+					};
+					EAE4FAC1214BB4CB008146A2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EAE4FA9E214BB4C9008146A2;
+					};
+				};
+			};
+			buildConfigurationList = EAE4FA9A214BB4C9008146A2 /* Build configuration list for PBXProject "AxcAE_Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAE4FA96214BB4C9008146A2;
+			productRefGroup = EAE4FAA0214BB4C9008146A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAE4FA9E214BB4C9008146A2 /* AxcAE_Test */,
+				EAE4FAB6214BB4CB008146A2 /* AxcAE_TestTests */,
+				EAE4FAC1214BB4CB008146A2 /* AxcAE_TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAE4FA9D214BB4C9008146A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE4FAAF214BB4CB008146A2 /* LaunchScreen.storyboard in Resources */,
+				EAE4FAAC214BB4CB008146A2 /* Assets.xcassets in Resources */,
+				EA1643BF2150A78E00BE510B /* ShowCell.xib in Resources */,
+				EAE4FAAA214BB4CA008146A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE4FAB5214BB4CB008146A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE4FAC0214BB4CB008146A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B29E1DA2CB76E5A48D6BD53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AxcAE_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A02091AF772EAC99BAA30FC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AxcAE_Test/Pods-AxcAE_Test-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AxcAE_Test/Pods-AxcAE_Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAE4FA9B214BB4C9008146A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE4FAB2214BB4CB008146A2 /* main.m in Sources */,
+				EA164378215095F000BE510B /* AxcAE_DrawBaseObj.m in Sources */,
+				EA1643C82150CE5700BE510B /* AxcAE_RingDrawView.m in Sources */,
+				EA1643CE2150D05600BE510B /* AxcAE_RingImageVC.m in Sources */,
+				EA1643AC2150A4AA00BE510B /* ContainerSampleVC.m in Sources */,
+				EA1643B92150A69F00BE510B /* ShowModel.m in Sources */,
+				EAE4FADD214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m in Sources */,
+				EA1643862150989900BE510B /* AxcAE_BaseDrawModule.m in Sources */,
+				EA50F7FC2151F04100A53B71 /* AETestViewController.m in Sources */,
+				EA1643D62150D6CD00BE510B /* AxcCAAnimation.m in Sources */,
+				EA16438F21509BE200BE510B /* AxcTabBarController.m in Sources */,
+				EA1643BE2150A78E00BE510B /* ShowCell.m in Sources */,
+				EA1643C32150CC3B00BE510B /* AxcAE_RingDrawVC.m in Sources */,
+				EAE4FAA4214BB4C9008146A2 /* AppDelegate.m in Sources */,
+				EA164375215095E900BE510B /* AxcAE_ImageBaseObj.m in Sources */,
+				EAE4FAE9214BB864008146A2 /* AxcAE_ParallelogramView.m in Sources */,
+				EABB8FB9214FA0EF009CABC7 /* AxcAE_BaseObject.m in Sources */,
+				EA1643B02150A4D600BE510B /* BaseVC.m in Sources */,
+				EA1643A62150A48300BE510B /* ViewSampleListVC.m in Sources */,
+				EAE4FAE4214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m in Sources */,
+				EA31924721521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m in Sources */,
+				EAE4FAD8214BB525008146A2 /* AxcAE_BaseControl.m in Sources */,
+				EABB8FB1214F8F21009CABC7 /* AxcAE_ArrowDrawView.m in Sources */,
+				EA7142ED214CF89C003E76BA /* AxcAE_RingImageView.m in Sources */,
+				EA50F7FF2151F08500A53B71 /* AxcAE_DrawBoard.m in Sources */,
+				EA1643B42150A68000BE510B /* BaseModel.m in Sources */,
+				EA1643A92150A49100BE510B /* DrawSampleListVC.m in Sources */,
+				EABB8FA2214F3F95009CABC7 /* AxcAE_ViewController.m in Sources */,
+				EA31924B21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m in Sources */,
+				EA1643822150980000BE510B /* AxcAE_BaseModule.m in Sources */,
+				EA3192562152477C00C315F2 /* AxcAE_DrawLineVC.m in Sources */,
+				EA1643992150A3D900BE510B /* SampleTemplateVC.m in Sources */,
+				EA16438A215098AB00BE510B /* AxcAE_BaseImageModule.m in Sources */,
+				EA50F7F52151E23100A53B71 /* AxcDrawPath.m in Sources */,
+				EA1643D22150D48E00BE510B /* AxcAE_ArrowDrawVC.m in Sources */,
+				EA50F7F92151ED9600A53B71 /* AxcLayerBrush.m in Sources */,
+				EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE4FAB3214BB4CB008146A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE4FABC214BB4CB008146A2 /* AxcAE_TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE4FABE214BB4CB008146A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE4FAC7214BB4CB008146A2 /* AxcAE_TestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAE4FAB9214BB4CB008146A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE4FA9E214BB4C9008146A2 /* AxcAE_Test */;
+			targetProxy = EAE4FAB8214BB4CB008146A2 /* PBXContainerItemProxy */;
+		};
+		EAE4FAC4214BB4CB008146A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE4FA9E214BB4C9008146A2 /* AxcAE_Test */;
+			targetProxy = EAE4FAC3214BB4CB008146A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAE4FAA8214BB4CA008146A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE4FAA9214BB4CA008146A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAE4FAAD214BB4CB008146A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE4FAAE214BB4CB008146A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAE4FAC9214BB4CB008146A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAE4FACA214BB4CB008146A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAE4FACC214BB4CB008146A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE94864D95CF4100B2FA2FA /* Pods-AxcAE_Test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R4T3ZJXKR;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/Axc/Desktop/AxcAE_Test/AxcAE_Test/PrefixHeader.pch;
+				INFOPLIST_FILE = AxcAE_Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AxcLogoCreate.AxcAE-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAE4FACD214BB4CB008146A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EAFAEF7E149894555DC05F1 /* Pods-AxcAE_Test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R4T3ZJXKR;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/Axc/Desktop/AxcAE_Test/AxcAE_Test/PrefixHeader.pch;
+				INFOPLIST_FILE = AxcAE_Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AxcLogoCreate.AxcAE-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAE4FACF214BB4CB008146A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxcAE_TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AxcLogoCreate.AxcAE-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxcAE_Test.app/AxcAE_Test";
+			};
+			name = Debug;
+		};
+		EAE4FAD0214BB4CB008146A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxcAE_TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AxcLogoCreate.AxcAE-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AxcAE_Test.app/AxcAE_Test";
+			};
+			name = Release;
+		};
+		EAE4FAD2214BB4CB008146A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxcAE_TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AxcLogoCreate.AxcAE-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AxcAE_Test;
+			};
+			name = Debug;
+		};
+		EAE4FAD3214BB4CB008146A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AxcAE_TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AxcLogoCreate.AxcAE-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AxcAE_Test;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAE4FA9A214BB4C9008146A2 /* Build configuration list for PBXProject "AxcAE_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE4FAC9214BB4CB008146A2 /* Debug */,
+				EAE4FACA214BB4CB008146A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE4FACB214BB4CB008146A2 /* Build configuration list for PBXNativeTarget "AxcAE_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE4FACC214BB4CB008146A2 /* Debug */,
+				EAE4FACD214BB4CB008146A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE4FACE214BB4CB008146A2 /* Build configuration list for PBXNativeTarget "AxcAE_TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE4FACF214BB4CB008146A2 /* Debug */,
+				EAE4FAD0214BB4CB008146A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAE4FAD1214BB4CB008146A2 /* Build configuration list for PBXNativeTarget "AxcAE_TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE4FAD2214BB4CB008146A2 /* Debug */,
+				EAE4FAD3214BB4CB008146A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAE4FA97214BB4C9008146A2 /* Project object */;
+}
