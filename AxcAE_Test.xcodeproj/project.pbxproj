@@ -44,6 +44,8 @@
 		EABC24C12153734000AE4D8A /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC24C02153734000AE4D8A /* test.png */; };
 		EABC24C321537A4700AE4D8A /* ttt.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC24C221537A4600AE4D8A /* ttt.png */; };
 		EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */; };
+		EADD07A52154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EADD07A42154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m */; };
+		EADD07A92154C07D00A87AC6 /* AxcAE_ProgressDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EADD07A82154C07D00A87AC6 /* AxcAE_ProgressDrawView.m */; };
 		EAE4FAA4214BB4C9008146A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */; };
 		EAE4FAAA214BB4CA008146A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE4FAA8214BB4CA008146A2 /* Main.storyboard */; };
 		EAE4FAAC214BB4CB008146A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE4FAAB214BB4CB008146A2 /* Assets.xcassets */; };
@@ -150,6 +152,10 @@
 		EABC24C221537A4600AE4D8A /* ttt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttt.png; sourceTree = "<group>"; };
 		EABC24C52153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AxcAE_ViewControllerExtension.h"; sourceTree = "<group>"; };
 		EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AxcAE_ViewControllerExtension.m"; sourceTree = "<group>"; };
+		EADD07A32154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ProgressDrawVC.h; sourceTree = "<group>"; };
+		EADD07A42154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ProgressDrawVC.m; sourceTree = "<group>"; };
+		EADD07A72154C07D00A87AC6 /* AxcAE_ProgressDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ProgressDrawView.h; sourceTree = "<group>"; };
+		EADD07A82154C07D00A87AC6 /* AxcAE_ProgressDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ProgressDrawView.m; sourceTree = "<group>"; };
 		EAE4FA9F214BB4C9008146A2 /* AxcAE_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxcAE_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE4FAA2214BB4C9008146A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -240,6 +246,7 @@
 		EA1643792150972400BE510B /* DrawModule */ = {
 			isa = PBXGroup;
 			children = (
+				EADD07A62154C05500A87AC6 /* AxcAE_ProgressDrawView */,
 				EABB8FAE214F8871009CABC7 /* AxcAE_ArrowDrawView */,
 				EA1643C52150CE5600BE510B /* AxcAE_RingDrawView */,
 				EA1643832150988800BE510B /* BaseDrawModule */,
@@ -408,6 +415,7 @@
 		EA1643C02150CC1600BE510B /* SubVC */ = {
 			isa = PBXGroup;
 			children = (
+				EADD07A22154BFE100A87AC6 /* 进度 */,
 				EA1643CF2150D46900BE510B /* 箭头 */,
 				EA1643C92150CFF700BE510B /* 圆环 */,
 			);
@@ -629,6 +637,24 @@
 				EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */,
 			);
 			path = AxcAE_ViewControllerExtension;
+			sourceTree = "<group>";
+		};
+		EADD07A22154BFE100A87AC6 /* 进度 */ = {
+			isa = PBXGroup;
+			children = (
+				EADD07A32154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.h */,
+				EADD07A42154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m */,
+			);
+			path = "进度";
+			sourceTree = "<group>";
+		};
+		EADD07A62154C05500A87AC6 /* AxcAE_ProgressDrawView */ = {
+			isa = PBXGroup;
+			children = (
+				EADD07A72154C07D00A87AC6 /* AxcAE_ProgressDrawView.h */,
+				EADD07A82154C07D00A87AC6 /* AxcAE_ProgressDrawView.m */,
+			);
+			path = AxcAE_ProgressDrawView;
 			sourceTree = "<group>";
 		};
 		EAE4FA96214BB4C9008146A2 = {
@@ -985,9 +1011,11 @@
 				EA50F7FF2151F08500A53B71 /* AxcAE_DrawBoard.m in Sources */,
 				EA1643B42150A68000BE510B /* BaseModel.m in Sources */,
 				EA1643A92150A49100BE510B /* DrawSampleListVC.m in Sources */,
+				EADD07A52154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m in Sources */,
 				EA31924B21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m in Sources */,
 				EA1643822150980000BE510B /* AxcAE_BaseModule.m in Sources */,
 				EA3192562152477C00C315F2 /* DrawLineVC.m in Sources */,
+				EADD07A92154C07D00A87AC6 /* AxcAE_ProgressDrawView.m in Sources */,
 				EA1643992150A3D900BE510B /* SampleTemplateVC.m in Sources */,
 				EA16438A215098AB00BE510B /* AxcAE_BaseImageModule.m in Sources */,
 				EA50F7F52151E23100A53B71 /* AxcDrawPath.m in Sources */,

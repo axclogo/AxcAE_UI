@@ -14,3 +14,10 @@
 
 #import "AxcAE_UIDefine.h"
 #import "AxcAE_StructDefine.h"
+
+
+
+// 贝塞尔画笔
+#import "AxcDrawPath.h"
+// Layer工厂类
+#import "AxcLayerBrush.h"

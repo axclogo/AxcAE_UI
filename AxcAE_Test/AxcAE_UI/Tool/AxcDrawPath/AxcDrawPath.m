@@ -17,6 +17,7 @@
 + (UIBezierPath *)AxcDrawLineArray:(NSArray <NSValue *> *)lineArray
                          clockwise:(BOOL)clockwise{
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
+    if (!lineArray.count) return bezierPath;
     CGPoint point1 = [lineArray[0] CGPointValue];
     [bezierPath moveToPoint:point1];
     __block BOOL isMovePoint = NO;
