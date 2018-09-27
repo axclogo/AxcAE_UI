@@ -28,6 +28,8 @@
 		EA1643CE2150D05600BE510B /* AxcAE_RingImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643CD2150D05600BE510B /* AxcAE_RingImageVC.m */; };
 		EA1643D22150D48E00BE510B /* AxcAE_ArrowDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643D12150D48E00BE510B /* AxcAE_ArrowDrawVC.m */; };
 		EA1643D62150D6CD00BE510B /* AxcCAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643D52150D6CD00BE510B /* AxcCAAnimation.m */; };
+		EA1A4307215B1BA8002C1988 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1A4306215B1BA8002C1988 /* OpenGLES.framework */; };
+		EA1A430E215B5F3A002C1988 /* AxcBF_FaceRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1A430D215B5F3A002C1988 /* AxcBF_FaceRecognition.m */; };
 		EA31924721521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31924621521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m */; };
 		EA31924B21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31924A21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m */; };
 		EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA319250215246A100C315F2 /* BezierSampleVC.m */; };
@@ -41,7 +43,6 @@
 		EABB8FB9214FA0EF009CABC7 /* AxcAE_BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FB8214FA0EF009CABC7 /* AxcAE_BaseObject.m */; };
 		EABC24BB21532C7B00AE4D8A /* DrawQuadrilateralVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24BA21532C7B00AE4D8A /* DrawQuadrilateralVC.m */; };
 		EABC24BF215338C300AE4D8A /* DrawBlockRingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24BE215338C300AE4D8A /* DrawBlockRingVC.m */; };
-		EABC24C12153734000AE4D8A /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC24C02153734000AE4D8A /* test.png */; };
 		EABC24C321537A4700AE4D8A /* ttt.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC24C221537A4600AE4D8A /* ttt.png */; };
 		EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */; };
 		EADD07A52154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EADD07A42154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m */; };
@@ -121,6 +122,9 @@
 		EA1643D12150D48E00BE510B /* AxcAE_ArrowDrawVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ArrowDrawVC.m; sourceTree = "<group>"; };
 		EA1643D42150D6CD00BE510B /* AxcCAAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcCAAnimation.h; sourceTree = "<group>"; };
 		EA1643D52150D6CD00BE510B /* AxcCAAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcCAAnimation.m; sourceTree = "<group>"; };
+		EA1A4306215B1BA8002C1988 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EA1A430C215B5F3A002C1988 /* AxcBF_FaceRecognition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcBF_FaceRecognition.h; sourceTree = "<group>"; };
+		EA1A430D215B5F3A002C1988 /* AxcBF_FaceRecognition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcBF_FaceRecognition.m; sourceTree = "<group>"; };
 		EA31924521521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+AxcAE_LayerAttribute.h"; sourceTree = "<group>"; };
 		EA31924621521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+AxcAE_LayerAttribute.m"; sourceTree = "<group>"; };
 		EA31924921521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AxcAE_ObjAttribute.h"; sourceTree = "<group>"; };
@@ -148,7 +152,6 @@
 		EABC24BA21532C7B00AE4D8A /* DrawQuadrilateralVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawQuadrilateralVC.m; sourceTree = "<group>"; };
 		EABC24BD215338C300AE4D8A /* DrawBlockRingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawBlockRingVC.h; sourceTree = "<group>"; };
 		EABC24BE215338C300AE4D8A /* DrawBlockRingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawBlockRingVC.m; sourceTree = "<group>"; };
-		EABC24C02153734000AE4D8A /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		EABC24C221537A4600AE4D8A /* ttt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttt.png; sourceTree = "<group>"; };
 		EABC24C52153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AxcAE_ViewControllerExtension.h"; sourceTree = "<group>"; };
 		EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AxcAE_ViewControllerExtension.m"; sourceTree = "<group>"; };
@@ -187,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1A4307215B1BA8002C1988 /* OpenGLES.framework in Frameworks */,
 				A8084A1F236645FB447FE2A3 /* libPods-AxcAE_Test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +224,7 @@
 		D4A50119089880596954FB01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA1A4306215B1BA8002C1988 /* OpenGLES.framework */,
 				63AE4BD8D8EFCA3804B67854 /* libPods-AxcAE_Test.a */,
 			);
 			name = Frameworks;
@@ -476,6 +481,23 @@
 			path = AxcBaseModelObj;
 			sourceTree = "<group>";
 		};
+		EA1A430A215B5E98002C1988 /* AxcBridgeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A430B215B5ED2002C1988 /* AxcBF_FaceRecognition */,
+			);
+			path = AxcBridgeFramework;
+			sourceTree = "<group>";
+		};
+		EA1A430B215B5ED2002C1988 /* AxcBF_FaceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A430C215B5F3A002C1988 /* AxcBF_FaceRecognition.h */,
+				EA1A430D215B5F3A002C1988 /* AxcBF_FaceRecognition.m */,
+			);
+			path = AxcBF_FaceRecognition;
+			sourceTree = "<group>";
+		};
 		EA31924421521D2500C315F2 /* CAShapeLayer+ */ = {
 			isa = PBXGroup;
 			children = (
@@ -686,8 +708,8 @@
 				EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */,
 				EA50F7FA2151F04100A53B71 /* AETestViewController.h */,
 				EA50F7FB2151F04100A53B71 /* AETestViewController.m */,
-				EABC24C02153734000AE4D8A /* test.png */,
 				EABC24C221537A4600AE4D8A /* ttt.png */,
+				EA1A430A215B5E98002C1988 /* AxcBridgeFramework */,
 				EA16438B21509BC800BE510B /* UI */,
 				EAE4FAD4214BB4E0008146A2 /* AxcAE_UI */,
 				EA16439021509C8000BE510B /* Other */,
@@ -912,7 +934,6 @@
 			files = (
 				EABC24C321537A4700AE4D8A /* ttt.png in Resources */,
 				EAE4FAAF214BB4CB008146A2 /* LaunchScreen.storyboard in Resources */,
-				EABC24C12153734000AE4D8A /* test.png in Resources */,
 				EAE4FAAC214BB4CB008146A2 /* Assets.xcassets in Resources */,
 				EA1643BF2150A78E00BE510B /* ShowCell.xib in Resources */,
 				EAE4FAAA214BB4CA008146A2 /* Main.storyboard in Resources */,
@@ -1022,6 +1043,7 @@
 				EA1643D22150D48E00BE510B /* AxcAE_ArrowDrawVC.m in Sources */,
 				EA50F7F92151ED9600A53B71 /* AxcLayerBrush.m in Sources */,
 				EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */,
+				EA1A430E215B5F3A002C1988 /* AxcBF_FaceRecognition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1192,11 +1214,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R4T3ZJXKR;
+				DEVELOPMENT_TEAM = MPXR757EXU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/Axc/Desktop/AxcAE_Test/AxcAE_Test/PrefixHeader.pch;
 				INFOPLIST_FILE = AxcAE_Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1213,11 +1235,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R4T3ZJXKR;
+				DEVELOPMENT_TEAM = MPXR757EXU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/Axc/Desktop/AxcAE_Test/AxcAE_Test/PrefixHeader.pch;
 				INFOPLIST_FILE = AxcAE_Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
