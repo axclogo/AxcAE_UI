@@ -21,7 +21,9 @@
 -(void)settingData{
     [self.dataArray addObject:[ShowModel Title:@"线段绘制" disTitle:@"贝塞尔曲线折线/线段绘制" VCName:@"DrawLineVC"]];
     [self.dataArray addObject:[ShowModel Title:@"四边形绘制" disTitle:@"贝塞尔四边形绘制" VCName:@"DrawQuadrilateralVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"圆周内切多边形绘制" disTitle:@"贝塞尔圆周内切多边形绘制" VCName:@"DrawCircularPolygonVC"]];
     [self.dataArray addObject:[ShowModel Title:@"块状圆弧绘制" disTitle:@"贝塞尔块状圆弧绘制" VCName:@"DrawBlockRingVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"网格绘制" disTitle:@"贝塞尔网格绘制" VCName:@"DrawGridVC"]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -30,6 +30,11 @@
 		EA1643D62150D6CD00BE510B /* AxcCAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643D52150D6CD00BE510B /* AxcCAAnimation.m */; };
 		EA1A4307215B1BA8002C1988 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1A4306215B1BA8002C1988 /* OpenGLES.framework */; };
 		EA1A430E215B5F3A002C1988 /* AxcBF_FaceRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1A430D215B5F3A002C1988 /* AxcBF_FaceRecognition.m */; };
+		EA1B9C68215DB86C001DF3B1 /* DrawCircularPolygonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1B9C67215DB86C001DF3B1 /* DrawCircularPolygonVC.m */; };
+		EA1B9C6C215DD31F001DF3B1 /* AxcLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1B9C6B215DD31F001DF3B1 /* AxcLayout.m */; };
+		EA1B9C70215DD351001DF3B1 /* AETestViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1B9C6F215DD351001DF3B1 /* AETestViewController2.m */; };
+		EA1B9C78215DD46C001DF3B1 /* HexagonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1B9C76215DD46C001DF3B1 /* HexagonCell.m */; };
+		EA1B9C79215DD46C001DF3B1 /* HexagonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1B9C77215DD46C001DF3B1 /* HexagonCell.xib */; };
 		EA31924721521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31924621521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m */; };
 		EA31924B21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EA31924A21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m */; };
 		EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA319250215246A100C315F2 /* BezierSampleVC.m */; };
@@ -45,6 +50,7 @@
 		EABC24BF215338C300AE4D8A /* DrawBlockRingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24BE215338C300AE4D8A /* DrawBlockRingVC.m */; };
 		EABC24C321537A4700AE4D8A /* ttt.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC24C221537A4600AE4D8A /* ttt.png */; };
 		EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */; };
+		EAD108D0215C860000F1C04A /* DrawGridVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD108CF215C860000F1C04A /* DrawGridVC.m */; };
 		EADD07A52154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EADD07A42154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m */; };
 		EADD07A92154C07D00A87AC6 /* AxcAE_ProgressDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EADD07A82154C07D00A87AC6 /* AxcAE_ProgressDrawView.m */; };
 		EAE4FAA4214BB4C9008146A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */; };
@@ -125,6 +131,15 @@
 		EA1A4306215B1BA8002C1988 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		EA1A430C215B5F3A002C1988 /* AxcBF_FaceRecognition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcBF_FaceRecognition.h; sourceTree = "<group>"; };
 		EA1A430D215B5F3A002C1988 /* AxcBF_FaceRecognition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcBF_FaceRecognition.m; sourceTree = "<group>"; };
+		EA1B9C66215DB86C001DF3B1 /* DrawCircularPolygonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawCircularPolygonVC.h; sourceTree = "<group>"; };
+		EA1B9C67215DB86C001DF3B1 /* DrawCircularPolygonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawCircularPolygonVC.m; sourceTree = "<group>"; };
+		EA1B9C6A215DD31F001DF3B1 /* AxcLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcLayout.h; sourceTree = "<group>"; };
+		EA1B9C6B215DD31F001DF3B1 /* AxcLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcLayout.m; sourceTree = "<group>"; };
+		EA1B9C6E215DD351001DF3B1 /* AETestViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestViewController2.h; sourceTree = "<group>"; };
+		EA1B9C6F215DD351001DF3B1 /* AETestViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestViewController2.m; sourceTree = "<group>"; };
+		EA1B9C75215DD46C001DF3B1 /* HexagonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexagonCell.h; sourceTree = "<group>"; };
+		EA1B9C76215DD46C001DF3B1 /* HexagonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexagonCell.m; sourceTree = "<group>"; };
+		EA1B9C77215DD46C001DF3B1 /* HexagonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HexagonCell.xib; sourceTree = "<group>"; };
 		EA31924521521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+AxcAE_LayerAttribute.h"; sourceTree = "<group>"; };
 		EA31924621521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+AxcAE_LayerAttribute.m"; sourceTree = "<group>"; };
 		EA31924921521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AxcAE_ObjAttribute.h"; sourceTree = "<group>"; };
@@ -155,6 +170,8 @@
 		EABC24C221537A4600AE4D8A /* ttt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttt.png; sourceTree = "<group>"; };
 		EABC24C52153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AxcAE_ViewControllerExtension.h"; sourceTree = "<group>"; };
 		EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AxcAE_ViewControllerExtension.m"; sourceTree = "<group>"; };
+		EAD108CE215C860000F1C04A /* DrawGridVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawGridVC.h; sourceTree = "<group>"; };
+		EAD108CF215C860000F1C04A /* DrawGridVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawGridVC.m; sourceTree = "<group>"; };
 		EADD07A32154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ProgressDrawVC.h; sourceTree = "<group>"; };
 		EADD07A42154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ProgressDrawVC.m; sourceTree = "<group>"; };
 		EADD07A72154C07D00A87AC6 /* AxcAE_ProgressDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ProgressDrawView.h; sourceTree = "<group>"; };
@@ -498,6 +515,46 @@
 			path = AxcBF_FaceRecognition;
 			sourceTree = "<group>";
 		};
+		EA1B9C65215DB841001DF3B1 /* 圆周多边形绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				EA1B9C66215DB86C001DF3B1 /* DrawCircularPolygonVC.h */,
+				EA1B9C67215DB86C001DF3B1 /* DrawCircularPolygonVC.m */,
+			);
+			path = "圆周多边形绘制";
+			sourceTree = "<group>";
+		};
+		EA1B9C69215DD30D001DF3B1 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				EA1B9C6A215DD31F001DF3B1 /* AxcLayout.h */,
+				EA1B9C6B215DD31F001DF3B1 /* AxcLayout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		EA1B9C6D215DD339001DF3B1 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				EA50F7FA2151F04100A53B71 /* AETestViewController.h */,
+				EA50F7FB2151F04100A53B71 /* AETestViewController.m */,
+				EA1B9C6E215DD351001DF3B1 /* AETestViewController2.h */,
+				EA1B9C6F215DD351001DF3B1 /* AETestViewController2.m */,
+				EA1B9C71215DD3AF001DF3B1 /* View */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		EA1B9C71215DD3AF001DF3B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA1B9C75215DD46C001DF3B1 /* HexagonCell.h */,
+				EA1B9C76215DD46C001DF3B1 /* HexagonCell.m */,
+				EA1B9C77215DD46C001DF3B1 /* HexagonCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EA31924421521D2500C315F2 /* CAShapeLayer+ */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +586,8 @@
 		EA3192522152474D00C315F2 /* SubVC */ = {
 			isa = PBXGroup;
 			children = (
+				EA1B9C65215DB841001DF3B1 /* 圆周多边形绘制 */,
+				EAD108CD215C85F100F1C04A /* 网格绘制 */,
 				EABC24BC215338B800AE4D8A /* 快状圆弧 */,
 				EABC24B821532BA500AE4D8A /* 四边形绘制 */,
 				EA3192532152475400C315F2 /* 线段绘制 */,
@@ -661,6 +720,15 @@
 			path = AxcAE_ViewControllerExtension;
 			sourceTree = "<group>";
 		};
+		EAD108CD215C85F100F1C04A /* 网格绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				EAD108CE215C860000F1C04A /* DrawGridVC.h */,
+				EAD108CF215C860000F1C04A /* DrawGridVC.m */,
+			);
+			path = "网格绘制";
+			sourceTree = "<group>";
+		};
 		EADD07A22154BFE100A87AC6 /* 进度 */ = {
 			isa = PBXGroup;
 			children = (
@@ -706,8 +774,8 @@
 			children = (
 				EAE4FAA2214BB4C9008146A2 /* AppDelegate.h */,
 				EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */,
-				EA50F7FA2151F04100A53B71 /* AETestViewController.h */,
-				EA50F7FB2151F04100A53B71 /* AETestViewController.m */,
+				EA1B9C6D215DD339001DF3B1 /* Test */,
+				EA1B9C69215DD30D001DF3B1 /* Layout */,
 				EABC24C221537A4600AE4D8A /* ttt.png */,
 				EA1A430A215B5E98002C1988 /* AxcBridgeFramework */,
 				EA16438B21509BC800BE510B /* UI */,
@@ -936,6 +1004,7 @@
 				EAE4FAAF214BB4CB008146A2 /* LaunchScreen.storyboard in Resources */,
 				EAE4FAAC214BB4CB008146A2 /* Assets.xcassets in Resources */,
 				EA1643BF2150A78E00BE510B /* ShowCell.xib in Resources */,
+				EA1B9C79215DD46C001DF3B1 /* HexagonCell.xib in Resources */,
 				EAE4FAAA214BB4CA008146A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1004,7 +1073,9 @@
 			files = (
 				EAE4FAB2214BB4CB008146A2 /* main.m in Sources */,
 				EA164378215095F000BE510B /* AxcAE_DrawBaseObj.m in Sources */,
+				EA1B9C78215DD46C001DF3B1 /* HexagonCell.m in Sources */,
 				EA1643C82150CE5700BE510B /* AxcAE_RingDrawView.m in Sources */,
+				EA1B9C6C215DD31F001DF3B1 /* AxcLayout.m in Sources */,
 				EA1643CE2150D05600BE510B /* AxcAE_RingImageVC.m in Sources */,
 				EABC24BB21532C7B00AE4D8A /* DrawQuadrilateralVC.m in Sources */,
 				EA1643AC2150A4AA00BE510B /* ContainerSampleVC.m in Sources */,
@@ -1018,6 +1089,7 @@
 				EA1643BE2150A78E00BE510B /* ShowCell.m in Sources */,
 				EA1643C32150CC3B00BE510B /* AxcAE_RingDrawVC.m in Sources */,
 				EAE4FAA4214BB4C9008146A2 /* AppDelegate.m in Sources */,
+				EA1B9C70215DD351001DF3B1 /* AETestViewController2.m in Sources */,
 				EA164375215095E900BE510B /* AxcAE_ImageBaseObj.m in Sources */,
 				EAE4FAE9214BB864008146A2 /* AxcAE_ParallelogramView.m in Sources */,
 				EABB8FB9214FA0EF009CABC7 /* AxcAE_BaseObject.m in Sources */,
@@ -1040,6 +1112,8 @@
 				EA1643992150A3D900BE510B /* SampleTemplateVC.m in Sources */,
 				EA16438A215098AB00BE510B /* AxcAE_BaseImageModule.m in Sources */,
 				EA50F7F52151E23100A53B71 /* AxcDrawPath.m in Sources */,
+				EA1B9C68215DB86C001DF3B1 /* DrawCircularPolygonVC.m in Sources */,
+				EAD108D0215C860000F1C04A /* DrawGridVC.m in Sources */,
 				EA1643D22150D48E00BE510B /* AxcAE_ArrowDrawVC.m in Sources */,
 				EA50F7F92151ED9600A53B71 /* AxcLayerBrush.m in Sources */,
 				EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */,

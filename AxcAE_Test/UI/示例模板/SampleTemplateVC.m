@@ -9,6 +9,7 @@
 #import "SampleTemplateVC.h"
 
 #import "AETestViewController.h"
+#import "AETestViewController2.h"
 
 @interface SampleTemplateVC ()
 
@@ -22,7 +23,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.navigationController pushViewController:[AETestViewController new] animated:YES];
+    [self.navigationController pushViewController:[AETestViewController2 new] animated:YES];
 }
 
 @end

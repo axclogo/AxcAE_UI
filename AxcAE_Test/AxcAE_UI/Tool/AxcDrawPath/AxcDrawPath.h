@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "AxcAE_HeaderDefine.h"
 
-
 /**
  绘制动作路径
  */
@@ -23,7 +22,6 @@
  @return 贝塞尔曲线
  */
 + (UIBezierPath *)AxcDrawLineArray:(NSArray <NSValue *> *)lineArray;
-
 /**
  传入一组点，将其按顺序连接起来 - 1
  @param lineArray 数组点
@@ -32,7 +30,56 @@
  */
 + (UIBezierPath *)AxcDrawLineArray:(NSArray <NSValue *> *)lineArray
                          clockwise:(BOOL)clockwise;
-#pragma mark - 四边形相关
+#pragma mark - 多边形相关
+#pragma mark 圆周内切多边形
+/**
+ 圆周内切多边形
+ @param center 中心
+ @param pointCount 多边形交点个数
+ @param radius 半径
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawParallelogramCenter:(CGPoint )center
+                                  pointCount:(NSInteger )pointCount
+                                      radius:(CGFloat )radius;
+/**
+ 圆周内切多边形
+ @param center 中心
+ @param pointCount 多边形交点个数
+ @param radius 半径
+ @param clockwise 是否顺时针
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawParallelogramCenter:(CGPoint )center
+                                  pointCount:(NSInteger )pointCount
+                                      radius:(CGFloat )radius
+                                   clockwise:(BOOL)clockwise;
+/**
+ 圆周内切多边形
+ @param center 中心
+ @param pointCount 多边形交点个数
+ @param radius 半径
+ @param startAngle 起始角
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawParallelogramCenter:(CGPoint )center
+                                  pointCount:(NSInteger )pointCount
+                                      radius:(CGFloat )radius
+                                  startAngle:(CGFloat )startAngle;
+/**
+ 圆周内切多边形
+ @param center 中心
+ @param pointCount 多边形交点个数
+ @param radius 半径
+ @param startAngle 起始角
+ @param clockwise 是否顺时针
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawParallelogramCenter:(CGPoint )center
+                                  pointCount:(NSInteger )pointCount
+                                      radius:(CGFloat )radius
+                                  startAngle:(CGFloat )startAngle
+                                   clockwise:(BOOL)clockwise;
 #pragma mark 四边形
 /**
  绘制一个四边形
@@ -40,7 +87,6 @@
  @return 贝塞尔曲线
  */
 + (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect;
-
 /**
  绘制一个四边形
  @param rect frame
@@ -57,17 +103,15 @@
  @param offset 偏移量
  @return 贝塞尔曲线
  */
-#pragma mark 平行四边形
 + (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect
                                     offset:(CGPoint )offset
                                  clockwise:(BOOL)clockwise;
 #pragma mark - 圆环相关
 /**
- 画圆 。。我自己都觉得这个封有点迷
  @param center 中心点
  @param radius 半径
- @param startAngle 起始角度
- @param endAngle 终止角度
+ @param startAngle 起始弧度
+ @param endAngle 终止弧度
  @param clockwise 是否顺时针顺序
  @return 贝塞尔曲线
  */
@@ -86,7 +130,6 @@
  */
 + (UIBezierPath *)AxcDrawArcRingCenter:(CGPoint )center
                                 radius:(CGFloat)radius;
-
 /**
  绘制双圆弧 - 2
  @param center 中心点
@@ -97,7 +140,6 @@
 + (UIBezierPath *)AxcDrawArcRingCenter:(CGPoint )center
                                 radius:(CGFloat)radius
                                 radian:(CGFloat )radian;
-
 #pragma mark 绘制块状圆弧
 /**
  绘制块状圆弧 -1
@@ -113,7 +155,6 @@
                                 blockRadius:(CGFloat )blockRadius
                                  blockCount:(NSInteger )blockCount
                                angleSpacing:(CGFloat )angleSpacing;
-
 /**
  绘制块状圆弧 -2
  @param center 中心点
@@ -132,5 +173,53 @@
                                angleSpacing:(CGFloat )angleSpacing
                                  startAngle:(CGFloat )startAngle
                                openingAngle:(CGFloat )openingAngle;
+#pragma mark - 网格相关
+#pragma mark 绘制矩形网络
+/**
+ 绘制矩形网络
+ @param rect 范围框架
+ @param gridCount 网格纵横格子数
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawRectangularGridRect:(CGRect )rect
+                                   gridCount:(AxcAE_Grid )gridCount;
+/**
+ 绘制矩形网络
+ @param rect 范围框架
+ @param gridCount 网格纵横格子数
+ @param forward 是否正向绘制
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawRectangularGridRect:(CGRect )rect
+                                   gridCount:(AxcAE_Grid )gridCount
+                                     forward:(BOOL)forward;
+/**
+ 绘制矩形网络
+ @param rect 范围框架
+ @param gridCount 网格纵横格子数
+ @param border 是否要外框
+ @param forward 是否正向绘制
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawRectangularGridRect:(CGRect )rect
+                                   gridCount:(AxcAE_Grid )gridCount
+                                      border:(BOOL )border
+                                     forward:(BOOL)forward;
+/**
+ 绘制矩形网络
+ @param rect 范围框架
+ @param gridCount 网格纵横格子数
+ @param firstHorizontal 先手横向绘制
+ @param border 是否要外框
+ @param forward 是否正向绘制
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawRectangularGridRect:(CGRect )rect
+                                   gridCount:(AxcAE_Grid )gridCount
+                             firstHorizontal:(BOOL )firstHorizontal
+                                      border:(BOOL )border
+                                     forward:(BOOL)forward;
+
+
 @end
 

@@ -31,9 +31,9 @@
 
 
 #define KScienceTechnologyBlue  RGB(59,185,222)
-#define kBackColor              RGB(9, 33, 62);
-#define kVCBackColor            RGB(28, 42, 60);
-#define kPicBackColor           RGB(0, 40, 90);
+#define kBackColor              RGB(9, 33, 62)
+#define kVCBackColor            RGB(28, 42, 60)
+#define kPicBackColor           RGB(0, 40, 90)
 
 // 三方框架组
 #import <SVProgressHUD.h>               // Tost展示

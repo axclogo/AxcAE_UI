@@ -24,3 +24,18 @@ AxcAE_GyroscopeMotionMake(CMDeviceMotion *motion){
     gyroscope.y = motion.gravity.y;
     return gyroscope;
 }
+
+
+/** 网格横宽 */
+struct AxcAE_Grid {
+    NSInteger horizontalCount;
+    NSInteger verticalCount;
+};
+typedef struct CG_BOXABLE AxcAE_Grid AxcAE_Grid;
+
+CG_INLINE AxcAE_Grid
+AxcAE_GridMake(NSInteger horizontalCount,NSInteger verticalCount){
+    AxcAE_Grid grad;
+    grad.horizontalCount = horizontalCount;grad.verticalCount = verticalCount;
+    return grad;
+}
