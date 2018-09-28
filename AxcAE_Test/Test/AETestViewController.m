@@ -74,7 +74,27 @@ AVCaptureMetadataOutputObjectsDelegate>
    return image;
 }
 
-
+- (void)renderer:(id<SCNSceneRenderer>)renderer didAddNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor{
+    if ([anchor isKindOfClass:[ARPlaneAnchor class]]) {
+        ARPlaneAnchor *planeAnchor = (ARPlaneAnchor *)anchor;
+        SCNPlane *plane = [SCNPlane planeWithWidth:planeAnchor.extent.x height: planeAnchor.extent.z];
+        
+        SCNNode *planeNode = [SCNNode new];
+        planeNode.position = SCNVector3Make(planeAnchor.center.x, 0, planeAnchor.center.z);
+        planeNode.transform = SCNMatrix4MakeRotation(-M_PI/2, 1, 0, 0);
+        SCNMaterial *gridMaterial = [SCNMaterial new];
+        gridMaterial.diffuse.contents = [UIImage imageNamed:@"art.scnassets/grid.png"];
+        plane.materials = @[gridMaterial];
+        planeNode.geometry = plane;
+        [node addChildNode:planeNode];
+    }
+    if ([anchor isKindOfClass:[ARFaceAnchor class]]) {
+        SCNBox *box = [SCNBox boxWithWidth:0.08 height:0.08 length:0.08 chamferRadius:0];
+        SCNNode *faceNode = [SCNNode nodeWithGeometry:box];
+        [node addChildNode:faceNode];
+    }
+    NSLog(@"111");
+}
 
 
 - (void)createUI{
