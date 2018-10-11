@@ -38,6 +38,67 @@
     if (!clockwise) bezierPath = [bezierPath bezierPathByReversingPath];// 逆时针绘制
     return bezierPath;
 }
+#pragma mark 绘制刻度线
++ (UIBezierPath *)AxcDrawScaleStartPoint:(CGPoint )startPoint
+                                   count:(NSInteger )count
+                              groupCount:(NSInteger )groupCount
+                          bigScaleHeight:(CGFloat )bigScaleHeight
+                        smallScaleHeight:(CGFloat )smallScaleHeight
+                                 spacing:(CGFloat )spacing{
+    return [self AxcDrawScaleStartPoint:startPoint
+                                  count:count
+                             groupCount:groupCount
+                         bigScaleHeight:bigScaleHeight
+                       smallScaleHeight:smallScaleHeight
+                                spacing:spacing
+                                 upward:YES];
+}
++ (UIBezierPath *)AxcDrawScaleStartPoint:(CGPoint )startPoint
+                                   count:(NSInteger )count
+                              groupCount:(NSInteger )groupCount
+                          bigScaleHeight:(CGFloat )bigScaleHeight
+                        smallScaleHeight:(CGFloat )smallScaleHeight
+                                 spacing:(CGFloat )spacing
+                                  upward:(BOOL )upward{
+    return [self AxcDrawScaleStartPoint:startPoint
+                                  count:count
+                             groupCount:groupCount
+                         bigScaleHeight:bigScaleHeight
+                       smallScaleHeight:smallScaleHeight
+                                spacing:spacing
+                                 upward:YES
+                               sequence:YES];
+}
++ (UIBezierPath *)AxcDrawScaleStartPoint:(CGPoint )startPoint
+                                   count:(NSInteger )count
+                              groupCount:(NSInteger )groupCount
+                          bigScaleHeight:(CGFloat )bigScaleHeight
+                        smallScaleHeight:(CGFloat )smallScaleHeight
+                                 spacing:(CGFloat )spacing
+                                  upward:(BOOL )upward
+                                sequence:(BOOL)sequence{
+    NSMutableArray *pointers = @[].mutableCopy;
+    CGPoint point = startPoint;
+    for (int i = 0; i <= count; i ++) { // 绘制大刻度
+        [pointers addObject:[NSValue valueWithCGPoint:point]];
+        [pointers addObject:[NSValue valueWithCGPoint:CGPointMake(point.x , point.y + bigScaleHeight)]];
+        [pointers addObject:[NSNull null]];
+        if (i == count) break;
+        for (int j = 1; j < groupCount; j ++) { // 小刻度
+            point = CGPointMake(point.x + spacing, point.y);
+            if (upward) {
+                [pointers addObject:[NSValue valueWithCGPoint:CGPointMake(point.x , point.y + bigScaleHeight - smallScaleHeight)]];
+                [pointers addObject:[NSValue valueWithCGPoint:CGPointMake(point.x , point.y + bigScaleHeight)]];
+            }else{
+                [pointers addObject:[NSValue valueWithCGPoint:point]];
+                [pointers addObject:[NSValue valueWithCGPoint:CGPointMake(point.x , point.y + smallScaleHeight)]];
+            }
+            [pointers addObject:[NSNull null]];
+        }
+        point = CGPointMake(point.x + spacing, point.y);
+    }
+    return [self AxcDrawLineArray:pointers clockwise:sequence];
+}
 #pragma mark - 多边形相关
 #pragma mark 圆周多边形
 + (UIBezierPath *)AxcDrawParallelogramCenter:(CGPoint )center

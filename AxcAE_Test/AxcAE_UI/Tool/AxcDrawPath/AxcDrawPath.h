@@ -23,17 +23,72 @@
  */
 + (UIBezierPath *)AxcDrawLineArray:(NSArray <NSValue *> *)lineArray;
 /**
- 传入一组点，将其按顺序连接起来 - 1
+ 传入一组点，将其按顺序连接起来 - 2
  @param lineArray 数组点
  @param clockwise 是否顺时针绘制
  @return 贝塞尔曲线
  */
 + (UIBezierPath *)AxcDrawLineArray:(NSArray <NSValue *> *)lineArray
                          clockwise:(BOOL)clockwise;
+#pragma mark 绘制刻度线
+/**
+ 绘制刻度线 - 1
+ @param startPoint 起始点位
+ @param count 一共多少组
+ @param groupCount 每组个数
+ @param bigScaleHeight 大刻度线高度
+ @param smallScaleHeight 小刻度线高度
+ @param spacing 间距
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawScaleStartPoint:(CGPoint )startPoint
+                                   count:(NSInteger )count
+                              groupCount:(NSInteger )groupCount
+                          bigScaleHeight:(CGFloat )bigScaleHeight
+                        smallScaleHeight:(CGFloat )smallScaleHeight
+                                 spacing:(CGFloat )spacing;
+/**
+ 绘制刻度线 - 2
+ @param startPoint 起始点位
+ @param count 一共多少组
+ @param groupCount 每组个数
+ @param bigScaleHeight 大刻度线高度
+ @param smallScaleHeight 小刻度线高度
+ @param spacing 间距
+ @param upward 是否向上
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawScaleStartPoint:(CGPoint )startPoint
+                                   count:(NSInteger )count
+                              groupCount:(NSInteger )groupCount
+                          bigScaleHeight:(CGFloat )bigScaleHeight
+                        smallScaleHeight:(CGFloat )smallScaleHeight
+                                 spacing:(CGFloat )spacing
+                                  upward:(BOOL )upward;
+/**
+ 绘制刻度线 - 3
+ @param startPoint 起始点位
+ @param count 一共多少组
+ @param groupCount 每组个数
+ @param bigScaleHeight 大刻度线高度
+ @param smallScaleHeight 小刻度线高度
+ @param spacing 间距
+ @param upward 是否向上
+ @param sequence 顺序绘制
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawScaleStartPoint:(CGPoint )startPoint
+                                   count:(NSInteger )count
+                              groupCount:(NSInteger )groupCount
+                          bigScaleHeight:(CGFloat )bigScaleHeight
+                        smallScaleHeight:(CGFloat )smallScaleHeight
+                                 spacing:(CGFloat )spacing
+                                  upward:(BOOL )upward
+                                sequence:(BOOL)sequence;
 #pragma mark - 多边形相关
 #pragma mark 圆周内切多边形
 /**
- 圆周内切多边形
+ 圆周内切多边形 - 1
  @param center 中心
  @param pointCount 多边形交点个数
  @param radius 半径
@@ -43,7 +98,7 @@
                                   pointCount:(NSInteger )pointCount
                                       radius:(CGFloat )radius;
 /**
- 圆周内切多边形
+ 圆周内切多边形 - 2
  @param center 中心
  @param pointCount 多边形交点个数
  @param radius 半径
@@ -55,7 +110,7 @@
                                       radius:(CGFloat )radius
                                    clockwise:(BOOL)clockwise;
 /**
- 圆周内切多边形
+ 圆周内切多边形 - 3
  @param center 中心
  @param pointCount 多边形交点个数
  @param radius 半径
@@ -67,7 +122,7 @@
                                       radius:(CGFloat )radius
                                   startAngle:(CGFloat )startAngle;
 /**
- 圆周内切多边形
+ 圆周内切多边形 - 4
  @param center 中心
  @param pointCount 多边形交点个数
  @param radius 半径
@@ -88,7 +143,7 @@
  */
 + (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect;
 /**
- 绘制一个四边形
+ 绘制一个四边形 - 2
  @param rect frame
  @param clockwise 是否顺时针绘制
  @return 贝塞尔曲线

@@ -40,10 +40,10 @@
     return returnLayer;
 }
 // 添加Layer层到视图
-- (void)drawSublayer:(CAShapeLayer *)layer{ // 默认用内存地址做Key，方便查找和特殊用途
+- (void)drawSublayer:(CALayer *)layer{ // 默认用内存地址做Key，方便查找和特殊用途
     [self drawSublayer:layer withKey:[NSString stringWithFormat:@"%p",layer]];
 }
-- (void)drawSublayer:(CAShapeLayer *)layer withKey:(NSString *)key{
+- (void)drawSublayer:(CALayer *)layer withKey:(NSString *)key{
     [self.sublayerMap setObject:layer forKey:key];
     [self.layer addSublayer:layer];
 }

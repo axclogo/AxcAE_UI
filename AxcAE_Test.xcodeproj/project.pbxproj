@@ -51,6 +51,8 @@
 		EABC24C321537A4700AE4D8A /* ttt.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC24C221537A4600AE4D8A /* ttt.png */; };
 		EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */; };
 		EAD108D0215C860000F1C04A /* DrawGridVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD108CF215C860000F1C04A /* DrawGridVC.m */; };
+		EAD9048E216DBC8D00A3B4FE /* AxcAE_Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD9048D216DBC8D00A3B4FE /* AxcAE_Scale.m */; };
+		EAD90492216DC54E00A3B4FE /* AETestViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD90491216DC54E00A3B4FE /* AETestViewController3.m */; };
 		EADD07A52154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EADD07A42154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m */; };
 		EADD07A92154C07D00A87AC6 /* AxcAE_ProgressDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EADD07A82154C07D00A87AC6 /* AxcAE_ProgressDrawView.m */; };
 		EAE4FAA4214BB4C9008146A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAA3214BB4C9008146A2 /* AppDelegate.m */; };
@@ -172,6 +174,10 @@
 		EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AxcAE_ViewControllerExtension.m"; sourceTree = "<group>"; };
 		EAD108CE215C860000F1C04A /* DrawGridVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawGridVC.h; sourceTree = "<group>"; };
 		EAD108CF215C860000F1C04A /* DrawGridVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawGridVC.m; sourceTree = "<group>"; };
+		EAD9048C216DBC8D00A3B4FE /* AxcAE_Scale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_Scale.h; sourceTree = "<group>"; };
+		EAD9048D216DBC8D00A3B4FE /* AxcAE_Scale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_Scale.m; sourceTree = "<group>"; };
+		EAD90490216DC54E00A3B4FE /* AETestViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestViewController3.h; sourceTree = "<group>"; };
+		EAD90491216DC54E00A3B4FE /* AETestViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestViewController3.m; sourceTree = "<group>"; };
 		EADD07A32154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ProgressDrawVC.h; sourceTree = "<group>"; };
 		EADD07A42154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ProgressDrawVC.m; sourceTree = "<group>"; };
 		EADD07A72154C07D00A87AC6 /* AxcAE_ProgressDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ProgressDrawView.h; sourceTree = "<group>"; };
@@ -540,6 +546,8 @@
 				EA50F7FB2151F04100A53B71 /* AETestViewController.m */,
 				EA1B9C6E215DD351001DF3B1 /* AETestViewController2.h */,
 				EA1B9C6F215DD351001DF3B1 /* AETestViewController2.m */,
+				EAD90490216DC54E00A3B4FE /* AETestViewController3.h */,
+				EAD90491216DC54E00A3B4FE /* AETestViewController3.m */,
 				EA1B9C71215DD3AF001DF3B1 /* View */,
 			);
 			path = Test;
@@ -625,6 +633,7 @@
 		EA7142D7214C9353003E76BA /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				EAD9048B216DBC5600A3B4FE /* AxcAE_Scale */,
 				EABC24C42153A02300AE4D8A /* AxcAE_ViewControllerExtension */,
 			);
 			path = Component;
@@ -727,6 +736,15 @@
 				EAD108CF215C860000F1C04A /* DrawGridVC.m */,
 			);
 			path = "网格绘制";
+			sourceTree = "<group>";
+		};
+		EAD9048B216DBC5600A3B4FE /* AxcAE_Scale */ = {
+			isa = PBXGroup;
+			children = (
+				EAD9048C216DBC8D00A3B4FE /* AxcAE_Scale.h */,
+				EAD9048D216DBC8D00A3B4FE /* AxcAE_Scale.m */,
+			);
+			path = AxcAE_Scale;
 			sourceTree = "<group>";
 		};
 		EADD07A22154BFE100A87AC6 /* 进度 */ = {
@@ -1080,6 +1098,7 @@
 				EABC24BB21532C7B00AE4D8A /* DrawQuadrilateralVC.m in Sources */,
 				EA1643AC2150A4AA00BE510B /* ContainerSampleVC.m in Sources */,
 				EABC24BF215338C300AE4D8A /* DrawBlockRingVC.m in Sources */,
+				EAD90492216DC54E00A3B4FE /* AETestViewController3.m in Sources */,
 				EA1643B92150A69F00BE510B /* ShowModel.m in Sources */,
 				EAE4FADD214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m in Sources */,
 				EA1643862150989900BE510B /* AxcAE_BaseDrawModule.m in Sources */,
@@ -1104,6 +1123,7 @@
 				EA50F7FF2151F08500A53B71 /* AxcAE_DrawBoard.m in Sources */,
 				EA1643B42150A68000BE510B /* BaseModel.m in Sources */,
 				EA1643A92150A49100BE510B /* DrawSampleListVC.m in Sources */,
+				EAD9048E216DBC8D00A3B4FE /* AxcAE_Scale.m in Sources */,
 				EADD07A52154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m in Sources */,
 				EA31924B21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m in Sources */,
 				EA1643822150980000BE510B /* AxcAE_BaseModule.m in Sources */,

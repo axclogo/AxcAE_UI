@@ -23,8 +23,8 @@
  绘制这个Layer
  @param layer layer
  */
-- (void)drawSublayer:(CAShapeLayer *)layer;
-- (void)drawSublayer:(CAShapeLayer *)layer withKey:(NSString *)key;
+- (void)drawSublayer:(CALayer *)layer;
+- (void)drawSublayer:(CALayer *)layer withKey:(NSString *)key;
 
 /**
  子Layer层的所有Layer
