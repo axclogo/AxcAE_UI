@@ -1,22 +1,20 @@
 //
-//  AETestViewController3.m
+//  AxcAE_ScaleDrawVC.m
 //  AxcAE_Test
 //
-//  Created by AxcLogo on 2018/10/10.
+//  Created by AxcLogo on 2018/10/11.
 //  Copyright © 2018年 AxcLogo. All rights reserved.
 //
 
-#import "AETestViewController3.h"
-
+#import "AxcAE_ScaleDrawVC.h"
 #import "AxcAE_Scale.h"
 
-
-@interface AETestViewController3 ()<AxcAE_ScaleDelegate>
+@interface AxcAE_ScaleDrawVC ()<AxcAE_ScaleDelegate>
 @property(nonatomic , strong)AxcAE_Scale *scale;
 @property(nonatomic , strong)UILabel *label;
 @end
 
-@implementation AETestViewController3
+@implementation AxcAE_ScaleDrawVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +27,7 @@
     [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.mas_equalTo(0);
         make.height.mas_equalTo(50);
-        make.top.mas_equalTo(self.scale.mas_bottom).offset(0);
+        make.top.mas_equalTo(self.scale.mas_bottom).offset(10);
     }];
 }
 
@@ -39,23 +37,32 @@
     self.scale.textColor = arcColor;
     self.scale.indicatorColor = arcColor;
     self.scale.value = arc4random()%1000;
+    [self.scale reloadTextLayer]; // 刷新文字，执行代理方法
 }
+#pragma mark - 代理
 - (void)AxcAE_Scale:(AxcAE_Scale *)scale value:(CGFloat )value{
     self.label.text = [NSString stringWithFormat:@"%.2f",value];
+}
+- (void)AxcAE_Scale:(AxcAE_Scale *)scale textLayer:(CATextLayer *)textLayer idx:(NSInteger)idx{
+    if (idx == 3) { // 第四个文字Layer设置
+        textLayer.foregroundColor = [UIColor whiteColor].CGColor;
+    }
 }
 
 - (AxcAE_Scale *)scale{
     if (!_scale) {
         _scale = [AxcAE_Scale new];
-        _scale.backgroundColor = kVCBackColor;
-        _scale.lineWidth = 1;
         _scale.delegate = self;
-        _scale.count = 20;
-        _scale.maxValue = 1000;
-        _scale.unit = @"kg";
-//        _scale.textColor = [UIColor redColor];
-//        _scale.fontSize = 10;
-//        _scale.isScrollAlign = YES;
+        _scale.backgroundColor = kVCBackColor;
+        
+        _scale.lineWidth = 1;   // 刻度线宽
+        _scale.count = 20;      // 一共几个大刻度
+        _scale.maxValue = 1000; // 最大值
+        _scale.unit = @"kg";    // 文字单位
+        //        _scale.fontSize = 10;         // 文字字号
+        
+        _scale.isScrollAlign = YES;   // 开启自动对齐
+        _scale.isGradient = NO;                 // 关闭渐变效果
         [self.view addSubview:_scale];
     }
     return _scale;
