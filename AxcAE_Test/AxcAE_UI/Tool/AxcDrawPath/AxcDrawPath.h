@@ -102,18 +102,6 @@
  @param center 中心
  @param pointCount 多边形交点个数
  @param radius 半径
- @param clockwise 是否顺时针
- @return 贝塞尔曲线
- */
-+ (UIBezierPath *)AxcDrawParallelogramCenter:(CGPoint )center
-                                  pointCount:(NSInteger )pointCount
-                                      radius:(CGFloat )radius
-                                   clockwise:(BOOL)clockwise;
-/**
- 圆周内切多边形 - 3
- @param center 中心
- @param pointCount 多边形交点个数
- @param radius 半径
  @param startAngle 起始角
  @return 贝塞尔曲线
  */
@@ -122,11 +110,26 @@
                                       radius:(CGFloat )radius
                                   startAngle:(CGFloat )startAngle;
 /**
+ 圆周内切多边形 - 3
+ @param center 中心
+ @param pointCount 多边形交点个数
+ @param radius 半径
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawParallelogramCenter:(CGPoint )center
+                                  pointCount:(NSInteger )pointCount
+                                      radius:(CGFloat )radius
+                                  startAngle:(CGFloat )startAngle
+                                openingAngle:(CGFloat )openingAngle;
+/**
  圆周内切多边形 - 4
  @param center 中心
  @param pointCount 多边形交点个数
  @param radius 半径
  @param startAngle 起始角
+ @param openingAngle 开合角
  @param clockwise 是否顺时针
  @return 贝塞尔曲线
  */
@@ -134,10 +137,11 @@
                                   pointCount:(NSInteger )pointCount
                                       radius:(CGFloat )radius
                                   startAngle:(CGFloat )startAngle
+                                openingAngle:(CGFloat )openingAngle
                                    clockwise:(BOOL)clockwise;
 #pragma mark 四边形
 /**
- 绘制一个四边形
+ 绘制一个四边形 - 1
  @param rect frame
  @return 贝塞尔曲线
  */
@@ -152,10 +156,18 @@
                                  clockwise:(BOOL)clockwise;
 #pragma mark 平行四边形
 /**
- 绘制一个四边形
+ 绘制一个四边形 - 1
  @param rect frame
- @param clockwise 是否顺时针绘制
  @param offset 偏移量
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect
+                                    offset:(CGPoint )offset;
+/**
+ 绘制一个四边形 - 2
+ @param rect frame
+ @param offset 偏移量
+ @param clockwise 是否顺时针绘制
  @return 贝塞尔曲线
  */
 + (UIBezierPath *)AxcDrawParallelogramRect:(CGRect )rect
@@ -175,29 +187,70 @@
                         startAngle:(CGFloat)startAngle
                           endAngle:(CGFloat)endAngle
                          clockwise:(BOOL)clockwise;
-
-#pragma mark 绘制双圆弧
+#pragma mark 绘制圆弧
 /**
- 绘制双圆弧 - 1
- @param center 中心点
+ 绘制圆弧 - 1
+ @param center 中心
  @param radius 半径
+ @param count 圆弧个数
+ @param radian 圆弧弧度
  @return 贝塞尔曲线
  */
-+ (UIBezierPath *)AxcDrawArcRingCenter:(CGPoint )center
-                                radius:(CGFloat)radius;
++ (UIBezierPath *)AxcDrawCircularArcCenter:(CGPoint )center
+                                    radius:(CGFloat)radius
+                                     count:(CGFloat)count
+                                    radian:(CGFloat )radian;
 /**
- 绘制双圆弧 - 2
- @param center 中心点
+ 绘制圆弧 - 2
+ @param center 中心
  @param radius 半径
- @param radian 弧度
+ @param count 圆弧个数
+ @param radian 圆弧弧度
+ @param startAngle 起始角
  @return 贝塞尔曲线
  */
-+ (UIBezierPath *)AxcDrawArcRingCenter:(CGPoint )center
-                                radius:(CGFloat)radius
-                                radian:(CGFloat )radian;
++ (UIBezierPath *)AxcDrawCircularArcCenter:(CGPoint )center
+                                    radius:(CGFloat)radius
+                                     count:(CGFloat)count
+                                    radian:(CGFloat )radian
+                                startAngle:(CGFloat )startAngle;
+/**
+ 绘制圆弧 - 3
+ @param center 中心
+ @param radius 半径
+ @param count 圆弧个数
+ @param radian 圆弧弧度
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawCircularArcCenter:(CGPoint )center
+                                    radius:(CGFloat)radius
+                                     count:(CGFloat)count
+                                    radian:(CGFloat )radian
+                                startAngle:(CGFloat )startAngle
+                              openingAngle:(CGFloat )openingAngle;
+/**
+ 绘制圆弧 - 4
+ @param center 中心
+ @param radius 半径
+ @param count 圆弧个数
+ @param radian 圆弧弧度
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @param connection 是否连接
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawCircularArcCenter:(CGPoint )center
+                                    radius:(CGFloat)radius
+                                     count:(CGFloat)count
+                                    radian:(CGFloat )radian
+                                startAngle:(CGFloat )startAngle
+                              openingAngle:(CGFloat )openingAngle
+                                connection:(BOOL )connection;
 #pragma mark 绘制块状圆弧
 /**
- 绘制块状圆弧 -1
+ 绘制块状圆弧 - 1
  @param center 中心点
  @param outsideRadius 外圆半径
  @param blockRadius 圆弧块弧半径
@@ -211,7 +264,23 @@
                                  blockCount:(NSInteger )blockCount
                                angleSpacing:(CGFloat )angleSpacing;
 /**
- 绘制块状圆弧 -2
+ 绘制块状圆弧 - 2
+ @param center 中心点
+ @param outsideRadius 外圆半径
+ @param blockRadius 圆弧块弧半径
+ @param blockCount 块个数
+ @param angleSpacing 间距角度
+ @param startAngle 起始角度
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawBlockArcRingCenter:(CGPoint )center
+                              outsideRadius:(CGFloat )outsideRadius
+                                blockRadius:(CGFloat )blockRadius
+                                 blockCount:(NSInteger )blockCount
+                               angleSpacing:(CGFloat )angleSpacing
+                                 startAngle:(CGFloat )startAngle;
+/**
+ 绘制块状圆弧 - 3
  @param center 中心点
  @param outsideRadius 外圆半径
  @param blockRadius 圆弧块弧半径
@@ -228,10 +297,156 @@
                                angleSpacing:(CGFloat )angleSpacing
                                  startAngle:(CGFloat )startAngle
                                openingAngle:(CGFloat )openingAngle;
+#pragma mark 绘制箭头块状圆弧
+/**
+ 绘制箭头块状圆弧 - 1
+ @param center 中心
+ @param outsideRadius 外圆半径
+ @param blockRadius 圆弧块距离
+ @param blockCount 块个数
+ @param angleSpacing 间距角度
+ @param arrowAngle 箭头突出角度
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawArrowBlockArcRingCenter:(CGPoint )center
+                                   outsideRadius:(CGFloat )outsideRadius
+                                     blockRadius:(CGFloat )blockRadius
+                                      blockCount:(NSInteger )blockCount
+                                    angleSpacing:(CGFloat )angleSpacing
+                                      arrowAngle:(CGFloat )arrowAngle;
+/**
+ 绘制箭头块状圆弧 - 2
+ @param center 中心
+ @param outsideRadius 外圆半径
+ @param blockRadius 圆弧块距离
+ @param blockCount 块个数
+ @param angleSpacing 间距角度
+ @param arrowAngle 箭头突出角度
+ @param startAngle 起始角
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawArrowBlockArcRingCenter:(CGPoint )center
+                                   outsideRadius:(CGFloat )outsideRadius
+                                     blockRadius:(CGFloat )blockRadius
+                                      blockCount:(NSInteger )blockCount
+                                    angleSpacing:(CGFloat )angleSpacing
+                                      arrowAngle:(CGFloat )arrowAngle
+                                      startAngle:(CGFloat )startAngle;
+/**
+ 绘制箭头块状圆弧 - 3
+ @param center 中心
+ @param outsideRadius 外圆半径
+ @param blockRadius 圆弧块距离
+ @param blockCount 块个数
+ @param angleSpacing 间距角度
+ @param arrowAngle 箭头突出角度
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawArrowBlockArcRingCenter:(CGPoint )center
+                                   outsideRadius:(CGFloat )outsideRadius
+                                     blockRadius:(CGFloat )blockRadius
+                                      blockCount:(NSInteger )blockCount
+                                    angleSpacing:(CGFloat )angleSpacing
+                                      arrowAngle:(CGFloat )arrowAngle
+                                      startAngle:(CGFloat )startAngle
+                                    openingAngle:(CGFloat )openingAngle;
+/**
+ 绘制箭头块状圆弧 - 4
+ @param center 中心
+ @param outsideRadius 外圆半径
+ @param blockRadius 圆弧块距离
+ @param blockCount 块个数
+ @param angleSpacing 间距角度
+ @param arrowAngle 箭头突出角度
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @param clockwise 顺时针指向？
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawArrowBlockArcRingCenter:(CGPoint )center
+                                   outsideRadius:(CGFloat )outsideRadius
+                                     blockRadius:(CGFloat )blockRadius
+                                      blockCount:(NSInteger )blockCount
+                                    angleSpacing:(CGFloat )angleSpacing
+                                      arrowAngle:(CGFloat )arrowAngle
+                                      startAngle:(CGFloat )startAngle
+                                    openingAngle:(CGFloat )openingAngle
+                                       clockwise:(BOOL )clockwise;
+#pragma mark 绘制梯形块状圆形
+/**
+ 绘制梯形块状圆形 - 1
+ @param center 中心
+ @param outsideRadius 外圆半径
+ @param blockRadius 梯形高度
+ @param blockCount 块个数
+ @param angleSpacing 角度间距
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawTrapezoidalBlockArcRingCenter:(CGPoint )center
+                                         outsideRadius:(CGFloat )outsideRadius
+                                           blockRadius:(CGFloat )blockRadius
+                                            blockCount:(NSInteger )blockCount
+                                          angleSpacing:(CGFloat )angleSpacing;
+/**
+ 绘制梯形块状圆形 - 2
+ @param center 中心
+ @param outsideRadius 外圆半径
+ @param blockRadius 梯形高度
+ @param blockCount 块个数
+ @param angleSpacing 角度间距
+ @param startAngle 起始角度
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawTrapezoidalBlockArcRingCenter:(CGPoint )center
+                                         outsideRadius:(CGFloat )outsideRadius
+                                           blockRadius:(CGFloat )blockRadius
+                                            blockCount:(NSInteger )blockCount
+                                          angleSpacing:(CGFloat )angleSpacing
+                                            startAngle:(CGFloat )startAngle;
+/**
+ 绘制梯形块状圆形 - 3
+ @param center 中心
+ @param outsideRadius 外圆半径
+ @param blockRadius 梯形高度
+ @param blockCount 块个数
+ @param angleSpacing 角度间距
+ @param startAngle 起始角度
+ @param openingAngle 开合角度
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawTrapezoidalBlockArcRingCenter:(CGPoint )center
+                                         outsideRadius:(CGFloat )outsideRadius
+                                           blockRadius:(CGFloat )blockRadius
+                                            blockCount:(NSInteger )blockCount
+                                          angleSpacing:(CGFloat )angleSpacing
+                                            startAngle:(CGFloat )startAngle
+                                          openingAngle:(CGFloat )openingAngle;
+/**
+ 绘制梯形块状圆形 - 4
+ @param center 中心
+ @param outsideRadius 外圆半径
+ @param blockRadius 梯形高度
+ @param blockCount 块个数
+ @param angleSpacing 角度间距
+ @param startAngle 起始角度
+ @param openingAngle 开合角度
+ @param clockwise 顺序绘制
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawTrapezoidalBlockArcRingCenter:(CGPoint )center
+                                         outsideRadius:(CGFloat )outsideRadius
+                                           blockRadius:(CGFloat )blockRadius
+                                            blockCount:(NSInteger )blockCount
+                                          angleSpacing:(CGFloat )angleSpacing
+                                            startAngle:(CGFloat )startAngle
+                                          openingAngle:(CGFloat )openingAngle
+                                             clockwise:(BOOL )clockwise;
 #pragma mark - 网格相关
 #pragma mark 绘制矩形网络
 /**
- 绘制矩形网络
+ 绘制矩形网络 - 1
  @param rect 范围框架
  @param gridCount 网格纵横格子数
  @return 贝塞尔曲线
@@ -239,7 +454,7 @@
 + (UIBezierPath *)AxcDrawRectangularGridRect:(CGRect )rect
                                    gridCount:(AxcAE_Grid )gridCount;
 /**
- 绘制矩形网络
+ 绘制矩形网络 - 2
  @param rect 范围框架
  @param gridCount 网格纵横格子数
  @param forward 是否正向绘制
@@ -249,7 +464,7 @@
                                    gridCount:(AxcAE_Grid )gridCount
                                      forward:(BOOL)forward;
 /**
- 绘制矩形网络
+ 绘制矩形网络 - 3
  @param rect 范围框架
  @param gridCount 网格纵横格子数
  @param border 是否要外框
@@ -261,7 +476,7 @@
                                       border:(BOOL )border
                                      forward:(BOOL)forward;
 /**
- 绘制矩形网络
+ 绘制矩形网络 - 4
  @param rect 范围框架
  @param gridCount 网格纵横格子数
  @param firstHorizontal 先手横向绘制

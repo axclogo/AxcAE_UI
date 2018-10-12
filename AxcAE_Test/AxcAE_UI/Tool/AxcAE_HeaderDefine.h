@@ -19,5 +19,8 @@
 
 // 贝塞尔画笔
 #import "AxcDrawPath.h"
+// 极轴坐标计算器
+#import "AxcPolarAxis.h"
+
 // Layer工厂类
 #import "AxcLayerBrush.h"

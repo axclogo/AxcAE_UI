@@ -24,7 +24,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.navigationController pushViewController:[AETestViewController3 new] animated:YES];
+    [self.navigationController pushViewController:[AETestViewController new] animated:YES];
 }
 
 @end

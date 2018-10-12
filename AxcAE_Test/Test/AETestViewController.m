@@ -104,8 +104,8 @@ AVCaptureMetadataOutputObjectsDelegate>
     [self.view addSubview:self.faceView];
 
     // 平面检测
-    ARFaceTrackingConfiguration *conf = [ARFaceTrackingConfiguration new];
-//        conf.planeDetection = ARPlaneDetectionVertical;
+    ARWorldTrackingConfiguration *conf = [ARWorldTrackingConfiguration new];
+    conf.planeDetection = ARPlaneDetectionVertical;
     conf.lightEstimationEnabled = YES;
     [self.sceneView.session runWithConfiguration:conf];
 }

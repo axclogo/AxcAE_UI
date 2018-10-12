@@ -43,6 +43,11 @@
 		EA50F7F92151ED9600A53B71 /* AxcLayerBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7F82151ED9600A53B71 /* AxcLayerBrush.m */; };
 		EA50F7FC2151F04100A53B71 /* AETestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7FB2151F04100A53B71 /* AETestViewController.m */; };
 		EA50F7FF2151F08500A53B71 /* AxcAE_DrawBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = EA50F7FE2151F08500A53B71 /* AxcAE_DrawBoard.m */; };
+		EA516C152170481000E85FE4 /* DrawCircularArcVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C142170481000E85FE4 /* DrawCircularArcVC.m */; };
+		EA516C192170492700E85FE4 /* DrawScaleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C182170492700E85FE4 /* DrawScaleVC.m */; };
+		EA516C1D21706D7000E85FE4 /* AxcPolarAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C1C21706D7000E85FE4 /* AxcPolarAxis.m */; };
+		EA516C212170805200E85FE4 /* DrawArrowBlockRingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C202170805200E85FE4 /* DrawArrowBlockRingVC.m */; };
+		EA516C252170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C242170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m */; };
 		EA7142ED214CF89C003E76BA /* AxcAE_RingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7142EC214CF89C003E76BA /* AxcAE_RingImageView.m */; };
 		EABB8FB1214F8F21009CABC7 /* AxcAE_ArrowDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FB0214F8F21009CABC7 /* AxcAE_ArrowDrawView.m */; };
 		EABB8FB9214FA0EF009CABC7 /* AxcAE_BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FB8214FA0EF009CABC7 /* AxcAE_BaseObject.m */; };
@@ -160,6 +165,16 @@
 		EA50F7FB2151F04100A53B71 /* AETestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestViewController.m; sourceTree = "<group>"; };
 		EA50F7FD2151F08500A53B71 /* AxcAE_DrawBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_DrawBoard.h; sourceTree = "<group>"; };
 		EA50F7FE2151F08500A53B71 /* AxcAE_DrawBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_DrawBoard.m; sourceTree = "<group>"; };
+		EA516C132170481000E85FE4 /* DrawCircularArcVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawCircularArcVC.h; sourceTree = "<group>"; };
+		EA516C142170481000E85FE4 /* DrawCircularArcVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawCircularArcVC.m; sourceTree = "<group>"; };
+		EA516C172170492700E85FE4 /* DrawScaleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawScaleVC.h; sourceTree = "<group>"; };
+		EA516C182170492700E85FE4 /* DrawScaleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawScaleVC.m; sourceTree = "<group>"; };
+		EA516C1B21706D7000E85FE4 /* AxcPolarAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcPolarAxis.h; sourceTree = "<group>"; };
+		EA516C1C21706D7000E85FE4 /* AxcPolarAxis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcPolarAxis.m; sourceTree = "<group>"; };
+		EA516C1F2170805200E85FE4 /* DrawArrowBlockRingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawArrowBlockRingVC.h; sourceTree = "<group>"; };
+		EA516C202170805200E85FE4 /* DrawArrowBlockRingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawArrowBlockRingVC.m; sourceTree = "<group>"; };
+		EA516C232170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawTrapezoidalBlockRingVC.h; sourceTree = "<group>"; };
+		EA516C242170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawTrapezoidalBlockRingVC.m; sourceTree = "<group>"; };
 		EA7142EB214CF89C003E76BA /* AxcAE_RingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_RingImageView.h; sourceTree = "<group>"; };
 		EA7142EC214CF89C003E76BA /* AxcAE_RingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_RingImageView.m; sourceTree = "<group>"; };
 		EABB8FAF214F8F21009CABC7 /* AxcAE_ArrowDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ArrowDrawView.h; sourceTree = "<group>"; };
@@ -598,6 +613,10 @@
 		EA3192522152474D00C315F2 /* SubVC */ = {
 			isa = PBXGroup;
 			children = (
+				EA516C222170807A00E85FE4 /* 梯形块状圆弧 */,
+				EA516C1E2170803300E85FE4 /* 箭头块状圆弧 */,
+				EA516C162170490000E85FE4 /* 刻度绘制 */,
+				EA516C12217047F400E85FE4 /* 多圆弧绘制 */,
 				EA1B9C65215DB841001DF3B1 /* 圆周多边形绘制 */,
 				EAD108CD215C85F100F1C04A /* 网格绘制 */,
 				EABC24BC215338B800AE4D8A /* 快状圆弧 */,
@@ -634,6 +653,51 @@
 			path = AxcLayerBrush;
 			sourceTree = "<group>";
 		};
+		EA516C12217047F400E85FE4 /* 多圆弧绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				EA516C132170481000E85FE4 /* DrawCircularArcVC.h */,
+				EA516C142170481000E85FE4 /* DrawCircularArcVC.m */,
+			);
+			path = "多圆弧绘制";
+			sourceTree = "<group>";
+		};
+		EA516C162170490000E85FE4 /* 刻度绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				EA516C172170492700E85FE4 /* DrawScaleVC.h */,
+				EA516C182170492700E85FE4 /* DrawScaleVC.m */,
+			);
+			path = "刻度绘制";
+			sourceTree = "<group>";
+		};
+		EA516C1A21706D5900E85FE4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EA516C1B21706D7000E85FE4 /* AxcPolarAxis.h */,
+				EA516C1C21706D7000E85FE4 /* AxcPolarAxis.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		EA516C1E2170803300E85FE4 /* 箭头块状圆弧 */ = {
+			isa = PBXGroup;
+			children = (
+				EA516C1F2170805200E85FE4 /* DrawArrowBlockRingVC.h */,
+				EA516C202170805200E85FE4 /* DrawArrowBlockRingVC.m */,
+			);
+			path = "箭头块状圆弧";
+			sourceTree = "<group>";
+		};
+		EA516C222170807A00E85FE4 /* 梯形块状圆弧 */ = {
+			isa = PBXGroup;
+			children = (
+				EA516C232170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.h */,
+				EA516C242170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m */,
+			);
+			path = "梯形块状圆弧";
+			sourceTree = "<group>";
+		};
 		EA7142D7214C9353003E76BA /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -655,6 +719,7 @@
 		EA7142E1214CCFA2003E76BA /* AxcDrawPath */ = {
 			isa = PBXGroup;
 			children = (
+				EA516C1A21706D5900E85FE4 /* Tools */,
 				EA50F7F32151E23100A53B71 /* AxcDrawPath.h */,
 				EA50F7F42151E23100A53B71 /* AxcDrawPath.m */,
 			);
@@ -1110,6 +1175,7 @@
 				EA1643CE2150D05600BE510B /* AxcAE_RingImageVC.m in Sources */,
 				EABC24BB21532C7B00AE4D8A /* DrawQuadrilateralVC.m in Sources */,
 				EA1643AC2150A4AA00BE510B /* ContainerSampleVC.m in Sources */,
+				EA516C152170481000E85FE4 /* DrawCircularArcVC.m in Sources */,
 				EAE3A753216EEA0500D93D67 /* AxcAE_ScaleDrawVC.m in Sources */,
 				EABC24BF215338C300AE4D8A /* DrawBlockRingVC.m in Sources */,
 				EAD90492216DC54E00A3B4FE /* AETestViewController3.m in Sources */,
@@ -1123,12 +1189,14 @@
 				EA1643C32150CC3B00BE510B /* AxcAE_RingDrawVC.m in Sources */,
 				EAE4FAA4214BB4C9008146A2 /* AppDelegate.m in Sources */,
 				EA1B9C70215DD351001DF3B1 /* AETestViewController2.m in Sources */,
+				EA516C1D21706D7000E85FE4 /* AxcPolarAxis.m in Sources */,
 				EA164375215095E900BE510B /* AxcAE_ImageBaseObj.m in Sources */,
 				EAE4FAE9214BB864008146A2 /* AxcAE_ParallelogramView.m in Sources */,
 				EABB8FB9214FA0EF009CABC7 /* AxcAE_BaseObject.m in Sources */,
 				EA1643B02150A4D600BE510B /* BaseVC.m in Sources */,
 				EA1643A62150A48300BE510B /* ViewSampleListVC.m in Sources */,
 				EAE4FAE4214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m in Sources */,
+				EA516C252170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m in Sources */,
 				EA31924721521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m in Sources */,
 				EAE4FAD8214BB525008146A2 /* AxcAE_BaseControl.m in Sources */,
 				EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */,
@@ -1148,7 +1216,9 @@
 				EA50F7F52151E23100A53B71 /* AxcDrawPath.m in Sources */,
 				EA1B9C68215DB86C001DF3B1 /* DrawCircularPolygonVC.m in Sources */,
 				EAD108D0215C860000F1C04A /* DrawGridVC.m in Sources */,
+				EA516C192170492700E85FE4 /* DrawScaleVC.m in Sources */,
 				EA1643D22150D48E00BE510B /* AxcAE_ArrowDrawVC.m in Sources */,
+				EA516C212170805200E85FE4 /* DrawArrowBlockRingVC.m in Sources */,
 				EA50F7F92151ED9600A53B71 /* AxcLayerBrush.m in Sources */,
 				EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */,
 				EA1A430E215B5F3A002C1988 /* AxcBF_FaceRecognition.m in Sources */,

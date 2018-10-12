@@ -23,7 +23,12 @@
     [self.dataArray addObject:[ShowModel Title:@"四边形绘制" disTitle:@"贝塞尔四边形绘制" VCName:@"DrawQuadrilateralVC"]];
     [self.dataArray addObject:[ShowModel Title:@"圆周内切多边形绘制" disTitle:@"贝塞尔圆周内切多边形绘制" VCName:@"DrawCircularPolygonVC"]];
     [self.dataArray addObject:[ShowModel Title:@"块状圆弧绘制" disTitle:@"贝塞尔块状圆弧绘制" VCName:@"DrawBlockRingVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"箭头块状圆弧绘制" disTitle:@"贝塞尔块状圆弧绘制" VCName:@"DrawArrowBlockRingVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"梯形块状圆弧绘制" disTitle:@"贝塞尔块状圆弧绘制" VCName:@"DrawTrapezoidalBlockRingVC"]];
+    
+    [self.dataArray addObject:[ShowModel Title:@"多圆弧绘制" disTitle:@"贝塞尔多圆弧绘制" VCName:@"DrawCircularArcVC"]];
     [self.dataArray addObject:[ShowModel Title:@"网格绘制" disTitle:@"贝塞尔网格绘制" VCName:@"DrawGridVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"刻度绘制" disTitle:@"贝塞尔刻度绘制" VCName:@"DrawScaleVC"]];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

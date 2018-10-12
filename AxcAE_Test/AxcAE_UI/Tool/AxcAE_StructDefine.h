@@ -39,3 +39,12 @@ AxcAE_GridMake(NSInteger horizontalCount,NSInteger verticalCount){
     grad.horizontalCount = horizontalCount;grad.verticalCount = verticalCount;
     return grad;
 }
+
+
+/** rectMake */
+CG_INLINE CGRect
+AxcAE_RectMake(CGPoint point,CGSize size){
+    CGRect rect;
+    rect.origin = point; rect.size = size;
+    return rect;
+}

@@ -44,12 +44,32 @@
 - (CAShapeLayer *)layerBrush{
     if (!_layerBrush) {
         // 创建绘制动作路径
-        UIBezierPath *bezierPath = [AxcDrawPath AxcDrawParallelogramCenter:CGPointMake(200, 200)    // 中心
-                                                                pointCount:3                        // 角个数
-                                                                    radius:100                      // 每个顶点距离心的半径
-                                                                startAngle:90                        // 起始绘制角（弧度）
-                                                                 clockwise:NO];                     // 是否顺时针
-        _layerBrush = [AxcLayerBrush AxcLayerDottedLineWidth:3                      // 画笔宽度
+//        UIBezierPath *bezierPath = [AxcDrawPath AxcDrawParallelogramCenter:CGPointMake(200, 200)    // 中心
+//                                                                pointCount:6                        // 角个数
+//                                                                    radius:100                      // 每个顶点距离心的半径
+//                                                                startAngle:60                        // 起始绘制角（弧度）
+//                                                              openingAngle:0                        // 开合角
+//                                                                 clockwise:YES];                     // 是否顺时针
+//        UIBezierPath *bezierPath = [AxcDrawPath AxcDrawArrowBlockArcRingCenter:CGPointMake(200, 200)
+//                                                                 outsideRadius:100
+//                                                                   blockRadius:70
+//                                                                    blockCount:3
+//                                                                  angleSpacing:10
+//                                                                    startAngle:-90
+//                                                                    arrowAngle:10
+//                                                                  openingAngle:0
+//                                                                     clockwise:NO];
+        UIBezierPath *bezierPath = [AxcDrawPath AxcDrawTrapezoidalBlockArcRingCenter:CGPointMake(200, 200)
+                                                                       outsideRadius:100
+                                                                         blockRadius:10
+                                                                          blockCount:3
+                                                                        angleSpacing:60
+                                                                          startAngle:-90
+                                                                        openingAngle:0
+                                                                           clockwise:YES];
+        
+        
+        _layerBrush = [AxcLayerBrush AxcLayerDottedLineWidth:1                      // 画笔宽度
                                                  strokeColor:[UIColor orangeColor]  // 画笔颜色
                                                   bezierPath:bezierPath];
     }

@@ -55,6 +55,7 @@
         _scale.delegate = self;
         _scale.backgroundColor = kVCBackColor;
         
+        _scale.spacing = 10;
         _scale.lineWidth = 1;   // 刻度线宽
         _scale.count = 20;      // 一共几个大刻度
         _scale.maxValue = 1000; // 最大值
@@ -62,7 +63,7 @@
         //        _scale.fontSize = 10;         // 文字字号
         
         _scale.isScrollAlign = YES;   // 开启自动对齐
-        _scale.isGradient = NO;                 // 关闭渐变效果
+        _scale.isGradient = NO;       // 关闭渐变效果
         [self.view addSubview:_scale];
     }
     return _scale;
