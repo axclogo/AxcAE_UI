@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A8084A1F236645FB447FE2A3 /* libPods-AxcAE_Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AE4BD8D8EFCA3804B67854 /* libPods-AxcAE_Test.a */; };
+		EA1289C82171B28500FC654B /* AETestViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1289C72171B28500FC654B /* AETestViewController4.m */; };
 		EA164375215095E900BE510B /* AxcAE_ImageBaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = EA164374215095E900BE510B /* AxcAE_ImageBaseObj.m */; };
 		EA164378215095F000BE510B /* AxcAE_DrawBaseObj.m in Sources */ = {isa = PBXBuildFile; fileRef = EA164377215095F000BE510B /* AxcAE_DrawBaseObj.m */; };
 		EA1643822150980000BE510B /* AxcAE_BaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1643812150980000BE510B /* AxcAE_BaseModule.m */; };
@@ -48,6 +49,8 @@
 		EA516C1D21706D7000E85FE4 /* AxcPolarAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C1C21706D7000E85FE4 /* AxcPolarAxis.m */; };
 		EA516C212170805200E85FE4 /* DrawArrowBlockRingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C202170805200E85FE4 /* DrawArrowBlockRingVC.m */; };
 		EA516C252170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C242170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m */; };
+		EA516C292170912100E85FE4 /* AxcCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C282170912100E85FE4 /* AxcCameraView.m */; };
+		EA516C2C2170A43A00E85FE4 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA516C2A2170A43A00E85FE4 /* UIImage+fixOrientation.m */; };
 		EA7142ED214CF89C003E76BA /* AxcAE_RingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7142EC214CF89C003E76BA /* AxcAE_RingImageView.m */; };
 		EABB8FB1214F8F21009CABC7 /* AxcAE_ArrowDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FB0214F8F21009CABC7 /* AxcAE_ArrowDrawView.m */; };
 		EABB8FB9214FA0EF009CABC7 /* AxcAE_BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB8FB8214FA0EF009CABC7 /* AxcAE_BaseObject.m */; };
@@ -55,6 +58,11 @@
 		EABC24BF215338C300AE4D8A /* DrawBlockRingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24BE215338C300AE4D8A /* DrawBlockRingVC.m */; };
 		EABC24C321537A4700AE4D8A /* ttt.png in Resources */ = {isa = PBXBuildFile; fileRef = EABC24C221537A4600AE4D8A /* ttt.png */; };
 		EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */; };
+		EAC1ACD421743BC0007E4499 /* AETestViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ACD321743BC0007E4499 /* AETestViewController5.m */; };
+		EAC1ACDD21747329007E4499 /* Blue.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAC1ACDC21747328007E4499 /* Blue.wav */; };
+		EAC1ACE121748116007E4499 /* DrawRadialCircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ACE021748116007E4499 /* DrawRadialCircleVC.m */; };
+		EAC1ACE5217482FC007E4499 /* DrawToHeartArrowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ACE4217482FC007E4499 /* DrawToHeartArrowVC.m */; };
+		EAC1ACE8217485E8007E4499 /* AETestViewController6.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ACE7217485E8007E4499 /* AETestViewController6.m */; };
 		EAD108D0215C860000F1C04A /* DrawGridVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD108CF215C860000F1C04A /* DrawGridVC.m */; };
 		EAD9048E216DBC8D00A3B4FE /* AxcAE_Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD9048D216DBC8D00A3B4FE /* AxcAE_Scale.m */; };
 		EAD90492216DC54E00A3B4FE /* AETestViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD90491216DC54E00A3B4FE /* AETestViewController3.m */; };
@@ -95,6 +103,8 @@
 		3EAFAEF7E149894555DC05F1 /* Pods-AxcAE_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxcAE_Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-AxcAE_Test/Pods-AxcAE_Test.release.xcconfig"; sourceTree = "<group>"; };
 		63AE4BD8D8EFCA3804B67854 /* libPods-AxcAE_Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AxcAE_Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE94864D95CF4100B2FA2FA /* Pods-AxcAE_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxcAE_Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AxcAE_Test/Pods-AxcAE_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		EA1289C62171B28500FC654B /* AETestViewController4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestViewController4.h; sourceTree = "<group>"; };
+		EA1289C72171B28500FC654B /* AETestViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestViewController4.m; sourceTree = "<group>"; };
 		EA164373215095E900BE510B /* AxcAE_ImageBaseObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ImageBaseObj.h; sourceTree = "<group>"; };
 		EA164374215095E900BE510B /* AxcAE_ImageBaseObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ImageBaseObj.m; sourceTree = "<group>"; };
 		EA164376215095F000BE510B /* AxcAE_DrawBaseObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_DrawBaseObj.h; sourceTree = "<group>"; };
@@ -175,6 +185,10 @@
 		EA516C202170805200E85FE4 /* DrawArrowBlockRingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawArrowBlockRingVC.m; sourceTree = "<group>"; };
 		EA516C232170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawTrapezoidalBlockRingVC.h; sourceTree = "<group>"; };
 		EA516C242170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawTrapezoidalBlockRingVC.m; sourceTree = "<group>"; };
+		EA516C272170912100E85FE4 /* AxcCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcCameraView.h; sourceTree = "<group>"; };
+		EA516C282170912100E85FE4 /* AxcCameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcCameraView.m; sourceTree = "<group>"; };
+		EA516C2A2170A43A00E85FE4 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		EA516C2B2170A43A00E85FE4 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
 		EA7142EB214CF89C003E76BA /* AxcAE_RingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_RingImageView.h; sourceTree = "<group>"; };
 		EA7142EC214CF89C003E76BA /* AxcAE_RingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_RingImageView.m; sourceTree = "<group>"; };
 		EABB8FAF214F8F21009CABC7 /* AxcAE_ArrowDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_ArrowDrawView.h; sourceTree = "<group>"; };
@@ -188,6 +202,15 @@
 		EABC24C221537A4600AE4D8A /* ttt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttt.png; sourceTree = "<group>"; };
 		EABC24C52153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AxcAE_ViewControllerExtension.h"; sourceTree = "<group>"; };
 		EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AxcAE_ViewControllerExtension.m"; sourceTree = "<group>"; };
+		EAC1ACD221743BC0007E4499 /* AETestViewController5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestViewController5.h; sourceTree = "<group>"; };
+		EAC1ACD321743BC0007E4499 /* AETestViewController5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestViewController5.m; sourceTree = "<group>"; };
+		EAC1ACDC21747328007E4499 /* Blue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Blue.wav; sourceTree = "<group>"; };
+		EAC1ACDF21748116007E4499 /* DrawRadialCircleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawRadialCircleVC.h; sourceTree = "<group>"; };
+		EAC1ACE021748116007E4499 /* DrawRadialCircleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawRadialCircleVC.m; sourceTree = "<group>"; };
+		EAC1ACE3217482FC007E4499 /* DrawToHeartArrowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawToHeartArrowVC.h; sourceTree = "<group>"; };
+		EAC1ACE4217482FC007E4499 /* DrawToHeartArrowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawToHeartArrowVC.m; sourceTree = "<group>"; };
+		EAC1ACE6217485E8007E4499 /* AETestViewController6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestViewController6.h; sourceTree = "<group>"; };
+		EAC1ACE7217485E8007E4499 /* AETestViewController6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestViewController6.m; sourceTree = "<group>"; };
 		EAD108CE215C860000F1C04A /* DrawGridVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawGridVC.h; sourceTree = "<group>"; };
 		EAD108CF215C860000F1C04A /* DrawGridVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawGridVC.m; sourceTree = "<group>"; };
 		EAD9048C216DBC8D00A3B4FE /* AxcAE_Scale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_Scale.h; sourceTree = "<group>"; };
@@ -362,6 +385,7 @@
 		EA16439021509C8000BE510B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				EAC1ACDC21747328007E4499 /* Blue.wav */,
 				EA16439121509C9E00BE510B /* PrefixHeader.pch */,
 				EAE4FAA8214BB4CA008146A2 /* Main.storyboard */,
 				EAE4FAAB214BB4CB008146A2 /* Assets.xcassets */,
@@ -567,6 +591,12 @@
 				EA1B9C6F215DD351001DF3B1 /* AETestViewController2.m */,
 				EAD90490216DC54E00A3B4FE /* AETestViewController3.h */,
 				EAD90491216DC54E00A3B4FE /* AETestViewController3.m */,
+				EA1289C62171B28500FC654B /* AETestViewController4.h */,
+				EA1289C72171B28500FC654B /* AETestViewController4.m */,
+				EAC1ACD221743BC0007E4499 /* AETestViewController5.h */,
+				EAC1ACD321743BC0007E4499 /* AETestViewController5.m */,
+				EAC1ACE6217485E8007E4499 /* AETestViewController6.h */,
+				EAC1ACE7217485E8007E4499 /* AETestViewController6.m */,
 				EA1B9C71215DD3AF001DF3B1 /* View */,
 			);
 			path = Test;
@@ -575,6 +605,7 @@
 		EA1B9C71215DD3AF001DF3B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EA516C26217090FA00E85FE4 /* AxcCameraView */,
 				EA1B9C75215DD46C001DF3B1 /* HexagonCell.h */,
 				EA1B9C76215DD46C001DF3B1 /* HexagonCell.m */,
 				EA1B9C77215DD46C001DF3B1 /* HexagonCell.xib */,
@@ -613,6 +644,8 @@
 		EA3192522152474D00C315F2 /* SubVC */ = {
 			isa = PBXGroup;
 			children = (
+				EAC1ACE2217482BE007E4499 /* 向心箭头圆 */,
+				EAC1ACDE217480F4007E4499 /* 放射状圆形 */,
 				EA516C222170807A00E85FE4 /* 梯形块状圆弧 */,
 				EA516C1E2170803300E85FE4 /* 箭头块状圆弧 */,
 				EA516C162170490000E85FE4 /* 刻度绘制 */,
@@ -696,6 +729,17 @@
 				EA516C242170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m */,
 			);
 			path = "梯形块状圆弧";
+			sourceTree = "<group>";
+		};
+		EA516C26217090FA00E85FE4 /* AxcCameraView */ = {
+			isa = PBXGroup;
+			children = (
+				EA516C2B2170A43A00E85FE4 /* UIImage+fixOrientation.h */,
+				EA516C2A2170A43A00E85FE4 /* UIImage+fixOrientation.m */,
+				EA516C272170912100E85FE4 /* AxcCameraView.h */,
+				EA516C282170912100E85FE4 /* AxcCameraView.m */,
+			);
+			path = AxcCameraView;
 			sourceTree = "<group>";
 		};
 		EA7142D7214C9353003E76BA /* Component */ = {
@@ -796,6 +840,24 @@
 				EABC24C62153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m */,
 			);
 			path = AxcAE_ViewControllerExtension;
+			sourceTree = "<group>";
+		};
+		EAC1ACDE217480F4007E4499 /* 放射状圆形 */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1ACDF21748116007E4499 /* DrawRadialCircleVC.h */,
+				EAC1ACE021748116007E4499 /* DrawRadialCircleVC.m */,
+			);
+			path = "放射状圆形";
+			sourceTree = "<group>";
+		};
+		EAC1ACE2217482BE007E4499 /* 向心箭头圆 */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1ACE3217482FC007E4499 /* DrawToHeartArrowVC.h */,
+				EAC1ACE4217482FC007E4499 /* DrawToHeartArrowVC.m */,
+			);
+			path = "向心箭头圆";
 			sourceTree = "<group>";
 		};
 		EAD108CD215C85F100F1C04A /* 网格绘制 */ = {
@@ -1099,6 +1161,7 @@
 				EABC24C321537A4700AE4D8A /* ttt.png in Resources */,
 				EAE4FAAF214BB4CB008146A2 /* LaunchScreen.storyboard in Resources */,
 				EAE4FAAC214BB4CB008146A2 /* Assets.xcassets in Resources */,
+				EAC1ACDD21747329007E4499 /* Blue.wav in Resources */,
 				EA1643BF2150A78E00BE510B /* ShowCell.xib in Resources */,
 				EA1B9C79215DD46C001DF3B1 /* HexagonCell.xib in Resources */,
 				EAE4FAAA214BB4CA008146A2 /* Main.storyboard in Resources */,
@@ -1179,15 +1242,18 @@
 				EAE3A753216EEA0500D93D67 /* AxcAE_ScaleDrawVC.m in Sources */,
 				EABC24BF215338C300AE4D8A /* DrawBlockRingVC.m in Sources */,
 				EAD90492216DC54E00A3B4FE /* AETestViewController3.m in Sources */,
+				EA516C2C2170A43A00E85FE4 /* UIImage+fixOrientation.m in Sources */,
 				EA1643B92150A69F00BE510B /* ShowModel.m in Sources */,
 				EAE4FADD214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m in Sources */,
 				EA1643862150989900BE510B /* AxcAE_BaseDrawModule.m in Sources */,
 				EA50F7FC2151F04100A53B71 /* AETestViewController.m in Sources */,
 				EA1643D62150D6CD00BE510B /* AxcCAAnimation.m in Sources */,
 				EA16438F21509BE200BE510B /* AxcTabBarController.m in Sources */,
+				EA516C292170912100E85FE4 /* AxcCameraView.m in Sources */,
 				EA1643BE2150A78E00BE510B /* ShowCell.m in Sources */,
 				EA1643C32150CC3B00BE510B /* AxcAE_RingDrawVC.m in Sources */,
 				EAE4FAA4214BB4C9008146A2 /* AppDelegate.m in Sources */,
+				EAC1ACD421743BC0007E4499 /* AETestViewController5.m in Sources */,
 				EA1B9C70215DD351001DF3B1 /* AETestViewController2.m in Sources */,
 				EA516C1D21706D7000E85FE4 /* AxcPolarAxis.m in Sources */,
 				EA164375215095E900BE510B /* AxcAE_ImageBaseObj.m in Sources */,
@@ -1198,6 +1264,7 @@
 				EAE4FAE4214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m in Sources */,
 				EA516C252170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m in Sources */,
 				EA31924721521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m in Sources */,
+				EA1289C82171B28500FC654B /* AETestViewController4.m in Sources */,
 				EAE4FAD8214BB525008146A2 /* AxcAE_BaseControl.m in Sources */,
 				EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */,
 				EABB8FB1214F8F21009CABC7 /* AxcAE_ArrowDrawView.m in Sources */,
@@ -1208,11 +1275,13 @@
 				EAD9048E216DBC8D00A3B4FE /* AxcAE_Scale.m in Sources */,
 				EADD07A52154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m in Sources */,
 				EA31924B21521D9500C315F2 /* NSObject+AxcAE_ObjAttribute.m in Sources */,
+				EAC1ACE5217482FC007E4499 /* DrawToHeartArrowVC.m in Sources */,
 				EA1643822150980000BE510B /* AxcAE_BaseModule.m in Sources */,
 				EA3192562152477C00C315F2 /* DrawLineVC.m in Sources */,
 				EADD07A92154C07D00A87AC6 /* AxcAE_ProgressDrawView.m in Sources */,
 				EA1643992150A3D900BE510B /* SampleTemplateVC.m in Sources */,
 				EA16438A215098AB00BE510B /* AxcAE_BaseImageModule.m in Sources */,
+				EAC1ACE8217485E8007E4499 /* AETestViewController6.m in Sources */,
 				EA50F7F52151E23100A53B71 /* AxcDrawPath.m in Sources */,
 				EA1B9C68215DB86C001DF3B1 /* DrawCircularPolygonVC.m in Sources */,
 				EAD108D0215C860000F1C04A /* DrawGridVC.m in Sources */,
@@ -1220,6 +1289,7 @@
 				EA1643D22150D48E00BE510B /* AxcAE_ArrowDrawVC.m in Sources */,
 				EA516C212170805200E85FE4 /* DrawArrowBlockRingVC.m in Sources */,
 				EA50F7F92151ED9600A53B71 /* AxcLayerBrush.m in Sources */,
+				EAC1ACE121748116007E4499 /* DrawRadialCircleVC.m in Sources */,
 				EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */,
 				EA1A430E215B5F3A002C1988 /* AxcBF_FaceRecognition.m in Sources */,
 			);
@@ -1396,7 +1466,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/Axc/Desktop/AxcAE_Test/AxcAE_Test/PrefixHeader.pch;
 				INFOPLIST_FILE = AxcAE_Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1417,7 +1487,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/Axc/Desktop/AxcAE_Test/AxcAE_Test/PrefixHeader.pch;
 				INFOPLIST_FILE = AxcAE_Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

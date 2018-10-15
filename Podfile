@@ -16,6 +16,7 @@ target “AxcAE_Test” do
    pod 'WHC_Model'
    pod 'AxcAE_TabBar'
 
-
-
+   pod 'ZLHistogramAudioPlot'
+   pod 'EZAudio'
+   
 end

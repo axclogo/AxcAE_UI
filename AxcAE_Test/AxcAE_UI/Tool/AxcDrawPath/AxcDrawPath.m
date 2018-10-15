@@ -461,6 +461,140 @@
     }
     return [self AxcDrawLineArray:points clockwise:clockwise];
 }
+#pragma mark 绘制指向箭头圆形
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount{
+    return [self AxcDrawPointArrowCenter:center
+                                  radius:radius
+                             arrowRadius:arrowRadius
+                             arrowRadian:arrowRadian
+                              arrowCount:arrowCount
+                              startAngle:DefaultStartAngle];
+}
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount
+                               startAngle:(CGFloat )startAngle{
+    return [self AxcDrawPointArrowCenter:center
+                                  radius:radius
+                             arrowRadius:arrowRadius
+                             arrowRadian:arrowRadian
+                              arrowCount:arrowCount
+                              startAngle:startAngle
+                            openingAngle:0];
+}
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount
+                               startAngle:(CGFloat )startAngle
+                             openingAngle:(CGFloat )openingAngle{
+    return [self AxcDrawPointArrowCenter:center
+                                  radius:radius
+                             arrowRadius:arrowRadius
+                             arrowRadian:arrowRadian
+                              arrowCount:arrowCount
+                              startAngle:startAngle
+                            openingAngle:openingAngle
+                               clockwise:YES];
+}
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount
+                               startAngle:(CGFloat )startAngle
+                             openingAngle:(CGFloat )openingAngle
+                                clockwise:(BOOL )clockwise{
+    CGFloat spacingAngle = (360.f - openingAngle)/arrowCount;
+    NSMutableArray *points = @[].mutableCopy;
+    for (int i = 0; i < arrowCount; i ++) {
+        [points addObject:[NSValue valueWithCGPoint:[AxcPolarAxis AxcPolarAxisCenter:center
+                                                                            distance:radius
+                                                                              radian:startAngle]]];
+        [points addObject:[NSValue valueWithCGPoint:[AxcPolarAxis AxcPolarAxisCenter:center
+                                                                            distance:radius - arrowRadius
+                                                                              radian:startAngle+arrowRadian/2]]] ;
+        [points addObject:[NSValue valueWithCGPoint:[AxcPolarAxis AxcPolarAxisCenter:center
+                                                                            distance:radius
+                                                                              radian:startAngle + arrowRadian]]] ;
+        [points addObject:[NSNull null]];
+        startAngle += spacingAngle;
+    }
+    return [self AxcDrawLineArray:points clockwise:clockwise];
+}
+#pragma mark 绘制圆形辐射线
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights{
+    return [self AxcDrawCircularRadiationCenter:center
+                                         radius:radius
+                                    lineHeights:lineHeights
+                                        outside:YES];
+}
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights
+                                         outside:(BOOL )outside{
+    return [self AxcDrawCircularRadiationCenter:center
+                                         radius:radius
+                                    lineHeights:lineHeights
+                                        outside:outside
+                                     startAngle:DefaultStartAngle];
+}
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights
+                                         outside:(BOOL )outside
+                                      startAngle:(CGFloat )startAngle{
+    return [self AxcDrawCircularRadiationCenter:center
+                                         radius:radius
+                                    lineHeights:lineHeights
+                                        outside:outside
+                                     startAngle:startAngle
+                                   openingAngle:0];
+}
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights
+                                         outside:(BOOL )outside
+                                      startAngle:(CGFloat )startAngle
+                                    openingAngle:(CGFloat )openingAngle{
+    return [self AxcDrawCircularRadiationCenter:center
+                                         radius:radius
+                                    lineHeights:lineHeights
+                                        outside:outside
+                                     startAngle:startAngle
+                                   openingAngle:openingAngle
+                                      clockwise:YES];
+}
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights
+                                         outside:(BOOL )outside
+                                      startAngle:(CGFloat )startAngle
+                                    openingAngle:(CGFloat )openingAngle
+                                       clockwise:(BOOL )clockwise{
+    NSMutableArray *points = @[].mutableCopy;
+    CGFloat angle = (360.f - openingAngle) / lineHeights.count;
+    [lineHeights enumerateObjectsUsingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CGFloat radian = clockwise ? startAngle + idx * angle : startAngle - idx * angle;
+        [points addObject:[NSValue valueWithCGPoint:[AxcPolarAxis AxcPolarAxisCenter:center
+                                                                            distance:radius
+                                                                              radian:radian]]];
+        [points addObject:[NSValue valueWithCGPoint:[AxcPolarAxis AxcPolarAxisCenter:center
+                                                                            distance:outside ? radius + obj.floatValue : radius - obj.floatValue
+                                                                              radian:radian]]];
+        [points addObject:[NSNull null]];
+    }];
+    return [AxcDrawPath AxcDrawLineArray:points clockwise:clockwise];
+}
 #pragma mark - 网格相关
 #pragma mark 绘制矩形网格
 + (UIBezierPath *)AxcDrawRectangularGridRect:(CGRect )rect

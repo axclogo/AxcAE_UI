@@ -443,6 +443,147 @@
                                             startAngle:(CGFloat )startAngle
                                           openingAngle:(CGFloat )openingAngle
                                              clockwise:(BOOL )clockwise;
+#pragma mark 绘制指向箭头圆形
+/**
+ 绘制指向箭头圆形
+ @param center 圆心
+ @param radius 半径
+ @param arrowRadius 箭头半径
+ @param arrowRadian 箭头角度
+ @param arrowCount 块个数
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount;
+/**
+ 绘制指向箭头圆形
+ @param center 圆心
+ @param radius 半径
+ @param arrowRadius 箭头半径
+ @param arrowRadian 箭头角度
+ @param arrowCount 块个数
+ @param startAngle 起始角
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount
+                               startAngle:(CGFloat )startAngle;
+/**
+ 绘制指向箭头圆形
+ @param center 圆心
+ @param radius 半径
+ @param arrowRadius 箭头半径
+ @param arrowRadian 箭头角度
+ @param arrowCount 块个数
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount
+                               startAngle:(CGFloat )startAngle
+                             openingAngle:(CGFloat )openingAngle;
+/**
+ 绘制指向箭头圆形
+ @param center 圆心
+ @param radius 半径
+ @param arrowRadius 箭头半径
+ @param arrowRadian 箭头角度
+ @param arrowCount 块个数
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @param clockwise 顺时针？
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount
+                               startAngle:(CGFloat )startAngle
+                             openingAngle:(CGFloat )openingAngle
+                                clockwise:(BOOL )clockwise;
+#pragma mark 绘制圆形辐射线
+/**
+ 绘制圆形辐射线 - 1
+ @param center 圆心
+ @param radius 半径
+ @param lineHeights 线高组
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights;
+/**
+ 绘制圆形辐射线 - 2
+ @param center 圆心
+ @param radius 半径
+ @param lineHeights 线高组
+ @param outside 向外辐射？
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights
+                                         outside:(BOOL )outside;
+/**
+ 绘制圆形辐射线 - 3
+ @param center 圆心
+ @param radius 半径
+ @param lineHeights 线高组
+ @param outside 向外辐射？
+ @param startAngle 起始角
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights
+                                         outside:(BOOL )outside
+                                      startAngle:(CGFloat )startAngle;
+/**
+ 绘制圆形辐射线 - 4
+ @param center 圆心
+ @param radius 半径
+ @param lineHeights 线高组
+ @param outside 向外辐射？
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights
+                                         outside:(BOOL )outside
+                                      startAngle:(CGFloat )startAngle
+                                    openingAngle:(CGFloat )openingAngle;
+/**
+ 绘制圆形辐射线 - 5
+ @param center 圆心
+ @param radius 半径
+ @param lineHeights 线高组
+ @param outside 向外辐射？
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @param clockwise 顺时针？
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawCircularRadiationCenter:(CGPoint )center
+                                          radius:(CGFloat )radius
+                                     lineHeights:(NSArray <NSNumber *>*)lineHeights
+                                         outside:(BOOL )outside
+                                      startAngle:(CGFloat )startAngle
+                                    openingAngle:(CGFloat )openingAngle
+                                       clockwise:(BOOL )clockwise;
+
 #pragma mark - 网格相关
 #pragma mark 绘制矩形网络
 /**

@@ -15,6 +15,12 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - AxcAE_TabBar (1.0.5)
+  - EZAudio (1.1.5):
+    - EZAudio/Full (= 1.1.5)
+  - EZAudio/Core (1.1.5)
+  - EZAudio/Full (1.1.5):
+    - EZAudio/Core
+    - TPCircularBuffer (= 1.1)
   - IQKeyboardManager (6.1.1)
   - JWNetAutoCache (0.0.2)
   - Masonry (1.1.0)
@@ -23,11 +29,15 @@ PODS:
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
   - SVProgressHUD (2.1.2)
+  - TPCircularBuffer (1.1)
   - WHC_Model (1.7.0.1)
+  - ZLHistogramAudioPlot (0.0.1):
+    - EZAudio
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - AxcAE_TabBar
+  - EZAudio
   - IQKeyboardManager
   - JWNetAutoCache
   - Masonry
@@ -35,30 +45,37 @@ DEPENDENCIES:
   - SDWebImage (~> 4.4.2)
   - SVProgressHUD (~> 2.1.2)
   - WHC_Model
+  - ZLHistogramAudioPlot
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - AxcAE_TabBar
+    - EZAudio
     - IQKeyboardManager
     - JWNetAutoCache
     - Masonry
     - MBProgressHUD
     - SDWebImage
     - SVProgressHUD
+    - TPCircularBuffer
     - WHC_Model
+    - ZLHistogramAudioPlot
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   AxcAE_TabBar: 1d5bcf6c4921889dc38839b6ba2c584a9b55251a
+  EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   JWNetAutoCache: 434f10855da06d29a381359552ae9d27ef35cad7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
   WHC_Model: 8268100386a9d450fa7ff72e9671910da8334e3f
+  ZLHistogramAudioPlot: aed6ae919a9b99132a7a27f8391932074597875e
 
-PODFILE CHECKSUM: d51f58ab5fc8d8dcca2004b4512b7f0ac5a54d0d
+PODFILE CHECKSUM: c8efb26fba7cb1303d14dd72a5efb5caf9aa49b7
 
 COCOAPODS: 1.5.3

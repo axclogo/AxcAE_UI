@@ -21,10 +21,13 @@
 -(void)settingData{
     [self.dataArray addObject:[ShowModel Title:@"线段绘制" disTitle:@"贝塞尔曲线折线/线段绘制" VCName:@"DrawLineVC"]];
     [self.dataArray addObject:[ShowModel Title:@"四边形绘制" disTitle:@"贝塞尔四边形绘制" VCName:@"DrawQuadrilateralVC"]];
+    
     [self.dataArray addObject:[ShowModel Title:@"圆周内切多边形绘制" disTitle:@"贝塞尔圆周内切多边形绘制" VCName:@"DrawCircularPolygonVC"]];
     [self.dataArray addObject:[ShowModel Title:@"块状圆弧绘制" disTitle:@"贝塞尔块状圆弧绘制" VCName:@"DrawBlockRingVC"]];
     [self.dataArray addObject:[ShowModel Title:@"箭头块状圆弧绘制" disTitle:@"贝塞尔块状圆弧绘制" VCName:@"DrawArrowBlockRingVC"]];
     [self.dataArray addObject:[ShowModel Title:@"梯形块状圆弧绘制" disTitle:@"贝塞尔块状圆弧绘制" VCName:@"DrawTrapezoidalBlockRingVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"放射状圆形绘制" disTitle:@"贝塞尔放射状圆形绘制" VCName:@"DrawRadialCircleVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"向心箭头圆绘制" disTitle:@"贝塞尔向心箭头圆绘制" VCName:@"DrawToHeartArrowVC"]];
     
     [self.dataArray addObject:[ShowModel Title:@"多圆弧绘制" disTitle:@"贝塞尔多圆弧绘制" VCName:@"DrawCircularArcVC"]];
     [self.dataArray addObject:[ShowModel Title:@"网格绘制" disTitle:@"贝塞尔网格绘制" VCName:@"DrawGridVC"]];
