@@ -512,6 +512,30 @@
                                startAngle:(CGFloat )startAngle
                              openingAngle:(CGFloat )openingAngle
                                 clockwise:(BOOL )clockwise;
+/**
+ 绘制指向箭头圆形
+ @param center 圆心
+ @param radius 半径
+ @param arrowRadius 箭头半径
+ @param arrowRadian 箭头角度
+ @param arrowCount 块个数
+ @param connections 是否连接
+ @param arcConnections 使用圆弧形连接
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @param clockwise 顺时针？
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount
+                              connections:(BOOL )connections
+                           arcConnections:(BOOL )arcConnections
+                               startAngle:(CGFloat )startAngle
+                             openingAngle:(CGFloat )openingAngle
+                                clockwise:(BOOL )clockwise;
 #pragma mark 绘制圆形辐射线
 /**
  绘制圆形辐射线 - 1

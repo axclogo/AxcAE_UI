@@ -63,6 +63,7 @@
 		EAC1ACE121748116007E4499 /* DrawRadialCircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ACE021748116007E4499 /* DrawRadialCircleVC.m */; };
 		EAC1ACE5217482FC007E4499 /* DrawToHeartArrowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ACE4217482FC007E4499 /* DrawToHeartArrowVC.m */; };
 		EAC1ACE8217485E8007E4499 /* AETestViewController6.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ACE7217485E8007E4499 /* AETestViewController6.m */; };
+		EAC1ACEC21748652007E4499 /* GredientLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ACEB21748652007E4499 /* GredientLayerView.m */; };
 		EAD108D0215C860000F1C04A /* DrawGridVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD108CF215C860000F1C04A /* DrawGridVC.m */; };
 		EAD9048E216DBC8D00A3B4FE /* AxcAE_Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD9048D216DBC8D00A3B4FE /* AxcAE_Scale.m */; };
 		EAD90492216DC54E00A3B4FE /* AETestViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD90491216DC54E00A3B4FE /* AETestViewController3.m */; };
@@ -78,8 +79,6 @@
 		EAE4FAC7214BB4CB008146A2 /* AxcAE_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAC6214BB4CB008146A2 /* AxcAE_TestUITests.m */; };
 		EAE4FAD8214BB525008146A2 /* AxcAE_BaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAD7214BB525008146A2 /* AxcAE_BaseControl.m */; };
 		EAE4FADD214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FADB214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m */; };
-		EAE4FAE4214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAE3214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m */; };
-		EAE4FAE9214BB864008146A2 /* AxcAE_ParallelogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAE7214BB864008146A2 /* AxcAE_ParallelogramView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +210,8 @@
 		EAC1ACE4217482FC007E4499 /* DrawToHeartArrowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawToHeartArrowVC.m; sourceTree = "<group>"; };
 		EAC1ACE6217485E8007E4499 /* AETestViewController6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestViewController6.h; sourceTree = "<group>"; };
 		EAC1ACE7217485E8007E4499 /* AETestViewController6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestViewController6.m; sourceTree = "<group>"; };
+		EAC1ACEA21748652007E4499 /* GredientLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GredientLayerView.h; sourceTree = "<group>"; };
+		EAC1ACEB21748652007E4499 /* GredientLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GredientLayerView.m; sourceTree = "<group>"; };
 		EAD108CE215C860000F1C04A /* DrawGridVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawGridVC.h; sourceTree = "<group>"; };
 		EAD108CF215C860000F1C04A /* DrawGridVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawGridVC.m; sourceTree = "<group>"; };
 		EAD9048C216DBC8D00A3B4FE /* AxcAE_Scale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_Scale.h; sourceTree = "<group>"; };
@@ -242,10 +243,6 @@
 		EAE4FAD9214BB5F8008146A2 /* AxcAE_UIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcAE_UIDefine.h; sourceTree = "<group>"; };
 		EAE4FADB214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AxcAE_ViewFrame.m"; sourceTree = "<group>"; };
 		EAE4FADC214BB61C008146A2 /* UIView+AxcAE_ViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AxcAE_ViewFrame.h"; sourceTree = "<group>"; };
-		EAE4FAE2214BB7BD008146A2 /* AxcAE_FirstDisplayBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_FirstDisplayBox.h; sourceTree = "<group>"; };
-		EAE4FAE3214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcAE_FirstDisplayBox.m; sourceTree = "<group>"; };
-		EAE4FAE7214BB864008146A2 /* AxcAE_ParallelogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcAE_ParallelogramView.m; sourceTree = "<group>"; };
-		EAE4FAE8214BB864008146A2 /* AxcAE_ParallelogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcAE_ParallelogramView.h; sourceTree = "<group>"; };
 		EAE4FAEA214BBA44008146A2 /* AxcAE_HeaderDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_HeaderDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -315,6 +312,7 @@
 		EA1643792150972400BE510B /* DrawModule */ = {
 			isa = PBXGroup;
 			children = (
+				EAC1ACEE21749DBA007E4499 /* AxcAE_ScopeDrawView */,
 				EADD07A62154C05500A87AC6 /* AxcAE_ProgressDrawView */,
 				EABB8FAE214F8871009CABC7 /* AxcAE_ArrowDrawView */,
 				EA1643C52150CE5600BE510B /* AxcAE_RingDrawView */,
@@ -485,7 +483,8 @@
 		EA1643C02150CC1600BE510B /* SubVC */ = {
 			isa = PBXGroup;
 			children = (
-				EAE3A750216EE9E200D93D67 /* 刻度 */,
+				EAC1ACED21749D17007E4499 /* 瞄具 */,
+				EAE3A750216EE9E200D93D67 /* 量具 */,
 				EADD07A22154BFE100A87AC6 /* 进度 */,
 				EA1643CF2150D46900BE510B /* 箭头 */,
 				EA1643C92150CFF700BE510B /* 圆环 */,
@@ -605,6 +604,7 @@
 		EA1B9C71215DD3AF001DF3B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EAC1ACE921748648007E4499 /* AxcGredientLayerView */,
 				EA516C26217090FA00E85FE4 /* AxcCameraView */,
 				EA1B9C75215DD46C001DF3B1 /* HexagonCell.h */,
 				EA1B9C76215DD46C001DF3B1 /* HexagonCell.m */,
@@ -860,6 +860,29 @@
 			path = "向心箭头圆";
 			sourceTree = "<group>";
 		};
+		EAC1ACE921748648007E4499 /* AxcGredientLayerView */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1ACEA21748652007E4499 /* GredientLayerView.h */,
+				EAC1ACEB21748652007E4499 /* GredientLayerView.m */,
+			);
+			path = AxcGredientLayerView;
+			sourceTree = "<group>";
+		};
+		EAC1ACED21749D17007E4499 /* 瞄具 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "瞄具";
+			sourceTree = "<group>";
+		};
+		EAC1ACEE21749DBA007E4499 /* AxcAE_ScopeDrawView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AxcAE_ScopeDrawView;
+			sourceTree = "<group>";
+		};
 		EAD108CD215C85F100F1C04A /* 网格绘制 */ = {
 			isa = PBXGroup;
 			children = (
@@ -896,13 +919,13 @@
 			path = AxcAE_ProgressDrawView;
 			sourceTree = "<group>";
 		};
-		EAE3A750216EE9E200D93D67 /* 刻度 */ = {
+		EAE3A750216EE9E200D93D67 /* 量具 */ = {
 			isa = PBXGroup;
 			children = (
 				EAE3A751216EEA0500D93D67 /* AxcAE_ScaleDrawVC.h */,
 				EAE3A752216EEA0500D93D67 /* AxcAE_ScaleDrawVC.m */,
 			);
-			path = "刻度";
+			path = "量具";
 			sourceTree = "<group>";
 		};
 		EAE4FA96214BB4C9008146A2 = {
@@ -1018,39 +1041,19 @@
 		EAE4FAE0214BB6FF008146A2 /* DisplayBox-展示框 */ = {
 			isa = PBXGroup;
 			children = (
-				EAE4FAE1214BB710008146A2 /* AxcAE_FirstDisplayBox */,
 			);
 			path = "DisplayBox-展示框";
-			sourceTree = "<group>";
-		};
-		EAE4FAE1214BB710008146A2 /* AxcAE_FirstDisplayBox */ = {
-			isa = PBXGroup;
-			children = (
-				EAE4FAE2214BB7BD008146A2 /* AxcAE_FirstDisplayBox.h */,
-				EAE4FAE3214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m */,
-			);
-			path = AxcAE_FirstDisplayBox;
 			sourceTree = "<group>";
 		};
 		EAE4FAE5214BB851008146A2 /* Module-模块 */ = {
 			isa = PBXGroup;
 			children = (
 				EA50F7EF2151E1E100A53B71 /* AxcAE_DrawBoard */,
-				EAE4FAE6214BB864008146A2 /* AxcAE_ParallelogramView */,
 				EA16437A2150973200BE510B /* ImageModule */,
 				EA1643792150972400BE510B /* DrawModule */,
 				EA16437F215097E300BE510B /* BaseModule */,
 			);
 			path = "Module-模块";
-			sourceTree = "<group>";
-		};
-		EAE4FAE6214BB864008146A2 /* AxcAE_ParallelogramView */ = {
-			isa = PBXGroup;
-			children = (
-				EAE4FAE8214BB864008146A2 /* AxcAE_ParallelogramView.h */,
-				EAE4FAE7214BB864008146A2 /* AxcAE_ParallelogramView.m */,
-			);
-			path = AxcAE_ParallelogramView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1257,11 +1260,9 @@
 				EA1B9C70215DD351001DF3B1 /* AETestViewController2.m in Sources */,
 				EA516C1D21706D7000E85FE4 /* AxcPolarAxis.m in Sources */,
 				EA164375215095E900BE510B /* AxcAE_ImageBaseObj.m in Sources */,
-				EAE4FAE9214BB864008146A2 /* AxcAE_ParallelogramView.m in Sources */,
 				EABB8FB9214FA0EF009CABC7 /* AxcAE_BaseObject.m in Sources */,
 				EA1643B02150A4D600BE510B /* BaseVC.m in Sources */,
 				EA1643A62150A48300BE510B /* ViewSampleListVC.m in Sources */,
-				EAE4FAE4214BB7BD008146A2 /* AxcAE_FirstDisplayBox.m in Sources */,
 				EA516C252170809E00E85FE4 /* DrawTrapezoidalBlockRingVC.m in Sources */,
 				EA31924721521D5500C315F2 /* CAShapeLayer+AxcAE_LayerAttribute.m in Sources */,
 				EA1289C82171B28500FC654B /* AETestViewController4.m in Sources */,
@@ -1271,6 +1272,7 @@
 				EA7142ED214CF89C003E76BA /* AxcAE_RingImageView.m in Sources */,
 				EA50F7FF2151F08500A53B71 /* AxcAE_DrawBoard.m in Sources */,
 				EA1643B42150A68000BE510B /* BaseModel.m in Sources */,
+				EAC1ACEC21748652007E4499 /* GredientLayerView.m in Sources */,
 				EA1643A92150A49100BE510B /* DrawSampleListVC.m in Sources */,
 				EAD9048E216DBC8D00A3B4FE /* AxcAE_Scale.m in Sources */,
 				EADD07A52154BFEE00A87AC6 /* AxcAE_ProgressDrawVC.m in Sources */,

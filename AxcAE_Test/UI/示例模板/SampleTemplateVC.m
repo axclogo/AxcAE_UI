@@ -13,6 +13,7 @@
 #import "AETestViewController3.h"
 #import "AETestViewController4.h"
 #import "AETestViewController5.h"
+#import "AETestViewController6.h"
 
 @interface SampleTemplateVC ()
 

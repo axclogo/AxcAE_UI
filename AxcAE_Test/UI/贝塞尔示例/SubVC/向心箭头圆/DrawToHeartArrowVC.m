@@ -37,7 +37,7 @@
     // 使画笔在画板上开始绘制
     [self.drawBoard drawSublayer:self.layerBrush];
     // 添加绘制动画 -- 非必选，如果设置绘制动画则能看到绘制效果
-    [self.layerBrush addAnimation:[AxcCAAnimation AxcDrawLineDuration:1] // 使其1秒绘制完
+    [self.layerBrush addAnimation:[AxcCAAnimation AxcDrawLineDuration:3] // 使其1秒绘制完
                            forKey:@"123"];
 }
 
@@ -45,9 +45,11 @@
     if (!_layerBrush) {
         UIBezierPath *bezierPath = [AxcDrawPath AxcDrawPointArrowCenter:CGPointMake(200, 200)   // 圆心
                                                                  radius:100                     // 半径
-                                                            arrowRadius:20                      // 箭头高度/向心半径差
+                                                            arrowRadius:80                      // 箭头高度/向心半径差
                                                             arrowRadian:20                      // 箭头圆弧角度
                                                              arrowCount:9                       // 箭头个数
+                                                            connections:YES                     // 是否形成闭合圆？
+                                                         arcConnections:YES                     // 是否使用圆弧作为连接边？
                                                              startAngle:-90-(20/2.f)            // 起始角
                                                            openingAngle:0                       // 开合角
                                                               clockwise:YES];                   // 顺时针？
