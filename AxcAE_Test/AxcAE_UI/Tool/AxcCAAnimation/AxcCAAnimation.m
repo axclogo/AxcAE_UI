@@ -31,13 +31,33 @@
 }
 + (CABasicAnimation *)AxcScaleDuration:(CGFloat )duration
                         timingFunction:(NSString *)timingFunction{
+    return [self AxcScaleDuration:duration timingFunction:timingFunction fromValue:@(0) toValue:@(1)];
+}
++ (CABasicAnimation *)AxcScaleDuration:(CGFloat )duration
+                        timingFunction:(NSString *)timingFunction
+                             fromValue:(NSNumber *)fromValue
+                               toValue:(NSNumber *)toValue{
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     [self settingCABasicAnimation:scaleAnimation
-                        fromValue:@(0)
-                          toValue:@(1)
+                        fromValue:fromValue
+                          toValue:toValue
                          duration:duration
                    timingFunction:timingFunction];
     scaleAnimation.repeatCount = 1; // 重复次数只需要1次
+    return scaleAnimation;
+}
+#pragma mark 来回缩放循环动画
++ (CABasicAnimation *)AxcScaleRepeatDuration:(CGFloat )duration
+                              timingFunction:(NSString *)timingFunction
+                                   fromValue:(NSNumber *)fromValue
+                                     toValue:(NSNumber *)toValue{
+    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    [self settingCABasicAnimation:scaleAnimation
+                        fromValue:fromValue
+                          toValue:toValue
+                         duration:duration
+                   timingFunction:timingFunction];
+    scaleAnimation.autoreverses = YES;
     return scaleAnimation;
 }
 #pragma mark - 旋转动画
@@ -63,7 +83,34 @@
     animation.autoreverses = NO; // 不用反复旋转
     return animation;
 }
-
+#pragma mark 来回旋转持续动画
++ (CABasicAnimation *)AxcRotatingRepeatDuration:(CGFloat )duration
+                                 timingFunction:(NSString *)timingFunction
+                                      fromValue:(NSNumber *)fromValue
+                                        toValue:(NSNumber *)toValue{
+    CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    [self settingCABasicAnimation:animation
+                        fromValue:fromValue
+                          toValue:toValue
+                         duration:duration
+                   timingFunction:timingFunction];
+    animation.autoreverses = YES;
+    return animation;
+}
+#pragma mark - 来回纵/横拉伸
++ (CABasicAnimation *)AxcTensileRepeatDuration:(CGFloat )duration
+                                timingFunction:(NSString *)timingFunction
+                                     fromValue:(NSNumber *)fromValue
+                                       toValue:(NSNumber *)toValue
+                                           isY:(BOOL )isY{
+    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:isY ? @"transform.scale.y" :@"transform.scale.x"];
+    [self settingCABasicAnimation:scaleAnimation
+                        fromValue:fromValue
+                          toValue:toValue
+                         duration:duration
+                   timingFunction:timingFunction];
+    scaleAnimation.autoreverses = YES;
+    return scaleAnimation;}
 #pragma mark - 透明渐变
 +(CABasicAnimation *)AxcOpacityWithDuration:(CGFloat )duration{
     return [self AxcOpacityWithDuration:duration

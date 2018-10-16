@@ -533,6 +533,29 @@
                                startAngle:(CGFloat )startAngle
                              openingAngle:(CGFloat )openingAngle
                                 clockwise:(BOOL )clockwise{
+    return [self AxcDrawPointArrowCenter:center
+                                  radius:radius
+                             arrowRadius:arrowRadius
+                             arrowRadian:arrowRadian
+                              arrowCount:arrowCount
+                             connections:connections
+                          arcConnections:arcConnections
+                                 outSide:NO
+                              startAngle:startAngle
+                            openingAngle:openingAngle
+                               clockwise:clockwise];
+}
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount
+                              connections:(BOOL )connections
+                           arcConnections:(BOOL )arcConnections
+                                  outSide:(BOOL )outSide
+                               startAngle:(CGFloat )startAngle
+                             openingAngle:(CGFloat )openingAngle
+                                clockwise:(BOOL )clockwise{
     CGFloat spacingAngle = (360.f - openingAngle)/arrowCount;
     UIBezierPath *path = [UIBezierPath bezierPath];
     for (int i = 0; i < arrowCount; i ++) {
@@ -543,7 +566,7 @@
                                                      distance:radius
                                                        radian:startAngle]];
         [path addLineToPoint:[AxcPolarAxis AxcPolarAxisCenter:center
-                                                     distance:radius - arrowRadius
+                                                     distance:outSide ?radius + arrowRadius : radius - arrowRadius
                                                        radian:clockwise ? startAngle+arrowRadian/2 :startAngle-arrowRadian/2]] ;
         [path addLineToPoint:[AxcPolarAxis AxcPolarAxisCenter:center
                                                      distance:radius
@@ -678,7 +701,24 @@
     }
     return [self AxcDrawLineArray:gridsPoint clockwise:forward];
 }
-
+#pragma mark - 准星相关
+#pragma mark 十字准星
++ (UIBezierPath *)AxcDrawReticleCenter:(CGPoint )center
+                                  size:(CGSize )size{
+    return [self AxcDrawReticleCenter:center size:size connection:YES];
+}
++ (UIBezierPath *)AxcDrawReticleCenter:(CGPoint )center
+                                  size:(CGSize )size
+                             connection:(BOOL )connection{
+    NSMutableArray *points = @[].mutableCopy;
+    [points addObject:[NSValue valueWithCGPoint:CGPointMake(center.x - size.width/2, center.y)]];
+    [points addObject:[NSValue valueWithCGPoint:CGPointMake(center.x + size.width/2, center.y)]];
+    [points addObject:[NSNull null]];
+    [points addObject:[NSValue valueWithCGPoint:CGPointMake(center.x , center.y - size.height/2)]];
+    [points addObject:[NSValue valueWithCGPoint:CGPointMake(center.x , center.y + size.height/2)]];
+    [points addObject:[NSNull null]];
+    return [self AxcDrawLineArray:points clockwise:connection];
+}
 
 @end
 

@@ -536,6 +536,32 @@
                                startAngle:(CGFloat )startAngle
                              openingAngle:(CGFloat )openingAngle
                                 clockwise:(BOOL )clockwise;
+/**
+ 绘制指向箭头圆形
+ @param center 圆心
+ @param radius 半径
+ @param arrowRadius 箭头半径
+ @param arrowRadian 箭头角度
+ @param arrowCount 块个数
+ @param connections 是否连接
+ @param arcConnections 使用圆弧形连接
+ @param outSide 箭头向外？
+ @param startAngle 起始角
+ @param openingAngle 开合角
+ @param clockwise 顺时针？
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawPointArrowCenter:(CGPoint )center
+                                   radius:(CGFloat )radius
+                              arrowRadius:(CGFloat )arrowRadius
+                              arrowRadian:(CGFloat )arrowRadian
+                               arrowCount:(NSInteger )arrowCount
+                              connections:(BOOL )connections
+                           arcConnections:(BOOL )arcConnections
+                                  outSide:(BOOL )outSide
+                               startAngle:(CGFloat )startAngle
+                             openingAngle:(CGFloat )openingAngle
+                                clockwise:(BOOL )clockwise;
 #pragma mark 绘制圆形辐射线
 /**
  绘制圆形辐射线 - 1
@@ -654,7 +680,26 @@
                              firstHorizontal:(BOOL )firstHorizontal
                                       border:(BOOL )border
                                      forward:(BOOL)forward;
-
+#pragma mark - 准星相关
+#pragma mark 绘制十字准星
+/**
+ 绘制十字准星
+ @param center s中心
+ @param size 大小
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawReticleCenter:(CGPoint )center
+                                  size:(CGSize )size;
+/**
+ 绘制十字准星
+ @param center s中心
+ @param size 大小
+ @param connection 顺序绘制
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawReticleCenter:(CGPoint )center
+                                  size:(CGSize )size
+                            connection:(BOOL )connection;
 
 @end
 

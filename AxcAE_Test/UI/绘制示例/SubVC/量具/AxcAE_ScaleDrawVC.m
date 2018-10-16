@@ -7,10 +7,10 @@
 //
 
 #import "AxcAE_ScaleDrawVC.h"
-#import "AxcAE_Scale.h"
+#import "AxcAE_ScaleDrawView.h"
 
 @interface AxcAE_ScaleDrawVC ()<AxcAE_ScaleDelegate>
-@property(nonatomic , strong)AxcAE_Scale *scale;
+@property(nonatomic , strong)AxcAE_ScaleDrawView *scale;
 @property(nonatomic , strong)UILabel *label;
 @end
 
@@ -40,18 +40,18 @@
     [self.scale reloadTextLayer]; // 刷新文字，执行代理方法
 }
 #pragma mark - 代理
-- (void)AxcAE_Scale:(AxcAE_Scale *)scale value:(CGFloat )value{
+- (void)AxcAE_Scale:(AxcAE_ScaleDrawView *)scale value:(CGFloat )value{
     self.label.text = [NSString stringWithFormat:@"%.2f",value];
 }
-- (void)AxcAE_Scale:(AxcAE_Scale *)scale textLayer:(CATextLayer *)textLayer idx:(NSInteger)idx{
+- (void)AxcAE_Scale:(AxcAE_ScaleDrawView *)scale textLayer:(CATextLayer *)textLayer idx:(NSInteger)idx{
     if (idx == 3) { // 第四个文字Layer设置
         textLayer.foregroundColor = [UIColor whiteColor].CGColor;
     }
 }
 
-- (AxcAE_Scale *)scale{
+- (AxcAE_ScaleDrawView *)scale{
     if (!_scale) {
-        _scale = [AxcAE_Scale new];
+        _scale = [AxcAE_ScaleDrawView new];
         _scale.delegate = self;
         _scale.backgroundColor = kVCBackColor;
         

@@ -10,19 +10,19 @@
 #import "AxcAE_DrawBoard.h"
 #import "AxcLayerBrush.h"
 
-@class AxcAE_Scale;
+@class AxcAE_ScaleDrawView;
 /** 参数回调Block */
-typedef void(^AxcAE_ScaleValueChangeBlock )(AxcAE_Scale *scale,CGFloat value);
+typedef void(^AxcAE_ScaleValueChangeBlock )(AxcAE_ScaleDrawView *scale,CGFloat value);
 
 @protocol AxcAE_ScaleDelegate <NSObject>
 @optional
 /** 参数发生改变 */
-- (void)AxcAE_Scale:(AxcAE_Scale *)scale value:(CGFloat )value;
+- (void)AxcAE_Scale:(AxcAE_ScaleDrawView *)scale value:(CGFloat )value;
 /** 每当重绘文字时候会调用 */
-- (void)AxcAE_Scale:(AxcAE_Scale *)scale textLayer:(CATextLayer *)textLayer idx:(NSInteger )idx;
+- (void)AxcAE_Scale:(AxcAE_ScaleDrawView *)scale textLayer:(CATextLayer *)textLayer idx:(NSInteger )idx;
 @end
 
-@interface AxcAE_Scale : AxcAE_BaseControl <UIScrollViewDelegate> 
+@interface AxcAE_ScaleDrawView : AxcAE_BaseControl <UIScrollViewDelegate> 
 #pragma mark 刻度设置
 /** 大刻度个数 默认20 */
 @property(nonatomic , assign)NSInteger count;

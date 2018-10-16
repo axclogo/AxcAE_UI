@@ -49,6 +49,32 @@
 + (CABasicAnimation *)AxcScaleDuration:(CGFloat )duration
                         timingFunction:(NSString *)timingFunction;
 
+/**
+ 缩放效果动画 - 3
+ @param duration 周期时间
+ @param timingFunction 时间函数
+ @param fromValue 从
+ @param toValue 到
+ @return 动画对象
+ */
++ (CABasicAnimation *)AxcScaleDuration:(CGFloat )duration
+                        timingFunction:(NSString *)timingFunction
+                             fromValue:(NSNumber *)fromValue
+                               toValue:(NSNumber *)toValue;
+#pragma mark 缩放循环动画
+
+/**
+ 缩放循环动画
+ @param duration 周期时间
+ @param timingFunction 时间函数
+ @param fromValue 从
+ @param toValue 到
+ @return 动画对象
+ */
++ (CABasicAnimation *)AxcScaleRepeatDuration:(CGFloat )duration
+                              timingFunction:(NSString *)timingFunction
+                                   fromValue:(NSNumber *)fromValue
+                                     toValue:(NSNumber *)toValue;
 #pragma mark - 旋转动画
 
 /**
@@ -77,7 +103,34 @@
 + (CABasicAnimation *)AxcRotatingDuration:(CGFloat )duration
                            timingFunction:(NSString *)timingFunction
                                 clockwise:(BOOL )clockwise;
-
+#pragma mark 来回旋转持续动画
+/**
+ 来回旋转持续动画
+ @param duration 周期时间
+ @param timingFunction 时间函数
+ @param fromValue 从
+ @param toValue 到
+ @return 动画对象
+ */
++ (CABasicAnimation *)AxcRotatingRepeatDuration:(CGFloat )duration
+                                 timingFunction:(NSString *)timingFunction
+                                      fromValue:(NSNumber *)fromValue
+                                        toValue:(NSNumber *)toValue;
+#pragma mark - 来回纵/横拉伸
+/**
+ 来回旋转持续动画
+ @param duration 周期时间
+ @param timingFunction 时间函数
+ @param fromValue 从
+ @param toValue 到
+ @param isY 是否是Y轴
+ @return 动画对象
+ */
++ (CABasicAnimation *)AxcTensileRepeatDuration:(CGFloat )duration
+                                timingFunction:(NSString *)timingFunction
+                                     fromValue:(NSNumber *)fromValue
+                                       toValue:(NSNumber *)toValue
+                                           isY:(BOOL )isY;
 #pragma mark - 透明渐变
 /**
  渐变出现动画

@@ -50,6 +50,7 @@
                                                              arrowCount:9                       // 箭头个数
                                                             connections:YES                     // 是否形成闭合圆？
                                                          arcConnections:YES                     // 是否使用圆弧作为连接边？
+                                                                outSide:YES                     // 箭头向外
                                                              startAngle:-90-(20/2.f)            // 起始角
                                                            openingAngle:0                       // 开合角
                                                               clockwise:YES];                   // 顺时针？

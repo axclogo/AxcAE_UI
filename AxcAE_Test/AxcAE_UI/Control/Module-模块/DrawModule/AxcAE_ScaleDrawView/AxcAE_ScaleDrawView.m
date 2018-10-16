@@ -6,11 +6,11 @@
 //  Copyright © 2018年 AxcLogo. All rights reserved.
 //
 
-#import "AxcAE_Scale.h"
-@interface AxcAE_Scale ()
+#import "AxcAE_ScaleDrawView.h"
+@interface AxcAE_ScaleDrawView ()
 @property(nonatomic , strong)NSMutableArray <CATextLayer *>*textLayerArray;
 @end
-@implementation AxcAE_Scale
+@implementation AxcAE_ScaleDrawView
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     if ([self pointInside:point withEvent:event]) {
         return self.scrollView;

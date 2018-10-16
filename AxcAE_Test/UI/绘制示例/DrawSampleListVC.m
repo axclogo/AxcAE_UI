@@ -22,7 +22,9 @@
     [self.dataArray addObject:[ShowModel Title:@"圆环型" disTitle:@"Layer绘制" VCName:@"AxcAE_RingDrawVC"]];
     [self.dataArray addObject:[ShowModel Title:@"箭头型" disTitle:@"Layer绘制" VCName:@"AxcAE_ArrowDrawVC"]];
     [self.dataArray addObject:[ShowModel Title:@"进度型" disTitle:@"Layer绘制" VCName:@"AxcAE_ProgressDrawVC"]];
-    [self.dataArray addObject:[ShowModel Title:@"刻度型" disTitle:@"Layer绘制" VCName:@"AxcAE_ScaleDrawVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"量具" disTitle:@"Layer绘制组件" VCName:@"AxcAE_ScaleDrawVC"]];
+    [self.dataArray addObject:[ShowModel Title:@"瞄具" disTitle:@"Layer绘制" VCName:@"AxcAE_ScopeDrawVC"]];
+    
     
 }
 
