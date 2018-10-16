@@ -33,7 +33,7 @@
     }];
 }
 - (NSInteger )collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 2;
+    return 10;
 }
 - (NSInteger )numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;

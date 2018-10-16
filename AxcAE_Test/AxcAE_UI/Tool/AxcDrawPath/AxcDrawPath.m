@@ -177,6 +177,24 @@
 #pragma mark - 圆环相关
 #pragma mark 画圆
 + (UIBezierPath *)AxcDrawArcCenter:(CGPoint )center
+                            radius:(CGFloat)radius{
+    return [self AxcDrawArcCenter:center
+                           radius:radius
+                       startAngle:DefaultStartAngle
+                         endAngle:270
+                        clockwise:YES];
+}
++ (UIBezierPath *)AxcDrawArcCenter:(CGPoint )center
+                            radius:(CGFloat)radius
+                        startAngle:(CGFloat)startAngle
+                          endAngle:(CGFloat)endAngle{
+    return [self AxcDrawArcCenter:center
+                           radius:radius
+                       startAngle:startAngle
+                         endAngle:endAngle
+                        clockwise:YES];
+}
++ (UIBezierPath *)AxcDrawArcCenter:(CGPoint )center
                             radius:(CGFloat)radius
                         startAngle:(CGFloat)startAngle
                           endAngle:(CGFloat)endAngle

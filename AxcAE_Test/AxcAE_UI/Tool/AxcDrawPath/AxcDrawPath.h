@@ -175,6 +175,27 @@
                                  clockwise:(BOOL)clockwise;
 #pragma mark - 圆环相关
 /**
+ 绘制圆 - 1
+ @param center 中心点
+ @param radius 半径
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawArcCenter:(CGPoint )center
+                            radius:(CGFloat)radius;
+/**
+ 绘制圆 - 2
+ @param center 中心点
+ @param radius 半径
+ @param startAngle 起始弧度
+ @param endAngle 终止弧度
+ @return 贝塞尔曲线
+ */
++ (UIBezierPath *)AxcDrawArcCenter:(CGPoint )center
+                            radius:(CGFloat)radius
+                        startAngle:(CGFloat)startAngle
+                          endAngle:(CGFloat)endAngle;
+/**
+ 绘制圆 - 3
  @param center 中心点
  @param radius 半径
  @param startAngle 起始弧度

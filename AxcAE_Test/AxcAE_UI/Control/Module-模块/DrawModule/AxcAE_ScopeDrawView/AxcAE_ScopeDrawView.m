@@ -42,19 +42,97 @@
 }
 - (void)redraw{
     switch (self.style) {
+        case AxcAE_ScopeDrawStyleThreePhase:{
+            [self drawThreePhase];
+        }break;
+        case AxcAE_ScopeDrawStyleX:{
+            [self drawX];
+        }break;
         case AxcAE_ScopeDrawStyleXArrow:{
             [self drawXArrow];
         }break;
         case AxcAE_ScopeDrawStyleXArrowRectangular:{
             [self drawXArrowRectangular];
         }break;
-            
+           
         default:{
             
         }break;
     }
 }
 #pragma mark - 类型
+#pragma mark 三相瞄准
+- (void)drawThreePhase{
+    // 1外沿圆
+    UIBezierPath *bezierPath_1 = [AxcDrawPath AxcDrawArcCenter:self.drawCenter
+                                                        radius:self.radius];
+    // 十字准星
+    [bezierPath_1 appendPath:[AxcDrawPath AxcDrawReticleCenter:self.drawCenter
+                                                          size:CGSizeMake(self.radius/8, self.radius/8)]];
+    self.shapeLayer_1.path = bezierPath_1.CGPath;
+    // 三相点位角
+    UIBezierPath *bezierPath_2 = [AxcDrawPath AxcDrawCircularRadiationCenter:self.drawCenter
+                                                                      radius:self.radius -5
+                                                                 lineHeights:@[@(self.radius - self.radius/5), @(self.radius - self.radius/5),
+                                                                               @(self.radius - self.radius/5)]
+                                                                     outside:NO];
+    self.shapeLayer_2.path = bezierPath_2.CGPath;
+    self.shapeLayer_2.lineWidth = self.radius/20;
+    // 3虚线圆弧
+    UIBezierPath *bezierPath_3 = [AxcDrawPath AxcDrawCircularArcCenter:self.drawCenter
+                                                                radius:self.radius/2
+                                                                 count:3
+                                                                radian:60
+                                                            startAngle:-60];
+    self.shapeLayer_3.path = bezierPath_3.CGPath;
+    self.shapeLayer_3.lineDashPattern = @[@(1),@(2)];
+    self.shapeLayer_3.lineWidth = self.radius/20;
+    // 4圆弧块状
+    UIBezierPath *bezierPath_4 = [AxcDrawPath AxcDrawBlockArcRingCenter:self.drawCenter
+                                                          outsideRadius:self.radius-10
+                                                            blockRadius:self.radius/10
+                                                             blockCount:3
+                                                           angleSpacing:60
+                                                             startAngle:-60];
+    self.shapeLayer_4.path = bezierPath_4.CGPath;
+    self.shapeLayer_4.lineWidth = 1;
+}
+#pragma mark X型瞄具
+- (void)drawX{
+    // 1外沿圆
+    UIBezierPath *bezierPath_1 = [AxcDrawPath AxcDrawArcCenter:self.drawCenter
+                                                        radius:self.radius - self.radius/40];
+    self.shapeLayer_1.path = bezierPath_1.CGPath;
+    self.shapeLayer_1.lineWidth = self.radius/20;
+    // 1内圆
+    CGFloat spacing_1_2 = self.radius / 10;
+    UIBezierPath *bezierPath_2 = [AxcDrawPath AxcDrawArcCenter:self.drawCenter
+                                                        radius:self.radius - spacing_1_2];
+    // 十字准星
+    [bezierPath_2 appendPath:[AxcDrawPath AxcDrawReticleCenter:self.drawCenter
+                                                          size:CGSizeMake(self.radius/10, self.radius/10)]];
+    self.shapeLayer_2.path = bezierPath_2.CGPath;
+    self.shapeLayer_2.lineWidth = 1;
+    // 3虚线圆弧
+    CGFloat spacing_2_3 = spacing_1_2 *3;
+    UIBezierPath *bezierPath_3 = [AxcDrawPath AxcDrawCircularArcCenter:self.drawCenter
+                                                                radius:self.radius - spacing_2_3
+                                                                 count:2
+                                                                radian:60
+                                                            startAngle:-30 ];
+    self.shapeLayer_3.path = bezierPath_3.CGPath;
+    self.shapeLayer_3.lineDashPattern = @[@(1),@(2)];
+    self.shapeLayer_3.lineWidth = self.radius/20;
+    // 4X型锁
+    UIBezierPath *bezierPath_4 = [AxcDrawPath AxcDrawCircularArcCenter:self.drawCenter
+                                                                radius:self.radius/2
+                                                                 count:4
+                                                                radian:2
+                                                            startAngle:-46];
+    self.shapeLayer_4.path = bezierPath_4.CGPath;
+    self.shapeLayer_4.lineWidth = self.radius/2;
+
+}
 #pragma mark X型指向箭头瞄具
 #define XArrow_SpacingAngle (self.radius/5)
 #define XArrow_SpacingHeight (XArrow_SpacingAngle - 3)
@@ -124,21 +202,14 @@
 - (void)drawXArrowRectangular{
     // 1外沿的同心圆
     UIBezierPath *bezierPath_1 = [AxcDrawPath AxcDrawArcCenter:self.drawCenter
-                                                      radius:self.radius
-                                                  startAngle:-90
-                                                    endAngle:270
-                                                   clockwise:YES];
+                                                      radius:self.radius];
     [bezierPath_1 appendPath:[AxcDrawPath AxcDrawArcCenter:self.drawCenter
-                                                  radius:self.radius - 5
-                                              startAngle:-90
-                                                endAngle:270
-                                               clockwise:YES]];
+                                                  radius:self.radius - 5]];
     [bezierPath_1 appendPath:[AxcDrawPath AxcDrawCircularArcCenter:self.drawCenter
                                                             radius:self.radius - 10
                                                              count:4
                                                             radian:15
                                                         startAngle:-90-15/2]];
-    
     self.shapeLayer_1.path = bezierPath_1.CGPath;
     self.shapeLayer_1.lineWidth = 1;
     // 2矩形
@@ -215,7 +286,6 @@
                                                             startAngle:-((90 - XArrow_SpacingAngle)/2 + XArrow_SpacingAngle/2)];
     self.shapeLayer_4.path = bezierPath_4.CGPath;
     self.shapeLayer_4.lineWidth = self.radius/2;
-
 }
 
 #define DrawAimation @"Animation"
@@ -237,6 +307,15 @@
     CABasicAnimation *animation_3;
     CABasicAnimation *animation_4;
     switch (self.style) {
+        case AxcAE_ScopeDrawStyleThreePhase:{
+            animation_2 = [AxcCAAnimation AxcRotatingRepeatDuration:2 timingFunction:kCAMediaTimingFunctionEaseInEaseOut fromValue:@(0) toValue:@(AxcAE_Angle(360))];
+            animation_3 = [AxcCAAnimation AxcScaleRepeatDuration:0.6 timingFunction:kCAMediaTimingFunctionEaseInEaseOut fromValue:@(1) toValue:@(0.7)];
+            animation_4 = [AxcCAAnimation AxcRotatingRepeatDuration:2 timingFunction:kCAMediaTimingFunctionEaseInEaseOut fromValue:@(0) toValue:@(AxcAE_Angle(-360))];
+        }break;
+        case AxcAE_ScopeDrawStyleX:{
+            animation_3 = [AxcCAAnimation AxcRotatingRepeatDuration:2 timingFunction:kCAMediaTimingFunctionEaseInEaseOut fromValue:@(0) toValue:@(AxcAE_Angle(360))];
+            animation_4 = [AxcCAAnimation AxcScaleRepeatDuration:0.33 timingFunction:kCAMediaTimingFunctionEaseInEaseOut fromValue:@(1) toValue:@(0.7)];
+        }break;
         case AxcAE_ScopeDrawStyleXArrow:{
             animation_1 = [AxcCAAnimation AxcRotatingRepeatDuration:2 timingFunction:kCAMediaTimingFunctionEaseInEaseOut fromValue:@(0) toValue:@(AxcAE_Angle(-90))];
             animation_2 = [AxcCAAnimation AxcRotatingRepeatDuration:2 timingFunction:kCAMediaTimingFunctionEaseInEaseOut fromValue:@(0) toValue:@(AxcAE_Angle(360))];
@@ -250,9 +329,7 @@
             animation_4 = [AxcCAAnimation AxcScaleRepeatDuration:0.33 timingFunction:kCAMediaTimingFunctionEaseInEaseOut fromValue:@(1) toValue:@(0.7)];
         }break;
             
-        default:{
-            
-        }break;
+        default: break;
     }
     [self.shapeLayer_1 addAnimation:animation_1 forKey:ContinuousAnimation];
     [self.shapeLayer_2 addAnimation:animation_2 forKey:ContinuousAnimation];

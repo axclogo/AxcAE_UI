@@ -9,6 +9,8 @@
 #import "AxcAE_BaseControl.h"
 
 typedef NS_ENUM(NSInteger, AxcAE_ScopeDrawStyle) {
+    AxcAE_ScopeDrawStyleThreePhase,                     // 三相线瞄准
+    AxcAE_ScopeDrawStyleX,                              // X型瞄准
     AxcAE_ScopeDrawStyleXArrow,                         // 箭头+X型瞄准
     AxcAE_ScopeDrawStyleXArrowRectangular,              // 箭头+X型+矩形瞄准
 };
