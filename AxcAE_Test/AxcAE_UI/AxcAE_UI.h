@@ -13,6 +13,7 @@
 #import "AxcAE_RingDrawView.h"
 #import "AxcAE_ArrowDrawView.h"
 #import "AxcAE_ProgressDrawView.h"
+#import "AxcAE_ScopeDrawView.h"
 
 // 视图组件类
 #import "AxcAE_RingImageView.h"

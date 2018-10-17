@@ -41,6 +41,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     ScopeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"axc" forIndexPath:indexPath];
     cell.scopeDrawView.style = indexPath.row;
+//    cell.scopeDrawView.animationSpeed = 0.7;
     return cell;
 }
 #pragma mark - 懒加载

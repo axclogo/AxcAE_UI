@@ -31,6 +31,18 @@
 +(CABasicAnimation *)AxcDrawLineDuration:(CGFloat )duration
                           timingFunction:(NSString *)timingFunction;
 
+/**
+ 线性绘制
+ @param duration 绘制时间
+ @param timingFunction 时间曲线
+ @param fromValue 从
+ @param toValue 到
+ @return 动画对象
+ */
++(CABasicAnimation *)AxcDrawLineDuration:(CGFloat )duration
+                          timingFunction:(NSString *)timingFunction
+                               fromValue:(NSNumber *)fromValue
+                                 toValue:(NSNumber *)toValue;
 #pragma mark - 缩放动画
 
 /**

@@ -13,6 +13,8 @@ typedef NS_ENUM(NSInteger, AxcAE_ScopeDrawStyle) {
     AxcAE_ScopeDrawStyleX,                              // X型瞄准
     AxcAE_ScopeDrawStyleXArrow,                         // 箭头+X型瞄准
     AxcAE_ScopeDrawStyleXArrowRectangular,              // 箭头+X型+矩形瞄准
+    AxcAE_ScopeDrawStyleThreeTriangle,                  // 3三角瞄准
+    AxcAE_ScopeDrawStyleScale,                          // 刻度瞄准
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -27,7 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic , strong)CAShapeLayer *shapeLayer_3;
 @property(nonatomic , strong)CAShapeLayer *shapeLayer_4;
 
-@property(nonatomic , assign)CGFloat lineWidth;
+@property(nonatomic , assign)CGFloat animationSpeed;
+
+
 
 - (void)draw;
 - (void)drawTime:(CGFloat )time;

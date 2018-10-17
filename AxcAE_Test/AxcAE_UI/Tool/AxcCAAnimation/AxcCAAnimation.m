@@ -16,10 +16,18 @@
 }
 +(CABasicAnimation *)AxcDrawLineDuration:(CGFloat )duration
                           timingFunction:(NSString *)timingFunction{
+    return [self AxcDrawLineDuration:duration timingFunction:kCAMediaTimingFunctionLinear
+                           fromValue:@(0)
+                             toValue:@(1)];
+}
++(CABasicAnimation *)AxcDrawLineDuration:(CGFloat )duration
+                          timingFunction:(NSString *)timingFunction
+                               fromValue:(NSNumber *)fromValue
+                                 toValue:(NSNumber *)toValue{
     CABasicAnimation *pathAniamtion = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     [self settingCABasicAnimation:pathAniamtion
-                        fromValue:@(0)
-                          toValue:@(1)
+                        fromValue:fromValue
+                          toValue:toValue
                          duration:duration
                    timingFunction:timingFunction];
     pathAniamtion.repeatCount = 1; // 重复次数只需要1次
@@ -110,7 +118,8 @@
                          duration:duration
                    timingFunction:timingFunction];
     scaleAnimation.autoreverses = YES;
-    return scaleAnimation;}
+    return scaleAnimation;
+}
 #pragma mark - 透明渐变
 +(CABasicAnimation *)AxcOpacityWithDuration:(CGFloat )duration{
     return [self AxcOpacityWithDuration:duration
