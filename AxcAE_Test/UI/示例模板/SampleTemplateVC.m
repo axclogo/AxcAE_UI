@@ -14,6 +14,7 @@
 #import "AETestViewController4.h"
 #import "AETestViewController5.h"
 #import "AETestViewController6.h"
+#import "AETestViewController7.h"
 
 @interface SampleTemplateVC ()
 
@@ -27,7 +28,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.navigationController pushViewController:[AETestViewController new] animated:YES];
+    [self.navigationController pushViewController:[AETestViewController2 new] animated:YES];
 }
 
 @end

@@ -83,6 +83,8 @@
 		EAE4FAC7214BB4CB008146A2 /* AxcAE_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAC6214BB4CB008146A2 /* AxcAE_TestUITests.m */; };
 		EAE4FAD8214BB525008146A2 /* AxcAE_BaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FAD7214BB525008146A2 /* AxcAE_BaseControl.m */; };
 		EAE4FADD214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4FADB214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m */; };
+		EAF1B4F221799CBA002D3947 /* AETestViewController7.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF1B4F121799CBA002D3947 /* AETestViewController7.m */; };
+		EAF1B4F621799CDE002D3947 /* AxcBufferView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF1B4F521799CDE002D3947 /* AxcBufferView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +257,10 @@
 		EAE4FADB214BB61C008146A2 /* UIView+AxcAE_ViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AxcAE_ViewFrame.m"; sourceTree = "<group>"; };
 		EAE4FADC214BB61C008146A2 /* UIView+AxcAE_ViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AxcAE_ViewFrame.h"; sourceTree = "<group>"; };
 		EAE4FAEA214BBA44008146A2 /* AxcAE_HeaderDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcAE_HeaderDefine.h; sourceTree = "<group>"; };
+		EAF1B4F021799CBA002D3947 /* AETestViewController7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestViewController7.h; sourceTree = "<group>"; };
+		EAF1B4F121799CBA002D3947 /* AETestViewController7.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestViewController7.m; sourceTree = "<group>"; };
+		EAF1B4F421799CDE002D3947 /* AxcBufferView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcBufferView.h; sourceTree = "<group>"; };
+		EAF1B4F521799CDE002D3947 /* AxcBufferView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcBufferView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -608,6 +614,8 @@
 				EAC1ACD321743BC0007E4499 /* AETestViewController5.m */,
 				EAC1ACE6217485E8007E4499 /* AETestViewController6.h */,
 				EAC1ACE7217485E8007E4499 /* AETestViewController6.m */,
+				EAF1B4F021799CBA002D3947 /* AETestViewController7.h */,
+				EAF1B4F121799CBA002D3947 /* AETestViewController7.m */,
 				EA1B9C71215DD3AF001DF3B1 /* View */,
 			);
 			path = Test;
@@ -616,6 +624,7 @@
 		EA1B9C71215DD3AF001DF3B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EAF1B4F321799CCC002D3947 /* AxcBufferView */,
 				EAC1ACE921748648007E4499 /* AxcGredientLayerView */,
 				EA516C26217090FA00E85FE4 /* AxcCameraView */,
 				EA1B9C75215DD46C001DF3B1 /* HexagonCell.h */,
@@ -1082,6 +1091,15 @@
 			path = "Module-模块";
 			sourceTree = "<group>";
 		};
+		EAF1B4F321799CCC002D3947 /* AxcBufferView */ = {
+			isa = PBXGroup;
+			children = (
+				EAF1B4F421799CDE002D3947 /* AxcBufferView.h */,
+				EAF1B4F521799CDE002D3947 /* AxcBufferView.m */,
+			);
+			path = AxcBufferView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1299,6 +1317,7 @@
 				EABC24C72153A0B500AE4D8A /* UIViewController+AxcAE_ViewControllerExtension.m in Sources */,
 				EABB8FB1214F8F21009CABC7 /* AxcAE_ArrowDrawView.m in Sources */,
 				EA7142ED214CF89C003E76BA /* AxcAE_RingImageView.m in Sources */,
+				EAF1B4F221799CBA002D3947 /* AETestViewController7.m in Sources */,
 				EA50F7FF2151F08500A53B71 /* AxcAE_DrawBoard.m in Sources */,
 				EA1643B42150A68000BE510B /* BaseModel.m in Sources */,
 				EAC1ACEC21748652007E4499 /* GredientLayerView.m in Sources */,
@@ -1324,6 +1343,7 @@
 				EAC1ACE121748116007E4499 /* DrawRadialCircleVC.m in Sources */,
 				EA319251215246A100C315F2 /* BezierSampleVC.m in Sources */,
 				EA1A430E215B5F3A002C1988 /* AxcBF_FaceRecognition.m in Sources */,
+				EAF1B4F621799CDE002D3947 /* AxcBufferView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -89,24 +89,7 @@
     UIImageView *imgView = [[UIImageView alloc] initWithImage:img];
     imgView.frame = CGRectMake(10, 100, 300, 300);
     imgView.backgroundColor = [UIColor lightGrayColor];
-//    [self.view addSubview:imgView];
-
     
-//    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-//
-//    gradientLayer.frame = [UIScreen mainScreen].bounds;
-//
-//    [gradientLayer setColors:[NSArray arrayWithObjects:(id)[[UIColor redColor] CGColor],(id)[[UIColor yellowColor] CGColor],(id)[[UIColor blueColor] CGColor], nil]];
-//
-//    [gradientLayer setLocations:@[@0,@0.6,@1]];
-//
-//    [gradientLayer setStartPoint:CGPointMake(0, 0)];
-//
-//    [gradientLayer setEndPoint:CGPointMake(1, 0)];
-//
-//    //用progressLayer来截取渐变层 遮罩
-//
-//    self.layer.fillColor = [[UIColor clearColor] CGColor];
 
     imgView.layer.frame = [UIScreen mainScreen].bounds;
     imgView.layer.mask = self.layer;
