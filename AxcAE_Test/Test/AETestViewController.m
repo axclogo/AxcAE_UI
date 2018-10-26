@@ -160,6 +160,12 @@ AVCaptureMetadataOutputObjectsDelegate>
 }
 
 
+- (void)settingShadow:(CALayer *)layer{
+    layer.shadowColor = [UIColor whiteColor].CGColor;
+    layer.shadowOffset = CGSizeMake(0, 0);
+    layer.shadowRadius = 15;
+    layer.shadowOpacity = 1;
+}
 
 - (AxcAE_ScopeDrawView *)scopeDrawView{
     if (!_scopeDrawView) {
@@ -169,6 +175,13 @@ AVCaptureMetadataOutputObjectsDelegate>
         _scopeDrawView.frame = CGRectMake(self.view.axcAE_Width/2 -50, self.view.axcAE_Height/2 -50, 100, 100);
         [_scopeDrawView layoutSubviews];
         _scopeDrawView.hidden = YES;
+        
+//        [self settingShadow:_scopeDrawView.shapeLayer_1];
+//        [self settingShadow:_scopeDrawView.shapeLayer_2];
+//        [self settingShadow:_scopeDrawView.shapeLayer_3];
+//        [self settingShadow:_scopeDrawView.shapeLayer_4];
+//        [self settingShadow:_scopeDrawView.layer];
+        
         [self.view addSubview:_scopeDrawView];
     }
     return _scopeDrawView;
